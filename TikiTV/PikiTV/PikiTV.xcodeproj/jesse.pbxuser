@@ -1,0 +1,157 @@
+// !$*UTF8*$!
+{
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeArchitecture = i386;
+		activeBuildConfigurationName = Release;
+		activeExecutable = 881E9D9E0E48845C005C3840 /* PikiTV */;
+		activeTarget = 8D1107260486CEB800E47090 /* PikiTV */;
+		codeSenseManager = 881E9DA50E48847B005C3840 /* Code sense */;
+		executables = (
+			881E9D9E0E48845C005C3840 /* PikiTV */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					243,
+					20,
+					48.16259765625,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					203,
+					60,
+					20,
+					48.16259765625,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 239633500;
+			PBXWorkspaceStateSaveDate = 239633500;
+		};
+		perUserProjectItems = {
+			881E9DBB0E488914005C3840 /* PBXBookmark */ = 881E9DBB0E488914005C3840 /* PBXBookmark */;
+			881E9DEB0E4C17CD005C3840 /* PBXTextBookmark */ = 881E9DEB0E4C17CD005C3840 /* PBXTextBookmark */;
+		};
+		sourceControlManager = 881E9DA40E48847B005C3840 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	29B97316FDCFA39411CA2CEA /* main.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1316, 742}}";
+			sepNavSelRange = "{529, 0}";
+			sepNavVisRange = "{0, 1601}";
+			sepNavWindowFrame = "{{61, 201}, {1257, 630}}";
+		};
+	};
+	32CA4F630368D1EE00C91783 /* PikiTV_Prefix.pch */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1198, 558}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 143}";
+			sepNavWindowFrame = "{{15, 243}, {1257, 630}}";
+		};
+	};
+	77631A3E0C0748CF005415CB /* main.py */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1198, 558}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 409}";
+			sepNavWindowFrame = "{{38, 222}, {1257, 630}}";
+		};
+	};
+	7790198E0C07548A00326F66 /* PikiTVAppDelegate.py */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {514, 486}}";
+			sepNavSelRange = "{210, 0}";
+			sepNavVisRange = "{0, 726}";
+			sepNavWindowFrame = "{{417, 178}, {573, 558}}";
+		};
+	};
+	881E9D9E0E48845C005C3840 /* PikiTV */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = PikiTV;
+		savedGlobals = {
+		};
+		sourceDirectories = (
+		);
+	};
+	881E9DA40E48847B005C3840 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+		};
+	};
+	881E9DA50E48847B005C3840 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	881E9DBB0E488914005C3840 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 7790198E0C07548A00326F66 /* PikiTVAppDelegate.py */;
+	};
+	881E9DEB0E4C17CD005C3840 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7790198E0C07548A00326F66 /* PikiTVAppDelegate.py */;
+		name = "PikiTVAppDelegate.py: 12";
+		rLen = 0;
+		rLoc = 210;
+		rType = 0;
+		vrLen = 726;
+		vrLoc = 0;
+	};
+	8D1107260486CEB800E47090 /* PikiTV */ = {
+		activeExec = 0;
+		executables = (
+			881E9D9E0E48845C005C3840 /* PikiTV */,
+		);
+	};
+}

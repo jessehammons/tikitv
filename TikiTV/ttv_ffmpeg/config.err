@@ -1,0 +1,2141 @@
+# ./configure --prefix=/Users/jesse/installed --disable-decoders --disable-encoders --disable-indevs --disable-outdevs --enable-decoder=mpeg1video --enable-decoder=mpeg2video --enable-decoder=mpeg4 --enable-decoder=mpeg4aac --enable-decoder=mpeg_xvmc --enable-decoder=mpegvideo --enable-decoder=msmpeg4v1 --enable-decoder=msmpeg4v2 --enable-decoder=msmpeg4v3 --enable-decoder=h261 --enable-decoder=h263 --enable-decoder=h263i --enable-decoder=h264 --enable-decoder=svq1 --enable-decoder=svq3 --disable-vhook
+ARCH_EXT_LIST='
+    altivec
+    armv5te
+    armv6
+    armvfp
+    iwmmxt
+    mmi
+    mmx
+    mmx2
+    neon
+    ssse3
+    vis
+'
+ARCH_LIST='
+    alpha
+    armv4l
+    bfin
+    ia64
+    m68k
+    mips
+    parisc
+    powerpc
+    s390
+    sh4
+    sparc
+    sparc64
+    x86
+    x86_32
+    x86_64
+'
+Apple_PubSub_Socket_Render=/tmp/launch-WIs2HX/Render
+BASH=/bin/sh
+BASH_ARGC=([0]="21")
+BASH_ARGV=([0]="--disable-vhook" [1]="--enable-decoder=svq3" [2]="--enable-decoder=svq1" [3]="--enable-decoder=h264" [4]="--enable-decoder=h263i" [5]="--enable-decoder=h263" [6]="--enable-decoder=h261" [7]="--enable-decoder=msmpeg4v3" [8]="--enable-decoder=msmpeg4v2" [9]="--enable-decoder=msmpeg4v1" [10]="--enable-decoder=mpegvideo" [11]="--enable-decoder=mpeg_xvmc" [12]="--enable-decoder=mpeg4aac" [13]="--enable-decoder=mpeg4" [14]="--enable-decoder=mpeg2video" [15]="--enable-decoder=mpeg1video" [16]="--disable-outdevs" [17]="--disable-indevs" [18]="--disable-encoders" [19]="--disable-decoders" [20]="--prefix=/Users/jesse/installed")
+BASH_LINENO=([0]="0")
+BASH_SOURCE=([0]="./configure")
+BASH_VERSINFO=([0]="3" [1]="2" [2]="17" [3]="1" [4]="release" [5]="i386-apple-darwin9.0")
+BASH_VERSION='3.2.17(1)-release'
+BSF_LIST='dump_extradata_bsf
+h264_mp4toannexb_bsf
+imx_dump_header_bsf
+mjpega_dump_header_bsf
+mp3_header_compress_bsf
+mp3_header_decompress_bsf
+mov2textsub_bsf
+noise_bsf
+remove_extradata_bsf
+text2movsub_bsf'
+CMDLINE_SELECT='
+    
+    altivec
+    armv5te
+    armv6
+    armvfp
+    iwmmxt
+    mmi
+    mmx
+    mmx2
+    neon
+    ssse3
+    vis
+
+    
+    
+    bsfs
+    decoders
+    demuxers
+    encoders
+    filters
+    indevs
+    muxers
+    outdevs
+    parsers
+    protocols
+
+    avfilter
+    avfilter_lavf
+    avisynth
+    beos_netserver
+    bzlib
+    ffmpeg
+    ffplay
+    ffserver
+    gpl
+    gprof
+    gray
+    hardcoded_tables
+    ipv6
+    liba52
+    liba52bin
+    libamr_nb
+    libamr_wb
+    libdc1394
+    libdirac
+    libfaac
+    libfaad
+    libfaadbin
+    libgsm
+    libmp3lame
+    libnut
+    libschroedinger
+    libtheora
+    libvorbis
+    libx264
+    libxvid
+    memalign_hack
+    mlib
+    mpegaudio_hp
+    network
+    nonfree
+    postproc
+    powerpc_perf
+    small
+    swscale
+    vhook
+    x11grab
+    zlib
+
+    
+    beosthreads
+    os2threads
+    pthreads
+    w32threads
+
+    cross_compile
+    debug
+    extra_warnings
+    logging
+    optimizations
+    shared
+    static
+    stripping
+'
+CMDLINE_SET='
+    
+    bindir
+    incdir
+    libdir
+    mandir
+    prefix
+    shlibdir
+
+    arch
+    build_suffix
+    cc
+    cpu
+    cross_prefix
+    logfile
+    source_path
+    target_os
+'
+COMMAND_MODE=unix2003
+COMPONENT_LIST='
+    bsfs
+    decoders
+    demuxers
+    encoders
+    filters
+    indevs
+    muxers
+    outdevs
+    parsers
+    protocols
+'
+CONFIG_LIST='
+    
+    bsfs
+    decoders
+    demuxers
+    encoders
+    filters
+    indevs
+    muxers
+    outdevs
+    parsers
+    protocols
+
+    avfilter
+    avfilter_lavf
+    avisynth
+    beos_netserver
+    bzlib
+    ffmpeg
+    ffplay
+    ffserver
+    gpl
+    gprof
+    gray
+    hardcoded_tables
+    ipv6
+    liba52
+    liba52bin
+    libamr_nb
+    libamr_wb
+    libdc1394
+    libdirac
+    libfaac
+    libfaad
+    libfaadbin
+    libgsm
+    libmp3lame
+    libnut
+    libschroedinger
+    libtheora
+    libvorbis
+    libx264
+    libxvid
+    memalign_hack
+    mlib
+    mpegaudio_hp
+    network
+    nonfree
+    postproc
+    powerpc_perf
+    small
+    swscale
+    vhook
+    x11grab
+    zlib
+'
+DECODER_LIST='aasc_decoder
+amv_decoder
+asv1_decoder
+asv2_decoder
+avs_decoder
+bethsoftvid_decoder
+bfi_decoder
+bmp_decoder
+c93_decoder
+cavs_decoder
+cinepak_decoder
+cljr_decoder
+cscd_decoder
+cyuv_decoder
+dnxhd_decoder
+dsicinvideo_decoder
+dvvideo_decoder
+dxa_decoder
+eightbps_decoder
+eightsvx_exp_decoder
+eightsvx_fib_decoder
+escape124_decoder
+ffv1_decoder
+ffvhuff_decoder
+flashsv_decoder
+flic_decoder
+flv_decoder
+fourxm_decoder
+fraps_decoder
+gif_decoder
+h261_decoder
+h263_decoder
+h263i_decoder
+h264_decoder
+huffyuv_decoder
+idcin_decoder
+indeo2_decoder
+indeo3_decoder
+interplay_video_decoder
+jpegls_decoder
+kmvc_decoder
+loco_decoder
+mdec_decoder
+mimic_decoder
+mjpeg_decoder
+mjpegb_decoder
+mmvideo_decoder
+mpeg_xvmc_decoder
+mpeg1video_decoder
+mpeg2video_decoder
+mpeg4_decoder
+mpegvideo_decoder
+msmpeg4v1_decoder
+msmpeg4v2_decoder
+msmpeg4v3_decoder
+msrle_decoder
+msvideo1_decoder
+mszh_decoder
+nuv_decoder
+pcx_decoder
+png_decoder
+ptx_decoder
+qdraw_decoder
+qpeg_decoder
+qtrle_decoder
+rawvideo_decoder
+rl2_decoder
+roq_decoder
+rpza_decoder
+rv10_decoder
+rv20_decoder
+sgi_decoder
+smacker_decoder
+smc_decoder
+snow_decoder
+sp5x_decoder
+sunrast_decoder
+svq1_decoder
+svq3_decoder
+targa_decoder
+theora_decoder
+thp_decoder
+tiertexseqvideo_decoder
+tiff_decoder
+truemotion1_decoder
+truemotion2_decoder
+tscc_decoder
+txd_decoder
+ulti_decoder
+vb_decoder
+vc1_decoder
+vcr1_decoder
+vmdvideo_decoder
+vmnc_decoder
+vp3_decoder
+vp5_decoder
+vp6_decoder
+vp6a_decoder
+vp6f_decoder
+vqa_decoder
+wmv1_decoder
+wmv2_decoder
+wmv3_decoder
+wnv1_decoder
+xan_wc3_decoder
+xl_decoder
+xsub_decoder
+zlib_decoder
+zmbv_decoder
+ac3_decoder
+alac_decoder
+ape_decoder
+atrac3_decoder
+cook_decoder
+dca_decoder
+dsicinaudio_decoder
+flac_decoder
+imc_decoder
+mace3_decoder
+mace6_decoder
+mp2_decoder
+mp3_decoder
+mp3adu_decoder
+mp3on4_decoder
+mpc7_decoder
+mpc8_decoder
+nellymoser_decoder
+qdm2_decoder
+ra_144_decoder
+ra_288_decoder
+shorten_decoder
+smackaud_decoder
+sonic_decoder
+truespeech_decoder
+tta_decoder
+vmdaudio_decoder
+vorbis_decoder
+wavpack_decoder
+wmav1_decoder
+wmav2_decoder
+ws_snd1_decoder
+pcm_alaw_decoder
+pcm_dvd_decoder
+pcm_mulaw_decoder
+pcm_s8_decoder
+pcm_s16be_decoder
+pcm_s16le_decoder
+pcm_s16le_planar_decoder
+pcm_s24be_decoder
+pcm_s24daud_decoder
+pcm_s24le_decoder
+pcm_s32be_decoder
+pcm_s32le_decoder
+pcm_u8_decoder
+pcm_u16be_decoder
+pcm_u16le_decoder
+pcm_u24be_decoder
+pcm_u24le_decoder
+pcm_u32be_decoder
+pcm_u32le_decoder
+pcm_zork_decoder
+interplay_dpcm_decoder
+roq_dpcm_decoder
+sol_dpcm_decoder
+xan_dpcm_decoder
+adpcm_4xm_decoder
+adpcm_adx_decoder
+adpcm_ct_decoder
+adpcm_ea_decoder
+adpcm_ea_maxis_xa_decoder
+adpcm_ea_r1_decoder
+adpcm_ea_r2_decoder
+adpcm_ea_r3_decoder
+adpcm_ea_xas_decoder
+adpcm_g726_decoder
+adpcm_ima_amv_decoder
+adpcm_ima_dk3_decoder
+adpcm_ima_dk4_decoder
+adpcm_ima_ea_eacs_decoder
+adpcm_ima_ea_sead_decoder
+adpcm_ima_qt_decoder
+adpcm_ima_smjpeg_decoder
+adpcm_ima_wav_decoder
+adpcm_ima_ws_decoder
+adpcm_ms_decoder
+adpcm_sbpro_2_decoder
+adpcm_sbpro_3_decoder
+adpcm_sbpro_4_decoder
+adpcm_swf_decoder
+adpcm_thp_decoder
+adpcm_xa_decoder
+adpcm_yamaha_decoder
+dvbsub_decoder
+dvdsub_decoder
+liba52_decoder
+libamr_nb_decoder
+libamr_wb_decoder
+libdirac_decoder
+libfaad_decoder
+libgsm_decoder
+libgsm_ms_decoder
+libschroedinger_decoder
+mpeg4aac_decoder'
+DEMUXER_LIST='aac_demuxer
+ac3_demuxer
+aiff_demuxer
+amr_demuxer
+apc_demuxer
+ape_demuxer
+asf_demuxer
+au_demuxer
+avi_demuxer
+avisynth_demuxer
+avs_demuxer
+bethsoftvid_demuxer
+bfi_demuxer
+c93_demuxer
+daud_demuxer
+dirac_demuxer
+dsicin_demuxer
+dts_demuxer
+dv_demuxer
+dxa_demuxer
+ea_demuxer
+ea_cdata_demuxer
+ffm_demuxer
+flac_demuxer
+flic_demuxer
+flv_demuxer
+fourxm_demuxer
+gif_demuxer
+gsm_demuxer
+gxf_demuxer
+h261_demuxer
+h263_demuxer
+h264_demuxer
+idcin_demuxer
+iff_demuxer
+image2_demuxer
+image2pipe_demuxer
+ingenient_demuxer
+ipmovie_demuxer
+lmlm4_demuxer
+m4v_demuxer
+matroska_demuxer
+mjpeg_demuxer
+mlp_demuxer
+mm_demuxer
+mmf_demuxer
+mov_demuxer
+mp3_demuxer
+mpc_demuxer
+mpc8_demuxer
+mpegps_demuxer
+mpegts_demuxer
+mpegtsraw_demuxer
+mpegvideo_demuxer
+msnwc_tcp_demuxer
+mtv_demuxer
+mxf_demuxer
+nsv_demuxer
+nut_demuxer
+nuv_demuxer
+ogg_demuxer
+oma_demuxer
+pcm_alaw_demuxer
+pcm_mulaw_demuxer
+pcm_s16be_demuxer
+pcm_s16le_demuxer
+pcm_s8_demuxer
+pcm_u16be_demuxer
+pcm_u16le_demuxer
+pcm_u8_demuxer
+pva_demuxer
+rawvideo_demuxer
+redir_demuxer
+rl2_demuxer
+rm_demuxer
+roq_demuxer
+rpl_demuxer
+rtsp_demuxer
+sdp_demuxer
+segafilm_demuxer
+shorten_demuxer
+siff_demuxer
+smacker_demuxer
+sol_demuxer
+str_demuxer
+swf_demuxer
+thp_demuxer
+tiertexseq_demuxer
+tta_demuxer
+txd_demuxer
+vc1_demuxer
+vc1t_demuxer
+vmd_demuxer
+voc_demuxer
+wav_demuxer
+wc3_demuxer
+wsaud_demuxer
+wsvqa_demuxer
+wv_demuxer
+xa_demuxer
+yuv4mpegpipe_demuxer
+libnut_demuxer'
+DEPEND_CMD='$(CC) $(CFLAGS) -MM -MG $< | sed -e "/^\#.*/d" -e "1s,^,$(@D)/,"'
+DIRSTACK=()
+DISPLAY=/tmp/launch-h7uccH/:0
+E1=0
+E2=1
+ENCODER_LIST='asv1_encoder
+asv2_encoder
+bmp_encoder
+dnxhd_encoder
+dvvideo_encoder
+ffv1_encoder
+ffvhuff_encoder
+flashsv_encoder
+flv_encoder
+gif_encoder
+h261_encoder
+h263_encoder
+h263p_encoder
+huffyuv_encoder
+jpegls_encoder
+ljpeg_encoder
+mjpeg_encoder
+mpeg1video_encoder
+mpeg2video_encoder
+mpeg4_encoder
+msmpeg4v1_encoder
+msmpeg4v2_encoder
+msmpeg4v3_encoder
+pam_encoder
+pbm_encoder
+pgm_encoder
+pgmyuv_encoder
+png_encoder
+ppm_encoder
+qtrle_encoder
+rawvideo_encoder
+roq_encoder
+rv10_encoder
+rv20_encoder
+sgi_encoder
+snow_encoder
+svq1_encoder
+targa_encoder
+tiff_encoder
+wmv1_encoder
+wmv2_encoder
+zlib_encoder
+zmbv_encoder
+ac3_encoder
+flac_encoder
+mp2_encoder
+sonic_encoder
+sonic_ls_encoder
+vorbis_encoder
+wmav1_encoder
+wmav2_encoder
+pcm_alaw_encoder
+pcm_mulaw_encoder
+pcm_s8_encoder
+pcm_s16be_encoder
+pcm_s16le_encoder
+pcm_s24be_encoder
+pcm_s24daud_encoder
+pcm_s24le_encoder
+pcm_s32be_encoder
+pcm_s32le_encoder
+pcm_u8_encoder
+pcm_u16be_encoder
+pcm_u16le_encoder
+pcm_u24be_encoder
+pcm_u24le_encoder
+pcm_u32be_encoder
+pcm_u32le_encoder
+pcm_zork_encoder
+roq_dpcm_encoder
+adpcm_adx_encoder
+adpcm_g726_encoder
+adpcm_ima_qt_encoder
+adpcm_ima_wav_encoder
+adpcm_ms_encoder
+adpcm_swf_encoder
+adpcm_yamaha_encoder
+dvbsub_encoder
+dvdsub_encoder
+libamr_nb_encoder
+libamr_wb_encoder
+libdirac_encoder
+libfaac_encoder
+libgsm_encoder
+libgsm_ms_encoder
+libmp3lame_encoder
+libschroedinger_encoder
+libtheora_encoder
+libvorbis_encoder
+libx264_encoder
+libxvid_encoder'
+EUID=501
+FFMPEG_CONFIGURATION='--prefix=/Users/jesse/installed --disable-decoders --disable-encoders --disable-indevs --disable-outdevs --enable-decoder=mpeg1video --enable-decoder=mpeg2video --enable-decoder=mpeg4 --enable-decoder=mpeg4aac --enable-decoder=mpeg_xvmc --enable-decoder=mpegvideo --enable-decoder=msmpeg4v1 --enable-decoder=msmpeg4v2 --enable-decoder=msmpeg4v3 --enable-decoder=h261 --enable-decoder=h263 --enable-decoder=h263i --enable-decoder=h264 --enable-decoder=svq1 --enable-decoder=svq3 --disable-vhook'
+FFSERVERLDFLAGS=-Wl,-E
+FILTER_LIST=crop_filter
+FULLNAME='$(NAME)$(BUILDSUF)'
+GL_ENABLE_DEBUG_ATTACH=YES
+GROUPS=()
+HAVE_LIST='
+    
+    altivec
+    armv5te
+    armv6
+    armvfp
+    iwmmxt
+    mmi
+    mmx
+    mmx2
+    neon
+    ssse3
+    vis
+
+    
+    beosthreads
+    os2threads
+    pthreads
+    w32threads
+
+    altivec_h
+    altivec_vector_braces
+    arpa_inet_h
+    bswap
+    byteswap_h
+    closesocket
+    cmov
+    conio_h
+    dcbzl
+    dev_bktr_ioctl_bt848_h
+    dev_bktr_ioctl_meteor_h
+    dev_ic_bt8xx_h
+    dev_video_meteor_ioctl_meteor_h
+    dev_video_bktr_ioctl_bt848_h
+    dlfcn_h
+    dlopen
+    ebp_available
+    ebx_available
+    fast_64bit
+    fast_cmov
+    fast_unaligned
+    fork
+    freetype2
+    gethrtime
+    GetProcessTimes
+    getrusage
+    imlib2
+    inet_aton
+    inline_asm
+    libdc1394_1
+    libdc1394_2
+    llrint
+    lrint
+    lrintf
+    machine_ioctl_bt848_h
+    machine_ioctl_meteor_h
+    malloc_h
+    memalign
+    mkstemp
+    pld
+    ppc64
+    round
+    roundf
+    sdl
+    sdl_video_size
+    socklen_t
+    soundcard_h
+    poll_h
+    sys_mman_h
+    sys_resource_h
+    sys_select_h
+    sys_soundcard_h
+    termios_h
+    threads
+    winsock2_h
+'
+HOME=/Users/jesse
+HOSTNAME=mbpro.local
+HOSTTYPE=i386
+IFS=' 	
+'
+INDEV_LIST='audio_beos_demuxer
+bktr_demuxer
+dv1394_demuxer
+oss_demuxer
+v4l2_demuxer
+v4l_demuxer
+vfwcap_demuxer
+x11_grab_device_demuxer
+libdc1394_demuxer'
+INFOPATH=/sw/share/info:/sw/info:/usr/share/info
+LANG=en_US.UTF-8
+LDLATEFLAGS='-Wl,-rpath-link,\$(BUILD_ROOT)/libpostproc -Wl,-rpath-link,\$(BUILD_ROOT)/libswscale -Wl,-rpath-link,\$(BUILD_ROOT)/libavfilter -Wl,-rpath-link,\$(BUILD_ROOT)/libavdevice -Wl,-rpath-link,\$(BUILD_ROOT)/libavformat -Wl,-rpath-link,\$(BUILD_ROOT)/libavcodec -Wl,-rpath-link,\$(BUILD_ROOT)/libavutil'
+LIBNAME='$(LIBPREF)$(FULLNAME)$(LIBSUF)'
+LIBPREF=lib
+LIBSUF=.a
+LIB_INSTALL_EXTRA_CMD='$(RANLIB) "$(LIBDIR)/$(LIBNAME)"'
+LOGNAME=jesse
+MACHTYPE=i386-apple-darwin9.0
+MANPATH=/sw/share/man:/usr/share/man:/usr/local/share/man:/usr/X11/man:/usr/local/git/man:/sw/lib/perl5/5.8.8/man:/usr/X11R6/man
+MUXER_LIST='ac3_muxer
+adts_muxer
+aiff_muxer
+amr_muxer
+asf_muxer
+asf_stream_muxer
+au_muxer
+avi_muxer
+avm2_muxer
+crc_muxer
+dirac_muxer
+dts_muxer
+dv_muxer
+ffm_muxer
+flac_muxer
+flv_muxer
+framecrc_muxer
+gif_muxer
+gxf_muxer
+h261_muxer
+h263_muxer
+h264_muxer
+image2_muxer
+image2pipe_muxer
+ipod_muxer
+m4v_muxer
+matroska_muxer
+matroska_audio_muxer
+mjpeg_muxer
+mmf_muxer
+mov_muxer
+mp2_muxer
+mp3_muxer
+mp4_muxer
+mpeg1system_muxer
+mpeg1vcd_muxer
+mpeg1video_muxer
+mpeg2dvd_muxer
+mpeg2svcd_muxer
+mpeg2video_muxer
+mpeg2vob_muxer
+mpegts_muxer
+mpjpeg_muxer
+null_muxer
+nut_muxer
+ogg_muxer
+pcm_alaw_muxer
+pcm_mulaw_muxer
+pcm_s16be_muxer
+pcm_s16le_muxer
+pcm_s8_muxer
+pcm_u16be_muxer
+pcm_u16le_muxer
+pcm_u8_muxer
+psp_muxer
+rawvideo_muxer
+rm_muxer
+roq_muxer
+rtp_muxer
+swf_muxer
+tg2_muxer
+tgp_muxer
+voc_muxer
+wav_muxer
+yuv4mpegpipe_muxer
+libnut_muxer'
+OPTERR=1
+OPTIND=1
+OSTYPE=darwin9.0
+OUTDEV_LIST='audio_beos_muxer
+oss_muxer'
+PARSER_LIST='aac_parser
+ac3_parser
+cavsvideo_parser
+dca_parser
+dirac_parser
+dvbsub_parser
+dvdsub_parser
+h261_parser
+h263_parser
+h264_parser
+mjpeg_parser
+mlp_parser
+mpeg4video_parser
+mpegaudio_parser
+mpegvideo_parser
+pnm_parser
+vc1_parser'
+PATH=/Library/Frameworks/Python.framework/Versions/Current/bin:/sw/bin:/sw/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin:/usr/X11R6/bin
+PATHS_LIST='
+    bindir
+    incdir
+    libdir
+    mandir
+    prefix
+    shlibdir
+'
+PERL5LIB=/sw/lib/perl5:/sw/lib/perl5/darwin
+PIPESTATUS=([0]="0")
+POSIXLY_CORRECT=y
+PPID=25252
+PROTOCOL_LIST='file_protocol
+http_protocol
+pipe_protocol
+rtp_protocol
+tcp_protocol
+udp_protocol'
+PS4='+ '
+PWD=/Users/jesse/projects/tikitv/TikiTV/ttv_ffmpeg
+SECURITYSESSIONID=91f550
+SGML_CATALOG_FILES=/sw/etc/sgml/catalog
+SHELL=/bin/bash
+SHELLOPTS=braceexpand:hashall:interactive-comments:posix
+SHFLAGS='-shared -Wl,-soname,$$(@F)'
+SHLVL=2
+SLIBNAME='$(SLIBPREF)$(FULLNAME)$(SLIBSUF)'
+SLIBNAME_WITH_MAJOR='$(SLIBNAME).$(LIBMAJOR)'
+SLIBNAME_WITH_VERSION='$(SLIBNAME).$(LIBVERSION)'
+SLIBPREF=lib
+SLIBSUF=.so
+SSH_AUTH_SOCK=/tmp/launch-QluYy5/Listeners
+TERM=xterm-color
+TERM_PROGRAM=Apple_Terminal
+TERM_PROGRAM_VERSION=240
+THREADS_LIST='
+    beosthreads
+    os2threads
+    pthreads
+    w32threads
+'
+TMPDIR=/var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-/
+UID=501
+USER=jesse
+VHOOKSHFLAGS='$(SHFLAGS)'
+XML_CATALOG_FILES=/sw/etc/xml/catalog
+_=--disable-vhook
+__CF_USER_TEXT_ENCODING=0x1F5:0:0
+aac_demuxer=yes
+aac_parser=yes
+aasc_decoder=no
+ac3_decoder=no
+ac3_decoder_deps=gpl
+ac3_demuxer=yes
+ac3_demuxer_deps=ac3_parser
+ac3_encoder=no
+ac3_muxer=yes
+ac3_parser=yes
+action=disable
+adpcm_4xm_decoder=no
+adpcm_adx_decoder=no
+adpcm_adx_encoder=no
+adpcm_ct_decoder=no
+adpcm_ea_decoder=no
+adpcm_ea_maxis_xa_decoder=no
+adpcm_ea_r1_decoder=no
+adpcm_ea_r2_decoder=no
+adpcm_ea_r3_decoder=no
+adpcm_ea_xas_decoder=no
+adpcm_g726_decoder=no
+adpcm_g726_encoder=no
+adpcm_ima_amv_decoder=no
+adpcm_ima_dk3_decoder=no
+adpcm_ima_dk4_decoder=no
+adpcm_ima_ea_eacs_decoder=no
+adpcm_ima_ea_sead_decoder=no
+adpcm_ima_qt_decoder=no
+adpcm_ima_qt_encoder=no
+adpcm_ima_smjpeg_decoder=no
+adpcm_ima_wav_decoder=no
+adpcm_ima_wav_encoder=no
+adpcm_ima_ws_decoder=no
+adpcm_ms_decoder=no
+adpcm_ms_encoder=no
+adpcm_sbpro_2_decoder=no
+adpcm_sbpro_3_decoder=no
+adpcm_sbpro_4_decoder=no
+adpcm_swf_decoder=no
+adpcm_swf_encoder=no
+adpcm_thp_decoder=no
+adpcm_xa_decoder=no
+adpcm_yamaha_decoder=no
+adpcm_yamaha_encoder=no
+adts_muxer=yes
+aiff_demuxer=yes
+aiff_muxer=yes
+alac_decoder=no
+altivec=yes
+altivec_deps=powerpc
+amr_demuxer=yes
+amr_muxer=yes
+amv_decoder=no
+apc_demuxer=yes
+ape_decoder=no
+ape_demuxer=yes
+ar=ar
+arch=i386
+armv5te=yes
+armv5te_deps=armv4l
+armv6=yes
+armv6_deps=armv4l
+armvfp=yes
+armvfp_deps=armv4l
+asf_demuxer=yes
+asf_muxer=yes
+asf_stream_muxer=yes
+asmalign_pot=unknown
+asv1_decoder=no
+asv1_encoder=no
+asv2_decoder=no
+asv2_encoder=no
+atrac3_decoder=no
+au_demuxer=yes
+au_muxer=yes
+audio_beos_demuxer=no
+audio_beos_demuxer_deps=audio_beos
+audio_beos_demuxer_extralibs='-lmedia -lbe'
+audio_beos_muxer=no
+audio_beos_muxer_deps=audio_beos
+audio_beos_muxer_extralibs='-lmedia -lbe'
+avi_demuxer=yes
+avi_muxer=yes
+avisynth_demuxer=yes
+avisynth_demuxer_deps=avisynth
+avm2_muxer=yes
+avs_decoder=no
+avs_demuxer=yes
+bethsoftvid_decoder=no
+bethsoftvid_demuxer=yes
+bfi_decoder=no
+bfi_demuxer=yes
+bindir_default='${prefix}/bin'
+bktr_demuxer=no
+bktr_demuxer_deps_any='dev_bktr_ioctl_bt848_h machine_ioctl_bt848_h dev_video_bktr_ioctl_bt848_h dev_ic_bt8xx_h'
+bmp_decoder=no
+bmp_encoder=no
+bzlib=yes
+c93_decoder=no
+c93_demuxer=yes
+cavs_decoder=no
+cavsvideo_parser=yes
+cc=gcc
+cinepak_decoder=no
+cljr_decoder=no
+cook_decoder=no
+cpu=generic
+crc_muxer=yes
+crop_filter=yes
+cscd_decoder=no
+cyuv_decoder=no
+daud_demuxer=yes
+dca_decoder=no
+dca_parser=yes
+debug=yes
+dirac_demuxer=yes
+dirac_demuxer_deps=dirac_parser
+dirac_muxer=yes
+dirac_parser=yes
+dnxhd_decoder=no
+dnxhd_encoder=no
+dsicin_demuxer=yes
+dsicinaudio_decoder=no
+dsicinvideo_decoder=no
+dts_demuxer=yes
+dts_muxer=yes
+dump_extradata_bsf=yes
+dv1394_demuxer=no
+dv1394_demuxer_deps='dv1394 dv_demuxer'
+dv_demuxer=yes
+dv_muxer=yes
+dvbsub_decoder=no
+dvbsub_encoder=no
+dvbsub_parser=yes
+dvdsub_decoder=no
+dvdsub_encoder=no
+dvdsub_parser=yes
+dvvideo_decoder=no
+dvvideo_encoder=no
+dxa_decoder=no
+dxa_decoder_deps=zlib
+dxa_demuxer=yes
+ea_cdata_demuxer=yes
+ea_demuxer=yes
+eightbps_decoder=no
+eightsvx_exp_decoder=no
+eightsvx_fib_decoder=no
+escape124_decoder=no
+ffm_demuxer=yes
+ffm_muxer=yes
+ffmpeg=yes
+ffplay=yes
+ffplay_deps=sdl
+ffserver=yes
+ffserver_deps='ffm_muxer rtp_protocol rtsp_demuxer'
+ffserver_extralibs='$ldl'
+ffv1_decoder=no
+ffv1_encoder=no
+ffvhuff_decoder=no
+ffvhuff_encoder=no
+file_protocol=yes
+flac_decoder=no
+flac_demuxer=yes
+flac_encoder=no
+flac_muxer=yes
+flashsv_decoder=no
+flashsv_decoder_deps=zlib
+flashsv_encoder=no
+flashsv_encoder_deps=zlib
+flic_decoder=no
+flic_demuxer=yes
+flv_decoder=no
+flv_demuxer=yes
+flv_encoder=no
+flv_muxer=yes
+fourxm_decoder=no
+fourxm_demuxer=yes
+framecrc_muxer=yes
+fraps_decoder=no
+gif_decoder=no
+gif_demuxer=yes
+gif_encoder=no
+gif_muxer=yes
+gsm_demuxer=yes
+gxf_demuxer=yes
+gxf_muxer=yes
+h261_decoder=yes
+h261_demuxer=yes
+h261_encoder=no
+h261_muxer=yes
+h261_parser=yes
+h263_decoder=yes
+h263_demuxer=yes
+h263_encoder=no
+h263_muxer=yes
+h263_parser=yes
+h263i_decoder=yes
+h263p_encoder=no
+h264_decoder=yes
+h264_demuxer=yes
+h264_mp4toannexb_bsf=yes
+h264_muxer=yes
+h264_parser=yes
+http_protocol=yes
+http_protocol_deps=network
+huffyuv_decoder=no
+huffyuv_encoder=no
+idcin_decoder=no
+idcin_demuxer=yes
+iff_demuxer=yes
+image2_demuxer=yes
+image2_muxer=yes
+image2pipe_demuxer=yes
+image2pipe_muxer=yes
+imc_decoder=no
+imx_dump_header_bsf=yes
+incdir_default='${prefix}/include'
+indeo2_decoder=no
+indeo3_decoder=no
+ingenient_demuxer=yes
+interplay_dpcm_decoder=no
+interplay_video_decoder=no
+ipmovie_demuxer=yes
+ipod_muxer=yes
+ipv6=yes
+iwmmxt=yes
+iwmmxt_deps=armv4l
+jpegls_decoder=no
+jpegls_encoder=no
+kmvc_decoder=no
+liba52_decoder=no
+liba52_decoder_deps=liba52
+liba52bin_decoder_extralibs='$ldl'
+libamr_nb_decoder=no
+libamr_nb_decoder_deps=libamr_nb
+libamr_nb_encoder=no
+libamr_nb_encoder_deps=libamr_nb
+libamr_wb_decoder=no
+libamr_wb_decoder_deps=libamr_wb
+libamr_wb_encoder=no
+libamr_wb_encoder_deps=libamr_wb
+libdc1394_demuxer=no
+libdc1394_demuxer_deps=libdc1394
+libdir_default='${prefix}/lib'
+libdirac_decoder=no
+libdirac_decoder_deps=libdirac
+libdirac_encoder=no
+libdirac_encoder_deps=libdirac
+libfaac_encoder=no
+libfaac_encoder_deps=libfaac
+libfaad_decoder=no
+libfaad_decoder_deps=libfaad
+libfaadbin_decoder_extralibs='$ldl'
+libgsm_decoder=no
+libgsm_decoder_deps=libgsm
+libgsm_encoder=no
+libgsm_encoder_deps=libgsm
+libgsm_ms_decoder=no
+libgsm_ms_decoder_deps=libgsm
+libgsm_ms_encoder=no
+libgsm_ms_encoder_deps=libgsm
+libmp3lame_encoder=no
+libmp3lame_encoder_deps=libmp3lame
+libnut_demuxer=yes
+libnut_demuxer_deps=libnut
+libnut_muxer=yes
+libnut_muxer_deps=libnut
+libschroedinger_decoder=no
+libschroedinger_decoder_deps=libschroedinger
+libschroedinger_encoder=no
+libschroedinger_encoder_deps=libschroedinger
+libtheora_encoder=no
+libtheora_encoder_deps=libtheora
+libvorbis_encoder=no
+libvorbis_encoder_deps=libvorbis
+libx264_encoder=no
+libx264_encoder_deps=libx264
+libxvid_encoder=no
+libxvid_encoder_deps=libxvid
+ljpeg_encoder=no
+lmlm4_demuxer=yes
+ln_s='ln -sf'
+loco_decoder=no
+logfile=config.err
+m4v_demuxer=yes
+m4v_muxer=yes
+mace3_decoder=no
+mace6_decoder=no
+mandir_default='${prefix}/share/man'
+matroska_audio_muxer=yes
+matroska_demuxer=yes
+matroska_muxer=yes
+mdec_decoder=no
+mimic_decoder=no
+mjpeg_decoder=no
+mjpeg_demuxer=yes
+mjpeg_encoder=no
+mjpeg_muxer=yes
+mjpeg_parser=yes
+mjpega_dump_header_bsf=yes
+mjpegb_decoder=no
+mlp_demuxer=yes
+mlp_parser=yes
+mm_demuxer=yes
+mmf_demuxer=yes
+mmf_muxer=yes
+mmi=yes
+mmi_deps=mips
+mmvideo_decoder=no
+mmx=yes
+mmx2=yes
+mmx2_deps='x86 mmx'
+mmx_deps=x86
+mov2textsub_bsf=yes
+mov_demuxer=yes
+mov_muxer=yes
+movie_filter_deps=avfilter_lavf
+mp2_decoder=no
+mp2_encoder=no
+mp2_muxer=yes
+mp3_decoder=no
+mp3_demuxer=yes
+mp3_demuxer_deps=mpegaudio_parser
+mp3_header_compress_bsf=yes
+mp3_header_decompress_bsf=yes
+mp3_muxer=yes
+mp3adu_decoder=no
+mp3on4_decoder=no
+mp4_muxer=yes
+mpc7_decoder=no
+mpc8_decoder=no
+mpc8_demuxer=yes
+mpc_demuxer=yes
+mpeg1system_muxer=yes
+mpeg1vcd_muxer=yes
+mpeg1video_decoder=yes
+mpeg1video_encoder=no
+mpeg1video_muxer=yes
+mpeg2dvd_muxer=yes
+mpeg2svcd_muxer=yes
+mpeg2video_decoder=yes
+mpeg2video_encoder=no
+mpeg2video_muxer=yes
+mpeg2vob_muxer=yes
+mpeg4_decoder=yes
+mpeg4_encoder=no
+mpeg4aac_decoder=yes
+mpeg4aac_decoder_deps=libfaad
+mpeg4video_parser=yes
+mpeg_xvmc_decoder=yes
+mpeg_xvmc_decoder_deps=xvmc
+mpegaudio_hp=yes
+mpegaudio_parser=yes
+mpegps_demuxer=yes
+mpegts_demuxer=yes
+mpegts_muxer=yes
+mpegtsraw_demuxer=yes
+mpegvideo_decoder=yes
+mpegvideo_demuxer=yes
+mpegvideo_parser=yes
+mpjpeg_muxer=yes
+msmpeg4v1_decoder=yes
+msmpeg4v1_encoder=no
+msmpeg4v2_decoder=yes
+msmpeg4v2_encoder=no
+msmpeg4v3_decoder=yes
+msmpeg4v3_encoder=no
+msnwc_tcp_demuxer=yes
+msrle_decoder=no
+msvideo1_decoder=no
+mszh_decoder=no
+mtv_demuxer=yes
+mxf_demuxer=yes
+name=svq3
+nellymoser_decoder=no
+neon=yes
+neon_deps=armv4l
+network=yes
+nm=nm
+noise_bsf=yes
+nsv_demuxer=yes
+null_muxer=yes
+nut_demuxer=yes
+nut_muxer=yes
+nuv_decoder=no
+nuv_demuxer=yes
+ogg_demuxer=yes
+ogg_muxer=yes
+oma_demuxer=yes
+opt=--disable-vhook
+optimizations=yes
+option=vhook
+optname=prefix
+optval=--disable-vhook
+oss_demuxer=no
+oss_demuxer_deps_any='soundcard_h sys_soundcard_h'
+oss_muxer=no
+oss_muxer_deps_any='soundcard_h sys_soundcard_h'
+pam_encoder=no
+pbm_encoder=no
+pcm_alaw_decoder=no
+pcm_alaw_demuxer=yes
+pcm_alaw_encoder=no
+pcm_alaw_muxer=yes
+pcm_dvd_decoder=no
+pcm_mulaw_decoder=no
+pcm_mulaw_demuxer=yes
+pcm_mulaw_encoder=no
+pcm_mulaw_muxer=yes
+pcm_s16be_decoder=no
+pcm_s16be_demuxer=yes
+pcm_s16be_encoder=no
+pcm_s16be_muxer=yes
+pcm_s16le_decoder=no
+pcm_s16le_demuxer=yes
+pcm_s16le_encoder=no
+pcm_s16le_muxer=yes
+pcm_s16le_planar_decoder=no
+pcm_s24be_decoder=no
+pcm_s24be_encoder=no
+pcm_s24daud_decoder=no
+pcm_s24daud_encoder=no
+pcm_s24le_decoder=no
+pcm_s24le_encoder=no
+pcm_s32be_decoder=no
+pcm_s32be_encoder=no
+pcm_s32le_decoder=no
+pcm_s32le_encoder=no
+pcm_s8_decoder=no
+pcm_s8_demuxer=yes
+pcm_s8_encoder=no
+pcm_s8_muxer=yes
+pcm_u16be_decoder=no
+pcm_u16be_demuxer=yes
+pcm_u16be_encoder=no
+pcm_u16be_muxer=yes
+pcm_u16le_decoder=no
+pcm_u16le_demuxer=yes
+pcm_u16le_encoder=no
+pcm_u16le_muxer=yes
+pcm_u24be_decoder=no
+pcm_u24be_encoder=no
+pcm_u24le_decoder=no
+pcm_u24le_encoder=no
+pcm_u32be_decoder=no
+pcm_u32be_encoder=no
+pcm_u32le_decoder=no
+pcm_u32le_encoder=no
+pcm_u8_decoder=no
+pcm_u8_demuxer=yes
+pcm_u8_encoder=no
+pcm_u8_muxer=yes
+pcm_zork_decoder=no
+pcm_zork_encoder=no
+pcx_decoder=no
+pgm_encoder=no
+pgmyuv_encoder=no
+pipe_protocol=yes
+png_decoder=no
+png_decoder_deps=zlib
+png_encoder=no
+png_encoder_deps=zlib
+pnm_parser=yes
+ppm_encoder=no
+prefix=/Users/jesse/installed
+prefix_default=/usr/local
+protocols=yes
+psp_muxer=yes
+ptx_decoder=no
+pva_demuxer=yes
+qdm2_decoder=no
+qdraw_decoder=no
+qpeg_decoder=no
+qtrle_decoder=no
+qtrle_encoder=no
+ra_144_decoder=no
+ra_288_decoder=no
+ranlib=ranlib
+rawvideo_decoder=no
+rawvideo_demuxer=yes
+rawvideo_encoder=no
+rawvideo_muxer=yes
+redir_demuxer=yes
+redir_demuxer_deps=network
+remove_extradata_bsf=yes
+rl2_decoder=no
+rl2_demuxer=yes
+rm_demuxer=yes
+rm_muxer=yes
+roq_decoder=no
+roq_demuxer=yes
+roq_dpcm_decoder=no
+roq_dpcm_encoder=no
+roq_encoder=no
+roq_muxer=yes
+rpl_demuxer=yes
+rpza_decoder=no
+rtp_muxer=yes
+rtp_muxer_deps='network rtp_protocol'
+rtp_protocol=yes
+rtp_protocol_deps=udp_protocol
+rtsp_demuxer=yes
+rtsp_demuxer_deps=sdp_demuxer
+rv10_decoder=no
+rv10_encoder=no
+rv20_decoder=no
+rv20_encoder=no
+sdp_demuxer=yes
+sdp_demuxer_deps='rtp_protocol mpegts_demuxer'
+segafilm_demuxer=yes
+sgi_decoder=no
+sgi_encoder=no
+shlibdir_default='${prefix}/lib'
+shorten_decoder=no
+shorten_demuxer=yes
+siff_demuxer=yes
+smackaud_decoder=no
+smacker_decoder=no
+smacker_demuxer=yes
+smc_decoder=no
+snow_decoder=no
+snow_encoder=no
+sol_demuxer=yes
+sol_dpcm_decoder=no
+sonic_decoder=no
+sonic_encoder=no
+sonic_ls_encoder=no
+source_path=/Users/jesse/projects/tikitv/TikiTV/ttv_ffmpeg
+source_path_used=no
+sp5x_decoder=no
+ssse3=yes
+ssse3_deps=x86
+static=yes
+str_demuxer=yes
+strip=strip
+stripping=yes
+sunrast_decoder=no
+svq1_decoder=yes
+svq1_encoder=no
+svq3_decoder=yes
+swf_demuxer=yes
+swf_muxer=yes
+targa_decoder=no
+targa_encoder=no
+target_os=darwin
+tcp_protocol=yes
+tcp_protocol_deps=network
+text2movsub_bsf=yes
+tg2_muxer=yes
+tgp_muxer=yes
+theora_decoder=no
+thing=decoder
+thp_decoder=no
+thp_demuxer=yes
+tiertexseq_demuxer=yes
+tiertexseqvideo_decoder=no
+tiff_decoder=no
+tiff_encoder=no
+truemotion1_decoder=no
+truemotion2_decoder=no
+truespeech_decoder=no
+tscc_decoder=no
+tta_decoder=no
+tta_demuxer=yes
+txd_decoder=no
+txd_demuxer=yes
+udp_protocol=yes
+udp_protocol_deps=network
+ulti_decoder=no
+v4l2_demuxer=no
+v4l2_demuxer_deps=linux_videodev2_h
+v4l_demuxer=no
+v4l_demuxer_deps=linux_videodev_h
+value=no
+var=vhook
+vb_decoder=no
+vc1_decoder=no
+vc1_demuxer=yes
+vc1_parser=yes
+vc1t_demuxer=yes
+vcr1_decoder=no
+vfwcap_demuxer=no
+vfwcap_demuxer_deps=capCreateCaptureWindow
+vfwcap_demuxer_extralibs=-lvfw32
+vhook=no
+vhook_extralibs='$ldl'
+vis=yes
+vis_deps=sparc
+vmd_demuxer=yes
+vmdaudio_decoder=no
+vmdvideo_decoder=no
+vmnc_decoder=no
+voc_demuxer=yes
+voc_muxer=yes
+vorbis_decoder=no
+vorbis_encoder=no
+vp3_decoder=no
+vp5_decoder=no
+vp6_decoder=no
+vp6a_decoder=no
+vp6f_decoder=no
+vqa_decoder=no
+wav_demuxer=yes
+wav_muxer=yes
+wavpack_decoder=no
+wc3_demuxer=yes
+wmav1_decoder=no
+wmav1_encoder=no
+wmav2_decoder=no
+wmav2_encoder=no
+wmv1_decoder=no
+wmv1_encoder=no
+wmv2_decoder=no
+wmv2_encoder=no
+wmv3_decoder=no
+wnv1_decoder=no
+ws_snd1_decoder=no
+wsaud_demuxer=yes
+wsvqa_demuxer=yes
+wv_demuxer=yes
+x11_grab_device_demuxer=no
+x11_grab_device_demuxer_deps='x11grab XShmCreateImage'
+x11_grab_device_demuxer_extralibs='-lX11 -lXext'
+xa_demuxer=yes
+xan_dpcm_decoder=no
+xan_wc3_decoder=no
+xl_decoder=no
+xsub_decoder=no
+yuv4mpegpipe_demuxer=yes
+yuv4mpegpipe_muxer=yes
+zlib=yes
+zlib_decoder=no
+zlib_encoder=no
+zmbv_decoder=no
+zmbv_decoder_deps=zlib
+zmbv_encoder=no
+zmbv_encoder_deps=zlib
+check_cflags -force_cpusubtype_ALL
+check_cc -force_cpusubtype_ALL
+BEGIN /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+    1	int x;
+END /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -pipe -force_cpusubtype_ALL -c -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+check_cflags -Wno-sign-compare
+check_cc -Wno-sign-compare
+BEGIN /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+    1	int x;
+END /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -pipe -force_cpusubtype_ALL -Wno-sign-compare -c -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+check_cflags -mdynamic-no-pic
+check_cc -mdynamic-no-pic
+BEGIN /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+    1	int x;
+END /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -pipe -force_cpusubtype_ALL -Wno-sign-compare -mdynamic-no-pic -c -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+check_ld
+check_cc
+BEGIN /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+    1	int main(void){ return 0; }
+END /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -pipe -force_cpusubtype_ALL -Wno-sign-compare -mdynamic-no-pic -fomit-frame-pointer -c -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -Wl,-dynamic,-search_paths_first -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-22195-69994-24359 /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o
+check_cc
+BEGIN /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+    1	int ff_extern;
+END /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -pipe -force_cpusubtype_ALL -Wno-sign-compare -mdynamic-no-pic -fomit-frame-pointer -c -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+check_asm inline_asm ""
+check_cc
+BEGIN /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+    1	int foo(void){ asm volatile(""); }
+END /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -pipe -force_cpusubtype_ALL -Wno-sign-compare -mdynamic-no-pic -fomit-frame-pointer -c -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+check_ld
+check_cc
+BEGIN /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+    1	#include <signal.h>
+    2	static void sighandler(int sig){
+    3	    raise(SIGTERM);
+    4	}
+    5	int main(void){
+    6	    signal(SIGILL, sighandler);
+    7	    signal(SIGFPE, sighandler);
+    8	    signal(SIGSEGV, sighandler);
+    9	#ifdef SIGBUS
+   10	    signal(SIGBUS, sighandler);
+   11	#endif
+   12	    {     volatile int i=0;
+   13	    asm volatile (
+   14	        "xorl %%ebp, %%ebp"
+   15	    ::: "%ebp");
+   16	    return i; }
+   17	}
+END /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -pipe -force_cpusubtype_ALL -Wno-sign-compare -mdynamic-no-pic -fomit-frame-pointer -c -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -Wl,-dynamic,-search_paths_first -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-22195-69994-24359 /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o
+check_asm ebx_available "":::"%ebx"
+check_cc
+BEGIN /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+    1	int foo(void){ asm volatile("":::"%ebx"); }
+END /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -pipe -force_cpusubtype_ALL -Wno-sign-compare -mdynamic-no-pic -fomit-frame-pointer -c -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+check_asm ssse3 "pabsw %xmm0, %xmm0"
+check_cc
+BEGIN /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+    1	int foo(void){ asm volatile("pabsw %xmm0, %xmm0"); }
+END /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -pipe -force_cpusubtype_ALL -Wno-sign-compare -mdynamic-no-pic -fomit-frame-pointer -c -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+check_asm mmx2 "movss %xmm0, %xmm0"
+check_cc
+BEGIN /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+    1	int foo(void){ asm volatile("movss %xmm0, %xmm0"); }
+END /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -pipe -force_cpusubtype_ALL -Wno-sign-compare -mdynamic-no-pic -fomit-frame-pointer -c -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+check_asm bswap "bswap %%eax" ::: "%eax"
+check_cc
+BEGIN /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+    1	int foo(void){ asm volatile("bswap %%eax" ::: "%eax"); }
+END /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -pipe -force_cpusubtype_ALL -Wno-sign-compare -mdynamic-no-pic -fomit-frame-pointer -c -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+check_cc
+BEGIN /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+    1	unsigned int endian = 'B' << 24 | 'I' << 16 | 'G' << 8 | 'E';
+END /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -pipe -force_cpusubtype_ALL -Wno-sign-compare -mdynamic-no-pic -fomit-frame-pointer -c -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+check_func dlopen
+check_ld
+check_cc
+BEGIN /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+    1	extern int dlopen();
+    2	int main(void){ dlopen(); }
+END /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -pipe -force_cpusubtype_ALL -Wno-sign-compare -mdynamic-no-pic -fomit-frame-pointer -c -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -Wl,-dynamic,-search_paths_first -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-22195-69994-24359 /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o
+check_func fork
+check_ld
+check_cc
+BEGIN /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+    1	extern int fork();
+    2	int main(void){ fork(); }
+END /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -pipe -force_cpusubtype_ALL -Wno-sign-compare -mdynamic-no-pic -fomit-frame-pointer -c -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -Wl,-dynamic,-search_paths_first -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-22195-69994-24359 /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o
+check_func gethrtime
+check_ld
+check_cc
+BEGIN /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+    1	extern int gethrtime();
+    2	int main(void){ gethrtime(); }
+END /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -pipe -force_cpusubtype_ALL -Wno-sign-compare -mdynamic-no-pic -fomit-frame-pointer -c -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -Wl,-dynamic,-search_paths_first -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-22195-69994-24359 /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o
+Undefined symbols:
+  "_gethrtime", referenced from:
+      _main in ffmpeg-conf-17709-69994-32544.o
+ld: symbol(s) not found
+collect2: ld returned 1 exit status
+check_func getrusage
+check_ld
+check_cc
+BEGIN /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+    1	extern int getrusage();
+    2	int main(void){ getrusage(); }
+END /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -pipe -force_cpusubtype_ALL -Wno-sign-compare -mdynamic-no-pic -fomit-frame-pointer -c -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -Wl,-dynamic,-search_paths_first -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-22195-69994-24359 /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o
+check_func inet_aton
+check_ld
+check_cc
+BEGIN /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+    1	extern int inet_aton();
+    2	int main(void){ inet_aton(); }
+END /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -pipe -force_cpusubtype_ALL -Wno-sign-compare -mdynamic-no-pic -fomit-frame-pointer -c -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -Wl,-dynamic,-search_paths_first -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-22195-69994-24359 /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o
+check_func memalign
+check_ld
+check_cc
+BEGIN /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+    1	extern int memalign();
+    2	int main(void){ memalign(); }
+END /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -pipe -force_cpusubtype_ALL -Wno-sign-compare -mdynamic-no-pic -fomit-frame-pointer -c -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -Wl,-dynamic,-search_paths_first -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-22195-69994-24359 /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o
+Undefined symbols:
+  "_memalign", referenced from:
+      _main in ffmpeg-conf-17709-69994-32544.o
+ld: symbol(s) not found
+collect2: ld returned 1 exit status
+check_func mkstemp
+check_ld
+check_cc
+BEGIN /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+    1	extern int mkstemp();
+    2	int main(void){ mkstemp(); }
+END /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -pipe -force_cpusubtype_ALL -Wno-sign-compare -mdynamic-no-pic -fomit-frame-pointer -c -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -Wl,-dynamic,-search_paths_first -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-22195-69994-24359 /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o
+check_func2 windows.h GetProcessTimes
+check_ld
+check_cc
+BEGIN /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+    1	
+    2	#include <windows.h>
+    3	int main(int argc, char **argv){
+    4	    (void) GetProcessTimes;
+    5	    return 0;
+    6	}
+END /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -pipe -force_cpusubtype_ALL -Wno-sign-compare -mdynamic-no-pic -fomit-frame-pointer -c -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+/var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c:2:21: error: windows.h: No such file or directory
+/var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c: In function ‘main’:
+/var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c:4: error: ‘GetProcessTimes’ undeclared (first use in this function)
+/var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c:4: error: (Each undeclared identifier is reported only once
+/var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c:4: error: for each function it appears in.)
+check_header byteswap.h
+check_cpp
+BEGIN /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+    1	#include <byteswap.h>
+    2	int x;
+END /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -pipe -force_cpusubtype_ALL -Wno-sign-compare -mdynamic-no-pic -fomit-frame-pointer -E -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+/var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c:1:22: error: byteswap.h: No such file or directory
+check_header conio.h
+check_cpp
+BEGIN /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+    1	#include <conio.h>
+    2	int x;
+END /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -pipe -force_cpusubtype_ALL -Wno-sign-compare -mdynamic-no-pic -fomit-frame-pointer -E -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+/var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c:1:19: error: conio.h: No such file or directory
+check_header dlfcn.h
+check_cpp
+BEGIN /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+    1	#include <dlfcn.h>
+    2	int x;
+END /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -pipe -force_cpusubtype_ALL -Wno-sign-compare -mdynamic-no-pic -fomit-frame-pointer -E -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+check_header malloc.h
+check_cpp
+BEGIN /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+    1	#include <malloc.h>
+    2	int x;
+END /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -pipe -force_cpusubtype_ALL -Wno-sign-compare -mdynamic-no-pic -fomit-frame-pointer -E -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+/var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c:1:20: error: malloc.h: No such file or directory
+check_header sys/mman.h
+check_cpp
+BEGIN /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+    1	#include <sys/mman.h>
+    2	int x;
+END /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -pipe -force_cpusubtype_ALL -Wno-sign-compare -mdynamic-no-pic -fomit-frame-pointer -E -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+check_header sys/resource.h
+check_cpp
+BEGIN /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+    1	#include <sys/resource.h>
+    2	int x;
+END /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -pipe -force_cpusubtype_ALL -Wno-sign-compare -mdynamic-no-pic -fomit-frame-pointer -E -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+check_header termios.h
+check_cpp
+BEGIN /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+    1	#include <termios.h>
+    2	int x;
+END /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -pipe -force_cpusubtype_ALL -Wno-sign-compare -mdynamic-no-pic -fomit-frame-pointer -E -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+check_lib zlib.h zlibVersion -lz
+check_header zlib.h
+check_cpp
+BEGIN /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+    1	#include <zlib.h>
+    2	int x;
+END /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -pipe -force_cpusubtype_ALL -Wno-sign-compare -mdynamic-no-pic -fomit-frame-pointer -E -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+check_func zlibVersion
+check_ld
+check_cc
+BEGIN /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+    1	extern int zlibVersion();
+    2	int main(void){ zlibVersion(); }
+END /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -pipe -force_cpusubtype_ALL -Wno-sign-compare -mdynamic-no-pic -fomit-frame-pointer -c -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -Wl,-dynamic,-search_paths_first -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-22195-69994-24359 /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o -lz
+check_lib bzlib.h BZ2_bzlibVersion -lbz2
+check_header bzlib.h
+check_cpp
+BEGIN /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+    1	#include <bzlib.h>
+    2	int x;
+END /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -pipe -force_cpusubtype_ALL -Wno-sign-compare -mdynamic-no-pic -fomit-frame-pointer -E -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+check_func BZ2_bzlibVersion
+check_ld
+check_cc
+BEGIN /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+    1	extern int BZ2_bzlibVersion();
+    2	int main(void){ BZ2_bzlibVersion(); }
+END /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -pipe -force_cpusubtype_ALL -Wno-sign-compare -mdynamic-no-pic -fomit-frame-pointer -c -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -Wl,-dynamic,-search_paths_first -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-22195-69994-24359 /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o -lz -lbz2
+check_header poll.h
+check_cpp
+BEGIN /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+    1	#include <poll.h>
+    2	int x;
+END /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -pipe -force_cpusubtype_ALL -Wno-sign-compare -mdynamic-no-pic -fomit-frame-pointer -E -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+check_header sys/select.h
+check_cpp
+BEGIN /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+    1	#include <sys/select.h>
+    2	int x;
+END /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -pipe -force_cpusubtype_ALL -Wno-sign-compare -mdynamic-no-pic -fomit-frame-pointer -E -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+check_lib math.h sin -lm
+check_header math.h
+check_cpp
+BEGIN /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+    1	#include <math.h>
+    2	int x;
+END /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -pipe -force_cpusubtype_ALL -Wno-sign-compare -mdynamic-no-pic -fomit-frame-pointer -E -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+check_func sin
+check_ld
+check_cc
+BEGIN /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+    1	extern int sin();
+    2	int main(void){ sin(); }
+END /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -pipe -force_cpusubtype_ALL -Wno-sign-compare -mdynamic-no-pic -fomit-frame-pointer -c -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+/var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c:1: warning: conflicting types for built-in function ‘sin’
+gcc -Wl,-dynamic,-search_paths_first -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-22195-69994-24359 /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o -lz -lbz2 -lm
+check_ld
+check_cc
+BEGIN /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+    1	#define _ISOC9X_SOURCE  1
+    2	#include <math.h>
+    3	int main(void) { return (llrint(3.999f) > 0)?0:1; }
+END /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -pipe -force_cpusubtype_ALL -Wno-sign-compare -mdynamic-no-pic -fomit-frame-pointer -c -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -Wl,-dynamic,-search_paths_first -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-22195-69994-24359 /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o -lz -lbz2 -lm
+check_ld
+check_cc
+BEGIN /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+    1	#define _ISOC9X_SOURCE  1
+    2	#include <math.h>
+    3	int main(void) { return (lrint(3.999f) > 0)?0:1; }
+END /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -pipe -force_cpusubtype_ALL -Wno-sign-compare -mdynamic-no-pic -fomit-frame-pointer -c -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -Wl,-dynamic,-search_paths_first -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-22195-69994-24359 /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o -lz -lbz2 -lm
+check_ld
+check_cc
+BEGIN /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+    1	#define _ISOC9X_SOURCE  1
+    2	#include <math.h>
+    3	int main(void) { return (lrintf(3.999f) > 0)?0:1; }
+END /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -pipe -force_cpusubtype_ALL -Wno-sign-compare -mdynamic-no-pic -fomit-frame-pointer -c -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -Wl,-dynamic,-search_paths_first -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-22195-69994-24359 /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o -lz -lbz2 -lm
+check_ld
+check_cc
+BEGIN /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+    1	#define _ISOC9X_SOURCE  1
+    2	#include <math.h>
+    3	int main(void) { return (round(3.999f) > 0)?0:1; }
+END /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -pipe -force_cpusubtype_ALL -Wno-sign-compare -mdynamic-no-pic -fomit-frame-pointer -c -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -Wl,-dynamic,-search_paths_first -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-22195-69994-24359 /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o -lz -lbz2 -lm
+check_ld
+check_cc
+BEGIN /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+    1	#define _ISOC9X_SOURCE  1
+    2	#include <math.h>
+    3	int main(void) { return (roundf(3.999f) > 0)?0:1; }
+END /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -pipe -force_cpusubtype_ALL -Wno-sign-compare -mdynamic-no-pic -fomit-frame-pointer -c -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -Wl,-dynamic,-search_paths_first -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-22195-69994-24359 /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o -lz -lbz2 -lm
+check_cc
+BEGIN /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+    1	void foo(char * restrict p);
+END /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -pipe -force_cpusubtype_ALL -Wno-sign-compare -mdynamic-no-pic -fomit-frame-pointer -c -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+/var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c:1: error: syntax error before ‘p’
+check_cc
+BEGIN /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+    1	void foo(char * __restrict__ p);
+END /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -pipe -force_cpusubtype_ALL -Wno-sign-compare -mdynamic-no-pic -fomit-frame-pointer -c -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+imlib2-config --version
+./configure: line 417: imlib2-config: command not found
+freetype-config --version
+9.17.3
+check_lib ft2build.h FT_Init_FreeType
+check_header ft2build.h
+check_cpp
+BEGIN /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+    1	#include <ft2build.h>
+    2	int x;
+END /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -pipe -force_cpusubtype_ALL -Wno-sign-compare -mdynamic-no-pic -fomit-frame-pointer -I/usr/X11/include/freetype2 -I/usr/X11/include -E -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+check_func FT_Init_FreeType
+check_ld
+check_cc
+BEGIN /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+    1	extern int FT_Init_FreeType();
+    2	int main(void){ FT_Init_FreeType(); }
+END /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -pipe -force_cpusubtype_ALL -Wno-sign-compare -mdynamic-no-pic -fomit-frame-pointer -I/usr/X11/include/freetype2 -I/usr/X11/include -c -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -Wl,-dynamic,-search_paths_first -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-22195-69994-24359 /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o -lz -lbz2 -lm -L/usr/X11/lib -lfreetype -lz -Wl,-framework,CoreServices -Wl,-framework,ApplicationServices
+check_lib2 SDL.h SDL_Init
+check_func2 SDL.h SDL_Init
+check_ld
+check_cc
+BEGIN /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+    1	
+    2	#include <SDL.h>
+    3	int main(int argc, char **argv){
+    4	    (void) SDL_Init;
+    5	    return 0;
+    6	}
+END /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -pipe -force_cpusubtype_ALL -Wno-sign-compare -mdynamic-no-pic -fomit-frame-pointer -I/sw/include/SDL -D_THREAD_SAFE -c -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -Wl,-dynamic,-search_paths_first -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-22195-69994-24359 /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o -lz -lbz2 -lm -L/sw/lib -lSDLmain -lSDL -framework Cocoa -framework OpenGL
+check_cc -I/sw/include/SDL -D_THREAD_SAFE
+BEGIN /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+    1	#include <SDL.h>
+    2	int main(int argc, char **argv){
+    3	    const SDL_VideoInfo *vi = SDL_GetVideoInfo();
+    4	    int w = vi->current_w;
+    5	    return 0;
+    6	}
+END /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -pipe -force_cpusubtype_ALL -Wno-sign-compare -mdynamic-no-pic -fomit-frame-pointer -I/sw/include/SDL -D_THREAD_SAFE -c -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+/var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c: In function ‘SDL_main’:
+/var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c:4: error: ‘struct SDL_VideoInfo’ has no member named ‘current_w’
+check_type sys/socket.h socklen_t
+check_cc
+BEGIN /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+    1	
+    2	#include <sys/socket.h>
+    3	socklen_t v;
+END /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -pipe -force_cpusubtype_ALL -Wno-sign-compare -mdynamic-no-pic -fomit-frame-pointer -c -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+check_header arpa/inet.h
+check_cpp
+BEGIN /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+    1	#include <arpa/inet.h>
+    2	int x;
+END /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -pipe -force_cpusubtype_ALL -Wno-sign-compare -mdynamic-no-pic -fomit-frame-pointer -E -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+check_func closesocket
+check_ld
+check_cc
+BEGIN /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+    1	extern int closesocket();
+    2	int main(void){ closesocket(); }
+END /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -pipe -force_cpusubtype_ALL -Wno-sign-compare -mdynamic-no-pic -fomit-frame-pointer -c -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -Wl,-dynamic,-search_paths_first -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-22195-69994-24359 /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o -lz -lbz2 -lm
+Undefined symbols:
+  "_closesocket", referenced from:
+      _main in ffmpeg-conf-17709-69994-32544.o
+ld: symbol(s) not found
+collect2: ld returned 1 exit status
+check_ld
+check_cc
+BEGIN /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+    1	#include <sys/types.h>
+    2	#include <sys/socket.h>
+    3	#include <netinet/in.h>
+    4	#include <netdb.h>
+    5	int main(void) {
+    6	    struct sockaddr_storage saddr;
+    7	    struct ipv6_mreq mreq6;
+    8	    getaddrinfo(0,0,0,0);
+    9	    getnameinfo(0,0,0,0,0,0,0);
+   10	    IN6_IS_ADDR_MULTICAST((const struct in6_addr *)0);
+   11	}
+END /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -pipe -force_cpusubtype_ALL -Wno-sign-compare -mdynamic-no-pic -fomit-frame-pointer -c -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -Wl,-dynamic,-search_paths_first -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-22195-69994-24359 /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o -lz -lbz2 -lm
+check_header linux/videodev.h
+check_cpp
+BEGIN /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+    1	#include <linux/videodev.h>
+    2	int x;
+END /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -pipe -force_cpusubtype_ALL -Wno-sign-compare -mdynamic-no-pic -fomit-frame-pointer -E -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+/var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c:1:28: error: linux/videodev.h: No such file or directory
+check_header linux/videodev2.h
+check_cpp
+BEGIN /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+    1	#include <linux/videodev2.h>
+    2	int x;
+END /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -pipe -force_cpusubtype_ALL -Wno-sign-compare -mdynamic-no-pic -fomit-frame-pointer -E -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+/var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c:1:29: error: linux/videodev2.h: No such file or directory
+check_func2 windows.h vfw.h capCreateCaptureWindow -lvfw32
+check_ld -lvfw32
+check_cc
+BEGIN /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+    1	
+    2	#include <windows.h>
+    3	#include <vfw.h>
+    4	int main(int argc, char **argv){
+    5	    (void) capCreateCaptureWindow;
+    6	    return 0;
+    7	}
+END /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -pipe -force_cpusubtype_ALL -Wno-sign-compare -mdynamic-no-pic -fomit-frame-pointer -c -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+/var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c:2:21: error: windows.h: No such file or directory
+/var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c:3:17: error: vfw.h: No such file or directory
+/var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c: In function ‘main’:
+/var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c:5: error: ‘capCreateCaptureWindow’ undeclared (first use in this function)
+/var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c:5: error: (Each undeclared identifier is reported only once
+/var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c:5: error: for each function it appears in.)
+check_header dev/bktr/ioctl_meteor.h
+check_cpp
+BEGIN /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+    1	#include <dev/bktr/ioctl_meteor.h>
+    2	int x;
+END /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -pipe -force_cpusubtype_ALL -Wno-sign-compare -mdynamic-no-pic -fomit-frame-pointer -E -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+/var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c:1:35: error: dev/bktr/ioctl_meteor.h: No such file or directory
+check_header machine/ioctl_meteor.h
+check_cpp
+BEGIN /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+    1	#include <machine/ioctl_meteor.h>
+    2	int x;
+END /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -pipe -force_cpusubtype_ALL -Wno-sign-compare -mdynamic-no-pic -fomit-frame-pointer -E -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+/var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c:1:34: error: machine/ioctl_meteor.h: No such file or directory
+check_header dev/video/meteor/ioctl_meteor.h
+check_cpp
+BEGIN /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+    1	#include <dev/video/meteor/ioctl_meteor.h>
+    2	int x;
+END /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -pipe -force_cpusubtype_ALL -Wno-sign-compare -mdynamic-no-pic -fomit-frame-pointer -E -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+/var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c:1:43: error: dev/video/meteor/ioctl_meteor.h: No such file or directory
+check_header dev/ic/bt8xx.h
+check_cpp
+BEGIN /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+    1	#include <dev/ic/bt8xx.h>
+    2	int x;
+END /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -pipe -force_cpusubtype_ALL -Wno-sign-compare -mdynamic-no-pic -fomit-frame-pointer -E -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+/var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c:1:26: error: dev/ic/bt8xx.h: No such file or directory
+check_header sys/soundcard.h
+check_cpp
+BEGIN /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+    1	#include <sys/soundcard.h>
+    2	int x;
+END /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -pipe -force_cpusubtype_ALL -Wno-sign-compare -mdynamic-no-pic -fomit-frame-pointer -E -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+/var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c:1:27: error: sys/soundcard.h: No such file or directory
+check_header soundcard.h
+check_cpp
+BEGIN /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+    1	#include <soundcard.h>
+    2	int x;
+END /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -pipe -force_cpusubtype_ALL -Wno-sign-compare -mdynamic-no-pic -fomit-frame-pointer -E -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+/var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c:1:23: error: soundcard.h: No such file or directory
+check_cflags -Wdeclaration-after-statement
+check_cc -Wdeclaration-after-statement
+BEGIN /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+    1	int x;
+END /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -pipe -force_cpusubtype_ALL -Wno-sign-compare -mdynamic-no-pic -fomit-frame-pointer -g -Wdeclaration-after-statement -c -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+check_cflags -Wall
+check_cc -Wall
+BEGIN /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+    1	int x;
+END /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -pipe -force_cpusubtype_ALL -Wno-sign-compare -mdynamic-no-pic -fomit-frame-pointer -g -Wdeclaration-after-statement -Wall -c -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+check_cflags -Wno-switch
+check_cc -Wno-switch
+BEGIN /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+    1	int x;
+END /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -pipe -force_cpusubtype_ALL -Wno-sign-compare -mdynamic-no-pic -fomit-frame-pointer -g -Wdeclaration-after-statement -Wall -Wno-switch -c -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+check_cflags -Wdisabled-optimization
+check_cc -Wdisabled-optimization
+BEGIN /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+    1	int x;
+END /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -pipe -force_cpusubtype_ALL -Wno-sign-compare -mdynamic-no-pic -fomit-frame-pointer -g -Wdeclaration-after-statement -Wall -Wno-switch -Wdisabled-optimization -c -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+check_cflags -Wpointer-arith
+check_cc -Wpointer-arith
+BEGIN /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+    1	int x;
+END /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -pipe -force_cpusubtype_ALL -Wno-sign-compare -mdynamic-no-pic -fomit-frame-pointer -g -Wdeclaration-after-statement -Wall -Wno-switch -Wdisabled-optimization -Wpointer-arith -c -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+check_cflags -Wredundant-decls
+check_cc -Wredundant-decls
+BEGIN /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+    1	int x;
+END /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -pipe -force_cpusubtype_ALL -Wno-sign-compare -mdynamic-no-pic -fomit-frame-pointer -g -Wdeclaration-after-statement -Wall -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -c -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+check_cflags -Wno-pointer-sign
+check_cc -Wno-pointer-sign
+BEGIN /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+    1	int x;
+END /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -pipe -force_cpusubtype_ALL -Wno-sign-compare -mdynamic-no-pic -fomit-frame-pointer -g -Wdeclaration-after-statement -Wall -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -c -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+check_cflags -Wcast-qual
+check_cc -Wcast-qual
+BEGIN /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+    1	int x;
+END /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -pipe -force_cpusubtype_ALL -Wno-sign-compare -mdynamic-no-pic -fomit-frame-pointer -g -Wdeclaration-after-statement -Wall -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -c -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+check_cflags -Wwrite-strings
+check_cc -Wwrite-strings
+BEGIN /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+    1	int x;
+END /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -pipe -force_cpusubtype_ALL -Wno-sign-compare -mdynamic-no-pic -fomit-frame-pointer -g -Wdeclaration-after-statement -Wall -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -Wwrite-strings -c -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+check_cflags -Wtype-limits
+check_cc -Wtype-limits
+BEGIN /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+    1	int x;
+END /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -pipe -force_cpusubtype_ALL -Wno-sign-compare -mdynamic-no-pic -fomit-frame-pointer -g -Wdeclaration-after-statement -Wall -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -Wwrite-strings -Wtype-limits -c -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+cc1: error: unrecognized command line option "-Wtype-limits"
+check_ldflags -Wl,--warn-common
+check_ld -Wl,--warn-common
+check_cc
+BEGIN /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+    1	int main(void){ return 0; }
+END /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -pipe -force_cpusubtype_ALL -Wno-sign-compare -mdynamic-no-pic -fomit-frame-pointer -g -Wdeclaration-after-statement -Wall -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -Wwrite-strings -c -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -Wl,-dynamic,-search_paths_first -Wl,--warn-common -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-22195-69994-24359 /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o -lz -lbz2 -lm
+ld: unknown option: --warn-common
+collect2: ld returned 1 exit status
+check_ldflags -Wl,-rpath-link,\$(BUILD_ROOT)/libpostproc -Wl,-rpath-link,\$(BUILD_ROOT)/libswscale -Wl,-rpath-link,\$(BUILD_ROOT)/libavfilter -Wl,-rpath-link,\$(BUILD_ROOT)/libavdevice -Wl,-rpath-link,\$(BUILD_ROOT)/libavformat -Wl,-rpath-link,\$(BUILD_ROOT)/libavcodec -Wl,-rpath-link,\$(BUILD_ROOT)/libavutil
+check_ld -Wl,-rpath-link,\$(BUILD_ROOT)/libpostproc -Wl,-rpath-link,\$(BUILD_ROOT)/libswscale -Wl,-rpath-link,\$(BUILD_ROOT)/libavfilter -Wl,-rpath-link,\$(BUILD_ROOT)/libavdevice -Wl,-rpath-link,\$(BUILD_ROOT)/libavformat -Wl,-rpath-link,\$(BUILD_ROOT)/libavcodec -Wl,-rpath-link,\$(BUILD_ROOT)/libavutil
+check_cc
+BEGIN /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+    1	int main(void){ return 0; }
+END /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -pipe -force_cpusubtype_ALL -Wno-sign-compare -mdynamic-no-pic -fomit-frame-pointer -g -Wdeclaration-after-statement -Wall -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -Wwrite-strings -c -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -Wl,-dynamic,-search_paths_first -Wl,-rpath-link,\$(BUILD_ROOT)/libpostproc -Wl,-rpath-link,\$(BUILD_ROOT)/libswscale -Wl,-rpath-link,\$(BUILD_ROOT)/libavfilter -Wl,-rpath-link,\$(BUILD_ROOT)/libavdevice -Wl,-rpath-link,\$(BUILD_ROOT)/libavformat -Wl,-rpath-link,\$(BUILD_ROOT)/libavcodec -Wl,-rpath-link,\$(BUILD_ROOT)/libavutil -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-22195-69994-24359 /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o -lz -lbz2 -lm
+ld: unknown option: -rpath-link
+collect2: ld returned 1 exit status
+check_ldflags -Wl,-Bsymbolic
+check_ld -Wl,-Bsymbolic
+check_cc
+BEGIN /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+    1	int main(void){ return 0; }
+END /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -pipe -force_cpusubtype_ALL -Wno-sign-compare -mdynamic-no-pic -fomit-frame-pointer -g -Wdeclaration-after-statement -Wall -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -Wwrite-strings -c -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -Wl,-dynamic,-search_paths_first -Wl,-Bsymbolic -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-22195-69994-24359 /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o -lz -lbz2 -lm
+ld: unknown option: -Bsymbolic
+collect2: ld returned 1 exit status
+check_cflags -fno-math-errno
+check_cc -fno-math-errno
+BEGIN /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+    1	int x;
+END /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -pipe -force_cpusubtype_ALL -Wno-sign-compare -mdynamic-no-pic -fomit-frame-pointer -g -Wdeclaration-after-statement -Wall -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -Wwrite-strings -O3 -fno-math-errno -c -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+check_cflags -fno-signed-zeros
+check_cc -fno-signed-zeros
+BEGIN /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+    1	int x;
+END /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -pipe -force_cpusubtype_ALL -Wno-sign-compare -mdynamic-no-pic -fomit-frame-pointer -g -Wdeclaration-after-statement -Wall -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -Wwrite-strings -O3 -fno-math-errno -fno-signed-zeros -c -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+cc1: error: unrecognized command line option "-fno-signed-zeros"
+check_cc
+BEGIN /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+    1	asm (".align 3");
+END /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c
+gcc -pipe -force_cpusubtype_ALL -Wno-sign-compare -mdynamic-no-pic -fomit-frame-pointer -g -Wdeclaration-after-statement -Wall -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -Wwrite-strings -O3 -fno-math-errno -c -o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-17709-69994-32544.o /var/folders/7p/7pdnOekwGfOkc6HiCfx0E++++TI/-Tmp-//ffmpeg-conf-19251-69994-28432.c

@@ -1,0 +1,715 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		880BDC230E450F31000CAC1E /* TTVImageBrowserView.m in Sources */ = {isa = PBXBuildFile; fileRef = 880BDC220E450F31000CAC1E /* TTVImageBrowserView.m */; };
+		8822A3DB0E53D6AA00685048 /* TTVCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 8822A3DA0E53D6AA00685048 /* TTVCore.m */; };
+		8827636A0E297FB5008E5EF7 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 882763690E297FB5008E5EF7 /* QTKit.framework */; };
+		8827636B0E297FB6008E5EF7 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 882763690E297FB5008E5EF7 /* QTKit.framework */; };
+		8827636C0E297FB6008E5EF7 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 882763690E297FB5008E5EF7 /* QTKit.framework */; };
+		8836D2D30CEC3C7300DC9730 /* VSOpenGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8836D2D10CEC3C7300DC9730 /* VSOpenGLView.m */; };
+		883ADAA00E06C00100B1ED8E /* tikitv_test.m in Sources */ = {isa = PBXBuildFile; fileRef = 883ADA700E06BF0400B1ED8E /* tikitv_test.m */; };
+		883ADAD50E06C26800B1ED8E /* VSDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 8884E3870CE18D2900489F77 /* VSDecoder.m */; };
+		883ADAD80E06C26D00B1ED8E /* TTVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 88FBA0160B65E4AB0034EF9E /* TTVAppDelegate.m */; };
+		883ADB020E06C34500B1ED8E /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88EBCECD0CE9580D002BEE1B /* Accelerate.framework */; };
+		883ADB050E06C34D00B1ED8E /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 888D07E40B65EF3C00957EB2 /* OpenGL.framework */; };
+		883ADB080E06C34F00B1ED8E /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88FBA0400B65E60C0034EF9E /* Quartz.framework */; };
+		883ADB0F0E06C35A00B1ED8E /* VSPipe.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E34EB80CE21CF000BA015F /* VSPipe.m */; };
+		883ADB160E06C36000B1ED8E /* VSFileLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CD2DC70CFA0B8000E3409C /* VSFileLibrary.m */; };
+		883ADCF10E0768CD00B1ED8E /* TTVMPEGSlicer.m in Sources */ = {isa = PBXBuildFile; fileRef = 883ADCF00E0768CD00B1ED8E /* TTVMPEGSlicer.m */; };
+		883ADD070E08A32100B1ED8E /* DPQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 883ADD060E08A32100B1ED8E /* DPQueue.m */; };
+		883ADD080E08A32100B1ED8E /* DPQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 883ADD060E08A32100B1ED8E /* DPQueue.m */; };
+		886F643B0E0A020200066F64 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 886F643A0E0A020200066F64 /* IOKit.framework */; };
+		886F643C0E0A020200066F64 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 886F643A0E0A020200066F64 /* IOKit.framework */; };
+		8884E3880CE18D2900489F77 /* VSDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 8884E3870CE18D2900489F77 /* VSDecoder.m */; };
+		888D07E50B65EF3C00957EB2 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 888D07E40B65EF3C00957EB2 /* OpenGL.framework */; };
+		88A0BAA90E5944FF00DD4DC9 /* TTVDecoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A0BAA80E5944FF00DD4DC9 /* TTVDecoding.m */; };
+		88CD2DC80CFA0B8000E3409C /* VSFileLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CD2DC70CFA0B8000E3409C /* VSFileLibrary.m */; };
+		88CF48190E14B26300EC6E5C /* TTVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 88FBA0160B65E4AB0034EF9E /* TTVAppDelegate.m */; };
+		88CF48220E14B28500EC6E5C /* ttv_fullscreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CF47FA0E14B0AC00EC6E5C /* ttv_fullscreen.m */; };
+		88CF48230E14B28C00EC6E5C /* VSDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 8884E3870CE18D2900489F77 /* VSDecoder.m */; };
+		88CF485D0E14B30100EC6E5C /* VSWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F0EEDD0CE9789300B4B08A /* VSWindow.m */; };
+		88CF485E0E14B30200EC6E5C /* VSTester.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E34E910CE21AFE00BA015F /* VSTester.m */; };
+		88CF485F0E14B30400EC6E5C /* VSPipe.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E34EB80CE21CF000BA015F /* VSPipe.m */; };
+		88CF48600E14B30500EC6E5C /* VSOpenGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8836D2D10CEC3C7300DC9730 /* VSOpenGLView.m */; };
+		88CF48610E14B30600EC6E5C /* VSFileLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CD2DC70CFA0B8000E3409C /* VSFileLibrary.m */; };
+		88CF48620E14B30900EC6E5C /* TTVMPEGSlicer.m in Sources */ = {isa = PBXBuildFile; fileRef = 883ADCF00E0768CD00B1ED8E /* TTVMPEGSlicer.m */; };
+		88CF48680E14B31E00EC6E5C /* DPQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 883ADD060E08A32100B1ED8E /* DPQueue.m */; };
+		88CF486E0E14B33100EC6E5C /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88FBA0400B65E60C0034EF9E /* Quartz.framework */; };
+		88CF48740E14B33800EC6E5C /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 888D07E40B65EF3C00957EB2 /* OpenGL.framework */; };
+		88E34E920CE21AFE00BA015F /* VSTester.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E34E910CE21AFE00BA015F /* VSTester.m */; };
+		88E34EB90CE21CF000BA015F /* VSPipe.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E34EB80CE21CF000BA015F /* VSPipe.m */; };
+		88EBCECE0CE9580D002BEE1B /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88EBCECD0CE9580D002BEE1B /* Accelerate.framework */; };
+		88F0EEDE0CE9789300B4B08A /* VSWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F0EEDD0CE9789300B4B08A /* VSWindow.m */; };
+		88FBA00C0B65E1830034EF9E /* GoodStuff.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 88FBA00B0B65E1830034EF9E /* GoodStuff.xcconfig */; };
+		88FBA0170B65E4AB0034EF9E /* TTVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 88FBA0160B65E4AB0034EF9E /* TTVAppDelegate.m */; };
+		88FBA0410B65E60C0034EF9E /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88FBA0400B65E60C0034EF9E /* Quartz.framework */; };
+		88FBA04F0B65E6720034EF9E /* TikiTV.qtz in Resources */ = {isa = PBXBuildFile; fileRef = 88FBA04E0B65E6720034EF9E /* TikiTV.qtz */; };
+		8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97319FDCFA39411CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		32CA4F630368D1EE00C91783 /* TikiTV_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TikiTV_Prefix.pch; sourceTree = "<group>"; };
+		880BDC210E450F31000CAC1E /* TTVImageBrowserView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTVImageBrowserView.h; sourceTree = "<group>"; };
+		880BDC220E450F31000CAC1E /* TTVImageBrowserView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTVImageBrowserView.m; sourceTree = "<group>"; };
+		8822A3D90E53D6AA00685048 /* TTVCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTVCore.h; sourceTree = "<group>"; };
+		8822A3DA0E53D6AA00685048 /* TTVCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTVCore.m; sourceTree = "<group>"; };
+		882763690E297FB5008E5EF7 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = /System/Library/Frameworks/QTKit.framework; sourceTree = "<absolute>"; };
+		8836D2D10CEC3C7300DC9730 /* VSOpenGLView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = VSOpenGLView.m; sourceTree = "<group>"; };
+		8836D2D20CEC3C7300DC9730 /* VSOpenGLView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = VSOpenGLView.h; sourceTree = "<group>"; };
+		883ADA650E06BE9400B1ED8E /* tikitv_test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = tikitv_test; sourceTree = BUILT_PRODUCTS_DIR; };
+		883ADA700E06BF0400B1ED8E /* tikitv_test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tikitv_test.m; sourceTree = "<group>"; };
+		883ADCEF0E0768CD00B1ED8E /* TTVMPEGSlicer.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = TTVMPEGSlicer.h; sourceTree = "<group>"; };
+		883ADCF00E0768CD00B1ED8E /* TTVMPEGSlicer.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = TTVMPEGSlicer.m; sourceTree = "<group>"; };
+		883ADD050E08A32100B1ED8E /* DPQueue.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DPQueue.h; sourceTree = "<group>"; };
+		883ADD060E08A32100B1ED8E /* DPQueue.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = DPQueue.m; sourceTree = "<group>"; };
+		886F643A0E0A020200066F64 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = /System/Library/Frameworks/IOKit.framework; sourceTree = "<absolute>"; };
+		8884E3860CE18D2900489F77 /* VSDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSDecoder.h; sourceTree = "<group>"; };
+		8884E3870CE18D2900489F77 /* VSDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSDecoder.m; sourceTree = "<group>"; };
+		888D07E40B65EF3C00957EB2 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		88A0BAA70E5944FF00DD4DC9 /* TTVDecoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTVDecoding.h; sourceTree = "<group>"; };
+		88A0BAA80E5944FF00DD4DC9 /* TTVDecoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTVDecoding.m; sourceTree = "<group>"; };
+		88CD2DC60CFA0B8000E3409C /* VSFileLibrary.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = VSFileLibrary.h; sourceTree = "<group>"; };
+		88CD2DC70CFA0B8000E3409C /* VSFileLibrary.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = VSFileLibrary.m; sourceTree = "<group>"; };
+		88CF47F90E14B0AC00EC6E5C /* ttv_fullscreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ttv_fullscreen.h; sourceTree = "<group>"; };
+		88CF47FA0E14B0AC00EC6E5C /* ttv_fullscreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ttv_fullscreen.m; sourceTree = "<group>"; };
+		88CF480A0E14B1FB00EC6E5C /* ttv_fullscreen */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ttv_fullscreen; sourceTree = BUILT_PRODUCTS_DIR; };
+		88E34E900CE21AFE00BA015F /* VSTester.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = VSTester.h; sourceTree = "<group>"; };
+		88E34E910CE21AFE00BA015F /* VSTester.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = VSTester.m; sourceTree = "<group>"; };
+		88E34EB70CE21CF000BA015F /* VSPipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSPipe.h; sourceTree = "<group>"; };
+		88E34EB80CE21CF000BA015F /* VSPipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSPipe.m; sourceTree = "<group>"; };
+		88EBCECD0CE9580D002BEE1B /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = /System/Library/Frameworks/Accelerate.framework; sourceTree = "<absolute>"; };
+		88F0EEDC0CE9789300B4B08A /* VSWindow.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = VSWindow.h; sourceTree = "<group>"; };
+		88F0EEDD0CE9789300B4B08A /* VSWindow.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = VSWindow.m; sourceTree = "<group>"; };
+		88FBA00B0B65E1830034EF9E /* GoodStuff.xcconfig */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xcconfig; name = GoodStuff.xcconfig; path = shared/xcode/GoodStuff.xcconfig; sourceTree = "<group>"; };
+		88FBA0150B65E4AB0034EF9E /* TTVAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = TTVAppDelegate.h; sourceTree = "<group>"; };
+		88FBA0160B65E4AB0034EF9E /* TTVAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = TTVAppDelegate.m; sourceTree = "<group>"; };
+		88FBA0400B65E60C0034EF9E /* Quartz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = Quartz.framework; path = /System/Library/Frameworks/Quartz.framework; sourceTree = "<absolute>"; };
+		88FBA04E0B65E6720034EF9E /* TikiTV.qtz */ = {isa = PBXFileReference; lastKnownFileType = file; path = TikiTV.qtz; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* TikiTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TikiTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		883ADA630E06BE9400B1ED8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				883ADB020E06C34500B1ED8E /* Accelerate.framework in Frameworks */,
+				883ADB050E06C34D00B1ED8E /* OpenGL.framework in Frameworks */,
+				883ADB080E06C34F00B1ED8E /* Quartz.framework in Frameworks */,
+				886F643C0E0A020200066F64 /* IOKit.framework in Frameworks */,
+				8827636A0E297FB5008E5EF7 /* QTKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88CF48080E14B1FB00EC6E5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88CF486E0E14B33100EC6E5C /* Quartz.framework in Frameworks */,
+				88CF48740E14B33800EC6E5C /* OpenGL.framework in Frameworks */,
+				8827636C0E297FB6008E5EF7 /* QTKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				88FBA0410B65E60C0034EF9E /* Quartz.framework in Frameworks */,
+				888D07E50B65EF3C00957EB2 /* OpenGL.framework in Frameworks */,
+				88EBCECE0CE9580D002BEE1B /* Accelerate.framework in Frameworks */,
+				886F643B0E0A020200066F64 /* IOKit.framework in Frameworks */,
+				8827636B0E297FB6008E5EF7 /* QTKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+				882763690E297FB5008E5EF7 /* QTKit.framework */,
+				88FBA0400B65E60C0034EF9E /* Quartz.framework */,
+				88EBCECD0CE9580D002BEE1B /* Accelerate.framework */,
+				888D07E40B65EF3C00957EB2 /* OpenGL.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* TikiTV.app */,
+				883ADA650E06BE9400B1ED8E /* tikitv_test */,
+				88CF480A0E14B1FB00EC6E5C /* ttv_fullscreen */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* TikiTV */ = {
+			isa = PBXGroup;
+			children = (
+				886F643A0E0A020200066F64 /* IOKit.framework */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+				883ADA700E06BF0400B1ED8E /* tikitv_test.m */,
+			);
+			name = TikiTV;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				88A0BAA70E5944FF00DD4DC9 /* TTVDecoding.h */,
+				88A0BAA80E5944FF00DD4DC9 /* TTVDecoding.m */,
+				8822A3D90E53D6AA00685048 /* TTVCore.h */,
+				8822A3DA0E53D6AA00685048 /* TTVCore.m */,
+				88CF47F90E14B0AC00EC6E5C /* ttv_fullscreen.h */,
+				88CF47FA0E14B0AC00EC6E5C /* ttv_fullscreen.m */,
+				88E34EB70CE21CF000BA015F /* VSPipe.h */,
+				88E34EB80CE21CF000BA015F /* VSPipe.m */,
+				8884E3860CE18D2900489F77 /* VSDecoder.h */,
+				8884E3870CE18D2900489F77 /* VSDecoder.m */,
+				883ADD050E08A32100B1ED8E /* DPQueue.h */,
+				883ADD060E08A32100B1ED8E /* DPQueue.m */,
+				88FBA00B0B65E1830034EF9E /* GoodStuff.xcconfig */,
+				32CA4F630368D1EE00C91783 /* TikiTV_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+				88FBA0150B65E4AB0034EF9E /* TTVAppDelegate.h */,
+				88FBA0160B65E4AB0034EF9E /* TTVAppDelegate.m */,
+				88E34E900CE21AFE00BA015F /* VSTester.h */,
+				88E34E910CE21AFE00BA015F /* VSTester.m */,
+				88F0EEDC0CE9789300B4B08A /* VSWindow.h */,
+				88F0EEDD0CE9789300B4B08A /* VSWindow.m */,
+				8836D2D10CEC3C7300DC9730 /* VSOpenGLView.m */,
+				8836D2D20CEC3C7300DC9730 /* VSOpenGLView.h */,
+				88CD2DC60CFA0B8000E3409C /* VSFileLibrary.h */,
+				88CD2DC70CFA0B8000E3409C /* VSFileLibrary.m */,
+				880BDC210E450F31000CAC1E /* TTVImageBrowserView.h */,
+				880BDC220E450F31000CAC1E /* TTVImageBrowserView.m */,
+				883ADCEF0E0768CD00B1ED8E /* TTVMPEGSlicer.h */,
+				883ADCF00E0768CD00B1ED8E /* TTVMPEGSlicer.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107310486CEB800E47090 /* Info.plist */,
+				88FBA04E0B65E6720034EF9E /* TikiTV.qtz */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				29B97318FDCFA39411CA2CEA /* MainMenu.nib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		883ADA640E06BE9400B1ED8E /* tikitv_test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 883ADA690E06BEB500B1ED8E /* Build configuration list for PBXNativeTarget "tikitv_test" */;
+			buildPhases = (
+				883ADA620E06BE9400B1ED8E /* Sources */,
+				883ADA630E06BE9400B1ED8E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tikitv_test;
+			productName = tikitv_test;
+			productReference = 883ADA650E06BE9400B1ED8E /* tikitv_test */;
+			productType = "com.apple.product-type.tool";
+		};
+		88CF48090E14B1FB00EC6E5C /* ttv_fullscreen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88CF48160E14B26200EC6E5C /* Build configuration list for PBXNativeTarget "ttv_fullscreen" */;
+			buildPhases = (
+				88CF48070E14B1FB00EC6E5C /* Sources */,
+				88CF48080E14B1FB00EC6E5C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ttv_fullscreen;
+			productName = ttv_fullscreen;
+			productReference = 88CF480A0E14B1FB00EC6E5C /* ttv_fullscreen */;
+			productType = "com.apple.product-type.tool";
+		};
+		8D1107260486CEB800E47090 /* TikiTV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "TikiTV" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TikiTV;
+			productInstallPath = "$(HOME)/Applications";
+			productName = TikiTV;
+			productReference = 8D1107320486CEB800E47090 /* TikiTV.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "TikiTV2" */;
+			compatibilityVersion = "Xcode 2.4";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* TikiTV */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* TikiTV */,
+				883ADA640E06BE9400B1ED8E /* tikitv_test */,
+				88CF48090E14B1FB00EC6E5C /* ttv_fullscreen */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */,
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				88FBA00C0B65E1830034EF9E /* GoodStuff.xcconfig in Resources */,
+				88FBA04F0B65E6720034EF9E /* TikiTV.qtz in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		883ADA620E06BE9400B1ED8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				883ADAA00E06C00100B1ED8E /* tikitv_test.m in Sources */,
+				883ADAD50E06C26800B1ED8E /* VSDecoder.m in Sources */,
+				883ADAD80E06C26D00B1ED8E /* TTVAppDelegate.m in Sources */,
+				883ADB0F0E06C35A00B1ED8E /* VSPipe.m in Sources */,
+				883ADB160E06C36000B1ED8E /* VSFileLibrary.m in Sources */,
+				883ADD080E08A32100B1ED8E /* DPQueue.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88CF48070E14B1FB00EC6E5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88CF48190E14B26300EC6E5C /* TTVAppDelegate.m in Sources */,
+				88CF48220E14B28500EC6E5C /* ttv_fullscreen.m in Sources */,
+				88CF48230E14B28C00EC6E5C /* VSDecoder.m in Sources */,
+				88CF485D0E14B30100EC6E5C /* VSWindow.m in Sources */,
+				88CF485E0E14B30200EC6E5C /* VSTester.m in Sources */,
+				88CF485F0E14B30400EC6E5C /* VSPipe.m in Sources */,
+				88CF48600E14B30500EC6E5C /* VSOpenGLView.m in Sources */,
+				88CF48610E14B30600EC6E5C /* VSFileLibrary.m in Sources */,
+				88CF48620E14B30900EC6E5C /* TTVMPEGSlicer.m in Sources */,
+				88CF48680E14B31E00EC6E5C /* DPQueue.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				88FBA0170B65E4AB0034EF9E /* TTVAppDelegate.m in Sources */,
+				8884E3880CE18D2900489F77 /* VSDecoder.m in Sources */,
+				88E34E920CE21AFE00BA015F /* VSTester.m in Sources */,
+				88E34EB90CE21CF000BA015F /* VSPipe.m in Sources */,
+				88F0EEDE0CE9789300B4B08A /* VSWindow.m in Sources */,
+				8836D2D30CEC3C7300DC9730 /* VSOpenGLView.m in Sources */,
+				88CD2DC80CFA0B8000E3409C /* VSFileLibrary.m in Sources */,
+				883ADCF10E0768CD00B1ED8E /* TTVMPEGSlicer.m in Sources */,
+				883ADD070E08A32100B1ED8E /* DPQueue.m in Sources */,
+				880BDC230E450F31000CAC1E /* TTVImageBrowserView.m in Sources */,
+				8822A3DB0E53D6AA00685048 /* TTVCore.m in Sources */,
+				88A0BAA90E5944FF00DD4DC9 /* TTVDecoding.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		29B97318FDCFA39411CA2CEA /* MainMenu.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29B97319FDCFA39411CA2CEA /* English */,
+			);
+			name = MainMenu.nib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		883ADA6A0E06BEB500B1ED8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88FBA00B0B65E1830034EF9E /* GoodStuff.xcconfig */;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				HEADER_SEARCH_PATHS = (
+					../../ffmpeg/libavcodec,
+					../../ffmpeg/libavformat/,
+					../../ffmpeg/libavutil/,
+				);
+				INSTALL_PATH = "$(HOME)/bin";
+				LIBRARY_SEARCH_PATHS = (
+					../../ffmpeg/libavcodec,
+					../../ffmpeg/libavformat,
+					../../ffmpeg/libavutil/,
+				);
+				OTHER_LDFLAGS = (
+					"-lavcodec",
+					"-lavformat",
+					"-lavutil",
+					"-lz",
+					"-read_only_relocs",
+					suppress,
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = tikitv_test;
+				ZERO_LINK = NO;
+			};
+			name = Debug;
+		};
+		883ADA6B0E06BEB500B1ED8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88FBA00B0B65E1830034EF9E /* GoodStuff.xcconfig */;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				HEADER_SEARCH_PATHS = (
+					../../ffmpeg/libavcodec,
+					../../ffmpeg/libavformat/,
+					../../ffmpeg/libavutil/,
+				);
+				INSTALL_PATH = "$(HOME)/bin";
+				LIBRARY_SEARCH_PATHS = ../../ffmpeg/opt;
+				OTHER_LDFLAGS = (
+					"-lavcodec",
+					"-lavformat",
+					"-lavutil",
+					"-lz",
+					"-read_only_relocs",
+					suppress,
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = tikitv_test;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		88CF48170E14B26200EC6E5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88FBA00B0B65E1830034EF9E /* GoodStuff.xcconfig */;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				HEADER_SEARCH_PATHS = (
+					../../ffmpeg/libavcodec,
+					../../ffmpeg/libavformat,
+					../../ffmpeg/libavutil,
+					../../ffmpeg/,
+				);
+				INSTALL_PATH = "$(HOME)/bin";
+				LIBRARY_SEARCH_PATHS = (
+					../../ffmpeg/libavcodec,
+					../../ffmpeg/libavformat,
+					../../ffmpeg/libavutil,
+					../../ffmpeg/,
+				);
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+					"-lavcodec",
+					"-lavformat",
+					"-lavutil",
+					"-lz",
+					"-lbz2",
+					"-read_only_relocs",
+					suppress,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = ttv_fullscreen;
+				ZERO_LINK = NO;
+			};
+			name = Debug;
+		};
+		88CF48180E14B26200EC6E5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88FBA00B0B65E1830034EF9E /* GoodStuff.xcconfig */;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				HEADER_SEARCH_PATHS = (
+					../../ffmpeg/libavcodec,
+					../../ffmpeg/libavformat,
+					../../ffmpeg/libavutil,
+					../../ffmpeg/,
+				);
+				INSTALL_PATH = "$(HOME)/bin";
+				LIBRARY_SEARCH_PATHS = (
+					../../ffmpeg/libavcodec,
+					../../ffmpeg/libavformat,
+					../../ffmpeg/libavutil,
+					../../ffmpeg/,
+				);
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+					"-lavcodec",
+					"-lavformat",
+					"-lavutil",
+					"-lz",
+					"-lbz2",
+					"-read_only_relocs",
+					suppress,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = ttv_fullscreen;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88FBA00B0B65E1830034EF9E /* GoodStuff.xcconfig */;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				HEADER_SEARCH_PATHS = (
+					ttv_ffmpeg/libavformat,
+					ttv_ffmpeg,
+					ttv_ffmpeg/libavutil,
+					ttv_ffmpeg/libavcodec,
+				);
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					ttv_ffmpeg/libavutil,
+					ttv_ffmpeg/libavformat,
+					ttv_ffmpeg/libavcodec,
+				);
+				OTHER_LDFLAGS = (
+					"-lavcodec",
+					"-lavformat",
+					"-lavutil",
+					"-lz",
+					"-lbz2",
+					"-read_only_relocs",
+					suppress,
+				);
+				PRODUCT_NAME = TikiTV;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88FBA00B0B65E1830034EF9E /* GoodStuff.xcconfig */;
+			buildSettings = {
+				ARCHS = i386;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = s;
+				HEADER_SEARCH_PATHS = (
+					ttv_ffmpeg/libavformat,
+					ttv_ffmpeg,
+					ttv_ffmpeg/libavutil,
+					ttv_ffmpeg/libavcodec,
+				);
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					ttv_ffmpeg/libavutil,
+					ttv_ffmpeg/libavformat,
+					ttv_ffmpeg/libavcodec,
+				);
+				OTHER_LDFLAGS = (
+					"-lavcodec",
+					"-lavformat",
+					"-lavutil",
+					"-lz",
+					"-lbz2",
+					"-read_only_relocs",
+					suppress,
+				);
+				PRODUCT_NAME = TikiTV;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		883ADA690E06BEB500B1ED8E /* Build configuration list for PBXNativeTarget "tikitv_test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				883ADA6A0E06BEB500B1ED8E /* Debug */,
+				883ADA6B0E06BEB500B1ED8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88CF48160E14B26200EC6E5C /* Build configuration list for PBXNativeTarget "ttv_fullscreen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88CF48170E14B26200EC6E5C /* Debug */,
+				88CF48180E14B26200EC6E5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "TikiTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "TikiTV2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

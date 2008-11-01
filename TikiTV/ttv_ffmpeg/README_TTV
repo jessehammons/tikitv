@@ -1,0 +1,9 @@
+
+
+This copy of FFMPEG was checked into the TikiTV codebase with the configure stuff already run, compiled libs, then removed all the *.o files.  The full configure command was:
+
+  ./configure --prefix=/Users/jesse/installed --disable-decoders --disable-encoders --disable-indevs --disable-outdevs --enable-decoder=mpeg1video --enable-decoder=mpeg2video --enable-decoder=mpeg4 --enable-decoder=mpeg4aac --enable-decoder=mpeg_xvmc --enable-decoder=mpegvideo --enable-decoder=msmpeg4v1 --enable-decoder=msmpeg4v2 --enable-decoder=msmpeg4v3 --enable-decoder=h261 --enable-decoder=h263 --enable-decoder=h263i --enable-decoder=h264 --enable-decoder=svq1 --enable-decoder=svq3 --disable-vhook
+
+In theory if you want to build your own FFMPEG libs you should be able to just type "gnumake" in this directory.  If you do need to use configure, use "ttv_configure"
+
+Have Fun!
