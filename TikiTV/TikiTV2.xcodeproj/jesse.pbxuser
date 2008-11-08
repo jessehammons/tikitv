@@ -2,15 +2,14 @@
 {
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
 		activeArchitecture = i386;
-		activeBuildConfigurationName = Release;
-		activeExecutable = 88F32A710B79BE46000D334C /* TikiTV */;
-		activeTarget = 8D1107260486CEB800E47090 /* TikiTV */;
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 88F62E880EC40DB600472168 /* TikiChop */;
+		activeTarget = 88F62E860EC40DB600472168 /* TikiChop */;
 		addToTargets = (
 			8D1107260486CEB800E47090 /* TikiTV */,
 		);
 		breakpoints = (
-			88F633940EC55B3400472168 /* TTVDecoding.m:1518 */,
-			886EC2AE0EC618C600CA72C0 /* TTVDecoding.m:1428 */,
+			886EC3370EC6245400CA72C0 /* TTVDecoding.m:1401 */,
 		);
 		codeSenseManager = 88F32A7B0B79BE53000D334C /* Code sense */;
 		executables = (
@@ -236,6 +235,146 @@
 			886EC2DE0EC61D8A00CA72C0 /* PBXTextBookmark */ = 886EC2DE0EC61D8A00CA72C0 /* PBXTextBookmark */;
 			886EC2DF0EC61D8A00CA72C0 /* PBXTextBookmark */ = 886EC2DF0EC61D8A00CA72C0 /* PBXTextBookmark */;
 			886EC2E00EC61D8A00CA72C0 /* PBXTextBookmark */ = 886EC2E00EC61D8A00CA72C0 /* PBXTextBookmark */;
+			886EC2E10EC6200600CA72C0 /* PBXTextBookmark */ = 886EC2E10EC6200600CA72C0 /* PBXTextBookmark */;
+			886EC2E40EC620DB00CA72C0 /* PBXTextBookmark */ = 886EC2E40EC620DB00CA72C0 /* PBXTextBookmark */;
+			886EC2E60EC620DB00CA72C0 /* PBXTextBookmark */ = 886EC2E60EC620DB00CA72C0 /* PBXTextBookmark */;
+			886EC2E90EC620DC00CA72C0 /* PBXTextBookmark */ = 886EC2E90EC620DC00CA72C0 /* PBXTextBookmark */;
+			886EC2EA0EC620DC00CA72C0 /* PBXTextBookmark */ = 886EC2EA0EC620DC00CA72C0 /* PBXTextBookmark */;
+			886EC2EC0EC6210400CA72C0 /* PBXTextBookmark */ = 886EC2EC0EC6210400CA72C0 /* PBXTextBookmark */;
+			886EC2ED0EC6210400CA72C0 /* PBXTextBookmark */ = 886EC2ED0EC6210400CA72C0 /* PBXTextBookmark */;
+			886EC2EE0EC6210400CA72C0 /* PBXTextBookmark */ = 886EC2EE0EC6210400CA72C0 /* PBXTextBookmark */;
+			886EC2EF0EC6210400CA72C0 /* PBXTextBookmark */ = 886EC2EF0EC6210400CA72C0 /* PBXTextBookmark */;
+			886EC2F00EC6210400CA72C0 /* PBXTextBookmark */ = 886EC2F00EC6210400CA72C0 /* PBXTextBookmark */;
+			886EC2F10EC6210400CA72C0 /* PBXTextBookmark */ = 886EC2F10EC6210400CA72C0 /* PBXTextBookmark */;
+			886EC2F20EC6210400CA72C0 /* PBXTextBookmark */ = 886EC2F20EC6210400CA72C0 /* PBXTextBookmark */;
+			886EC2F30EC6210400CA72C0 /* PBXTextBookmark */ = 886EC2F30EC6210400CA72C0 /* PBXTextBookmark */;
+			886EC2F40EC6210400CA72C0 /* PBXTextBookmark */ = 886EC2F40EC6210400CA72C0 /* PBXTextBookmark */;
+			886EC2F50EC6210400CA72C0 /* PBXTextBookmark */ = 886EC2F50EC6210400CA72C0 /* PBXTextBookmark */;
+			886EC2F70EC6212800CA72C0 /* PBXTextBookmark */ = 886EC2F70EC6212800CA72C0 /* PBXTextBookmark */;
+			886EC2F80EC6212800CA72C0 /* PBXTextBookmark */ = 886EC2F80EC6212800CA72C0 /* PBXTextBookmark */;
+			886EC2FB0EC6223600CA72C0 /* PBXTextBookmark */ = 886EC2FB0EC6223600CA72C0 /* PBXTextBookmark */;
+			886EC2FC0EC6223600CA72C0 /* PBXTextBookmark */ = 886EC2FC0EC6223600CA72C0 /* PBXTextBookmark */;
+			886EC2FD0EC6223600CA72C0 /* PBXTextBookmark */ = 886EC2FD0EC6223600CA72C0 /* PBXTextBookmark */;
+			886EC2FE0EC6223600CA72C0 /* PBXTextBookmark */ = 886EC2FE0EC6223600CA72C0 /* PBXTextBookmark */;
+			886EC2FF0EC6223600CA72C0 /* PBXTextBookmark */ = 886EC2FF0EC6223600CA72C0 /* PBXTextBookmark */;
+			886EC3000EC6223600CA72C0 /* PBXTextBookmark */ = 886EC3000EC6223600CA72C0 /* PBXTextBookmark */;
+			886EC3010EC6223600CA72C0 /* PBXTextBookmark */ = 886EC3010EC6223600CA72C0 /* PBXTextBookmark */;
+			886EC3020EC6223600CA72C0 /* PBXTextBookmark */ = 886EC3020EC6223600CA72C0 /* PBXTextBookmark */;
+			886EC3030EC6223600CA72C0 /* PBXTextBookmark */ = 886EC3030EC6223600CA72C0 /* PBXTextBookmark */;
+			886EC3040EC6223600CA72C0 /* PBXTextBookmark */ = 886EC3040EC6223600CA72C0 /* PBXTextBookmark */;
+			886EC3050EC6223600CA72C0 /* PBXTextBookmark */ = 886EC3050EC6223600CA72C0 /* PBXTextBookmark */;
+			886EC3080EC6227F00CA72C0 /* PBXTextBookmark */ = 886EC3080EC6227F00CA72C0 /* PBXTextBookmark */;
+			886EC3090EC6227F00CA72C0 /* PBXTextBookmark */ = 886EC3090EC6227F00CA72C0 /* PBXTextBookmark */;
+			886EC30A0EC6227F00CA72C0 /* PBXTextBookmark */ = 886EC30A0EC6227F00CA72C0 /* PBXTextBookmark */;
+			886EC30B0EC6227F00CA72C0 /* PBXTextBookmark */ = 886EC30B0EC6227F00CA72C0 /* PBXTextBookmark */;
+			886EC30C0EC6227F00CA72C0 /* PBXTextBookmark */ = 886EC30C0EC6227F00CA72C0 /* PBXTextBookmark */;
+			886EC30D0EC6229400CA72C0 /* PBXTextBookmark */ = 886EC30D0EC6229400CA72C0 /* PBXTextBookmark */;
+			886EC30E0EC6229400CA72C0 /* PBXTextBookmark */ = 886EC30E0EC6229400CA72C0 /* PBXTextBookmark */;
+			886EC3100EC622F700CA72C0 /* PBXTextBookmark */ = 886EC3100EC622F700CA72C0 /* PBXTextBookmark */;
+			886EC3110EC622F700CA72C0 /* PBXTextBookmark */ = 886EC3110EC622F700CA72C0 /* PBXTextBookmark */;
+			886EC3130EC6230D00CA72C0 /* PBXTextBookmark */ = 886EC3130EC6230D00CA72C0 /* PBXTextBookmark */;
+			886EC3140EC6230D00CA72C0 /* PBXTextBookmark */ = 886EC3140EC6230D00CA72C0 /* PBXTextBookmark */;
+			886EC3150EC6230D00CA72C0 /* PBXTextBookmark */ = 886EC3150EC6230D00CA72C0 /* PBXTextBookmark */;
+			886EC3160EC6230D00CA72C0 /* PBXTextBookmark */ = 886EC3160EC6230D00CA72C0 /* PBXTextBookmark */;
+			886EC3170EC6230D00CA72C0 /* PBXTextBookmark */ = 886EC3170EC6230D00CA72C0 /* PBXTextBookmark */;
+			886EC3180EC6230D00CA72C0 /* PBXTextBookmark */ = 886EC3180EC6230D00CA72C0 /* PBXTextBookmark */;
+			886EC3190EC6233700CA72C0 /* PBXTextBookmark */ = 886EC3190EC6233700CA72C0 /* PBXTextBookmark */;
+			886EC31A0EC6233700CA72C0 /* PBXTextBookmark */ = 886EC31A0EC6233700CA72C0 /* PBXTextBookmark */;
+			886EC31C0EC6236200CA72C0 /* PBXTextBookmark */ = 886EC31C0EC6236200CA72C0 /* PBXTextBookmark */;
+			886EC31D0EC6236200CA72C0 /* PBXTextBookmark */ = 886EC31D0EC6236200CA72C0 /* PBXTextBookmark */;
+			886EC31E0EC6236200CA72C0 /* PBXTextBookmark */ = 886EC31E0EC6236200CA72C0 /* PBXTextBookmark */;
+			886EC31F0EC6236200CA72C0 /* PBXTextBookmark */ = 886EC31F0EC6236200CA72C0 /* PBXTextBookmark */;
+			886EC3200EC6236200CA72C0 /* PBXTextBookmark */ = 886EC3200EC6236200CA72C0 /* PBXTextBookmark */;
+			886EC3220EC6238F00CA72C0 /* PBXTextBookmark */ = 886EC3220EC6238F00CA72C0 /* PBXTextBookmark */;
+			886EC3230EC6238F00CA72C0 /* PBXTextBookmark */ = 886EC3230EC6238F00CA72C0 /* PBXTextBookmark */;
+			886EC3240EC6238F00CA72C0 /* PBXTextBookmark */ = 886EC3240EC6238F00CA72C0 /* PBXTextBookmark */;
+			886EC3250EC6238F00CA72C0 /* PBXTextBookmark */ = 886EC3250EC6238F00CA72C0 /* PBXTextBookmark */;
+			886EC3260EC6238F00CA72C0 /* PBXTextBookmark */ = 886EC3260EC6238F00CA72C0 /* PBXTextBookmark */;
+			886EC3280EC623AC00CA72C0 /* PBXTextBookmark */ = 886EC3280EC623AC00CA72C0 /* PBXTextBookmark */;
+			886EC3290EC623AC00CA72C0 /* PBXTextBookmark */ = 886EC3290EC623AC00CA72C0 /* PBXTextBookmark */;
+			886EC32A0EC623AC00CA72C0 /* PBXTextBookmark */ = 886EC32A0EC623AC00CA72C0 /* PBXTextBookmark */;
+			886EC32B0EC623AC00CA72C0 /* PBXTextBookmark */ = 886EC32B0EC623AC00CA72C0 /* PBXTextBookmark */;
+			886EC32C0EC623AC00CA72C0 /* PBXTextBookmark */ = 886EC32C0EC623AC00CA72C0 /* PBXTextBookmark */;
+			886EC32D0EC623DC00CA72C0 /* PBXTextBookmark */ = 886EC32D0EC623DC00CA72C0 /* PBXTextBookmark */;
+			886EC32E0EC623DC00CA72C0 /* PBXTextBookmark */ = 886EC32E0EC623DC00CA72C0 /* PBXTextBookmark */;
+			886EC3300EC6240800CA72C0 /* PBXTextBookmark */ = 886EC3300EC6240800CA72C0 /* PBXTextBookmark */;
+			886EC3310EC6240800CA72C0 /* PBXTextBookmark */ = 886EC3310EC6240800CA72C0 /* PBXTextBookmark */;
+			886EC3320EC6240800CA72C0 /* PBXTextBookmark */ = 886EC3320EC6240800CA72C0 /* PBXTextBookmark */;
+			886EC3330EC6240800CA72C0 /* PBXTextBookmark */ = 886EC3330EC6240800CA72C0 /* PBXTextBookmark */;
+			886EC3340EC6240800CA72C0 /* PBXTextBookmark */ = 886EC3340EC6240800CA72C0 /* PBXTextBookmark */;
+			886EC3390EC6245F00CA72C0 /* PBXTextBookmark */ = 886EC3390EC6245F00CA72C0 /* PBXTextBookmark */;
+			886EC33A0EC6245F00CA72C0 /* PBXTextBookmark */ = 886EC33A0EC6245F00CA72C0 /* PBXTextBookmark */;
+			886EC33B0EC6245F00CA72C0 /* PBXTextBookmark */ = 886EC33B0EC6245F00CA72C0 /* PBXTextBookmark */;
+			886EC33C0EC6245F00CA72C0 /* PBXTextBookmark */ = 886EC33C0EC6245F00CA72C0 /* PBXTextBookmark */;
+			886EC33D0EC6245F00CA72C0 /* PBXTextBookmark */ = 886EC33D0EC6245F00CA72C0 /* PBXTextBookmark */;
+			886EC33E0EC6245F00CA72C0 /* PBXTextBookmark */ = 886EC33E0EC6245F00CA72C0 /* PBXTextBookmark */;
+			886EC33F0EC624A300CA72C0 /* PBXTextBookmark */ = 886EC33F0EC624A300CA72C0 /* PBXTextBookmark */;
+			886EC3400EC624A300CA72C0 /* PBXTextBookmark */ = 886EC3400EC624A300CA72C0 /* PBXTextBookmark */;
+			886EC3410EC624A300CA72C0 /* PBXTextBookmark */ = 886EC3410EC624A300CA72C0 /* PBXTextBookmark */;
+			886EC3420EC624A300CA72C0 /* PBXTextBookmark */ = 886EC3420EC624A300CA72C0 /* PBXTextBookmark */;
+			886EC3430EC624AF00CA72C0 /* PBXTextBookmark */ = 886EC3430EC624AF00CA72C0 /* PBXTextBookmark */;
+			886EC3440EC624AF00CA72C0 /* PBXTextBookmark */ = 886EC3440EC624AF00CA72C0 /* PBXTextBookmark */;
+			886EC3450EC624AF00CA72C0 /* PBXTextBookmark */ = 886EC3450EC624AF00CA72C0 /* PBXTextBookmark */;
+			886EC3460EC624AF00CA72C0 /* PBXTextBookmark */ = 886EC3460EC624AF00CA72C0 /* PBXTextBookmark */;
+			886EC3470EC624AF00CA72C0 /* PBXTextBookmark */ = 886EC3470EC624AF00CA72C0 /* PBXTextBookmark */;
+			886EC34A0EC624F200CA72C0 /* PBXTextBookmark */ = 886EC34A0EC624F200CA72C0 /* PBXTextBookmark */;
+			886EC34B0EC624F200CA72C0 /* PBXTextBookmark */ = 886EC34B0EC624F200CA72C0 /* PBXTextBookmark */;
+			886EC34C0EC624F200CA72C0 /* PBXTextBookmark */ = 886EC34C0EC624F200CA72C0 /* PBXTextBookmark */;
+			886EC34D0EC624F200CA72C0 /* PBXTextBookmark */ = 886EC34D0EC624F200CA72C0 /* PBXTextBookmark */;
+			886EC34E0EC624F200CA72C0 /* PBXTextBookmark */ = 886EC34E0EC624F200CA72C0 /* PBXTextBookmark */;
+			886EC34F0EC6253700CA72C0 /* PBXTextBookmark */ = 886EC34F0EC6253700CA72C0 /* PBXTextBookmark */;
+			886EC3500EC6253700CA72C0 /* PBXTextBookmark */ = 886EC3500EC6253700CA72C0 /* PBXTextBookmark */;
+			886EC3510EC6253700CA72C0 /* PBXTextBookmark */ = 886EC3510EC6253700CA72C0 /* PBXTextBookmark */;
+			886EC3520EC6253700CA72C0 /* PBXTextBookmark */ = 886EC3520EC6253700CA72C0 /* PBXTextBookmark */;
+			886EC3530EC6253700CA72C0 /* PBXTextBookmark */ = 886EC3530EC6253700CA72C0 /* PBXTextBookmark */;
+			886EC3560EC6254700CA72C0 /* PBXTextBookmark */ = 886EC3560EC6254700CA72C0 /* PBXTextBookmark */;
+			886EC3570EC6254700CA72C0 /* PBXTextBookmark */ = 886EC3570EC6254700CA72C0 /* PBXTextBookmark */;
+			886EC3580EC6254700CA72C0 /* PBXTextBookmark */ = 886EC3580EC6254700CA72C0 /* PBXTextBookmark */;
+			886EC3590EC6254700CA72C0 /* PBXTextBookmark */ = 886EC3590EC6254700CA72C0 /* PBXTextBookmark */;
+			886EC35A0EC6254700CA72C0 /* PBXTextBookmark */ = 886EC35A0EC6254700CA72C0 /* PBXTextBookmark */;
+			886EC35B0EC6257800CA72C0 /* PBXTextBookmark */ = 886EC35B0EC6257800CA72C0 /* PBXTextBookmark */;
+			886EC35C0EC6257800CA72C0 /* PBXTextBookmark */ = 886EC35C0EC6257800CA72C0 /* PBXTextBookmark */;
+			886EC35D0EC625C500CA72C0 /* PBXTextBookmark */ = 886EC35D0EC625C500CA72C0 /* PBXTextBookmark */;
+			886EC35E0EC625C500CA72C0 /* PBXTextBookmark */ = 886EC35E0EC625C500CA72C0 /* PBXTextBookmark */;
+			886EC35F0EC625C500CA72C0 /* PBXTextBookmark */ = 886EC35F0EC625C500CA72C0 /* PBXTextBookmark */;
+			886EC3600EC625C500CA72C0 /* PBXTextBookmark */ = 886EC3600EC625C500CA72C0 /* PBXTextBookmark */;
+			886EC3610EC625C500CA72C0 /* PBXTextBookmark */ = 886EC3610EC625C500CA72C0 /* PBXTextBookmark */;
+			886EC3640EC626BB00CA72C0 /* PBXTextBookmark */ = 886EC3640EC626BB00CA72C0 /* PBXTextBookmark */;
+			886EC3650EC626BB00CA72C0 /* PBXTextBookmark */ = 886EC3650EC626BB00CA72C0 /* PBXTextBookmark */;
+			886EC3660EC626BB00CA72C0 /* PBXTextBookmark */ = 886EC3660EC626BB00CA72C0 /* PBXTextBookmark */;
+			886EC3670EC626BB00CA72C0 /* PBXTextBookmark */ = 886EC3670EC626BB00CA72C0 /* PBXTextBookmark */;
+			886EC3680EC626BB00CA72C0 /* PBXTextBookmark */ = 886EC3680EC626BB00CA72C0 /* PBXTextBookmark */;
+			886EC36A0EC626DB00CA72C0 /* PBXTextBookmark */ = 886EC36A0EC626DB00CA72C0 /* PBXTextBookmark */;
+			886EC36B0EC626DB00CA72C0 /* PBXTextBookmark */ = 886EC36B0EC626DB00CA72C0 /* PBXTextBookmark */;
+			886EC36C0EC626DB00CA72C0 /* PBXTextBookmark */ = 886EC36C0EC626DB00CA72C0 /* PBXTextBookmark */;
+			886EC36D0EC626DB00CA72C0 /* PBXTextBookmark */ = 886EC36D0EC626DB00CA72C0 /* PBXTextBookmark */;
+			886EC36E0EC626DB00CA72C0 /* PBXTextBookmark */ = 886EC36E0EC626DB00CA72C0 /* PBXTextBookmark */;
+			886EC3710EC629E300CA72C0 /* PBXTextBookmark */ = 886EC3710EC629E300CA72C0 /* PBXTextBookmark */;
+			886EC3720EC629E300CA72C0 /* PBXTextBookmark */ = 886EC3720EC629E300CA72C0 /* PBXTextBookmark */;
+			886EC3730EC629E300CA72C0 /* PBXTextBookmark */ = 886EC3730EC629E300CA72C0 /* PBXTextBookmark */;
+			886EC3740EC629E300CA72C0 /* PBXTextBookmark */ = 886EC3740EC629E300CA72C0 /* PBXTextBookmark */;
+			886EC3750EC629E300CA72C0 /* PBXTextBookmark */ = 886EC3750EC629E300CA72C0 /* PBXTextBookmark */;
+			886EC3760EC629E300CA72C0 /* PBXTextBookmark */ = 886EC3760EC629E300CA72C0 /* PBXTextBookmark */;
+			886EC3770EC629E300CA72C0 /* PBXTextBookmark */ = 886EC3770EC629E300CA72C0 /* PBXTextBookmark */;
+			886EC3780EC629E300CA72C0 /* PBXTextBookmark */ = 886EC3780EC629E300CA72C0 /* PBXTextBookmark */;
+			886EC3790EC629E300CA72C0 /* PBXTextBookmark */ = 886EC3790EC629E300CA72C0 /* PBXTextBookmark */;
+			886EC37B0EC62B4D00CA72C0 /* PBXTextBookmark */ = 886EC37B0EC62B4D00CA72C0 /* PBXTextBookmark */;
+			886EC37C0EC62B4D00CA72C0 /* PBXTextBookmark */ = 886EC37C0EC62B4D00CA72C0 /* PBXTextBookmark */;
+			886EC37D0EC62B4D00CA72C0 /* PBXTextBookmark */ = 886EC37D0EC62B4D00CA72C0 /* PBXTextBookmark */;
+			886EC37E0EC62B4D00CA72C0 /* PBXTextBookmark */ = 886EC37E0EC62B4D00CA72C0 /* PBXTextBookmark */;
+			886EC37F0EC62B4D00CA72C0 /* PBXTextBookmark */ = 886EC37F0EC62B4D00CA72C0 /* PBXTextBookmark */;
+			886EC3800EC633C200CA72C0 /* PBXTextBookmark */ = 886EC3800EC633C200CA72C0 /* PBXTextBookmark */;
+			886EC3810EC633C200CA72C0 /* PBXTextBookmark */ = 886EC3810EC633C200CA72C0 /* PBXTextBookmark */;
+			886EC3820EC633C400CA72C0 /* PBXTextBookmark */ = 886EC3820EC633C400CA72C0 /* PBXTextBookmark */;
+			886EC3830EC633C400CA72C0 /* PBXTextBookmark */ = 886EC3830EC633C400CA72C0 /* PBXTextBookmark */;
+			886EC3840EC633C400CA72C0 /* PBXTextBookmark */ = 886EC3840EC633C400CA72C0 /* PBXTextBookmark */;
+			886EC3850EC633C400CA72C0 /* PBXTextBookmark */ = 886EC3850EC633C400CA72C0 /* PBXTextBookmark */;
+			886EC3860EC633C400CA72C0 /* PBXTextBookmark */ = 886EC3860EC633C400CA72C0 /* PBXTextBookmark */;
+			886EC3870EC633D100CA72C0 /* PBXTextBookmark */ = 886EC3870EC633D100CA72C0 /* PBXTextBookmark */;
+			886EC3880EC633D100CA72C0 /* PBXTextBookmark */ = 886EC3880EC633D100CA72C0 /* PBXTextBookmark */;
+			886EC3890EC633D100CA72C0 /* PBXTextBookmark */ = 886EC3890EC633D100CA72C0 /* PBXTextBookmark */;
+			886EC38A0EC633D100CA72C0 /* PBXTextBookmark */ = 886EC38A0EC633D100CA72C0 /* PBXTextBookmark */;
+			886EC38B0EC633D100CA72C0 /* PBXTextBookmark */ = 886EC38B0EC633D100CA72C0 /* PBXTextBookmark */;
 			88F637FB0EC6050800472168 = 88F637FB0EC6050800472168 /* PBXTextBookmark */;
 			88F82DF90EBC207800CCAAA8 = 88F82DF90EBC207800CCAAA8 /* PBXTextBookmark */;
 		};
@@ -354,9 +493,9 @@
 	};
 	883ADCF00E0768CD00B1ED8E /* TTVMPEGSlicer.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1090, 3038}}";
-			sepNavSelRange = "{566, 11}";
-			sepNavVisRange = "{132, 962}";
+			sepNavIntBoundsRect = "{{0, 0}, {1090, 2968}}";
+			sepNavSelRange = "{2300, 0}";
+			sepNavVisRange = "{1671, 891}";
 			sepNavVisRect = "{{0, 392}, {1110, 398}}";
 			sepNavWindowFrame = "{{68, 251}, {1149, 471}}";
 		};
@@ -408,7 +547,7 @@
 		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
 		name = "TTVDecoding.m: 1559";
 		rLen = 0;
-		rLoc = 44506;
+		rLoc = 44853;
 		rType = 0;
 		vrLen = 1110;
 		vrLoc = 44136;
@@ -428,7 +567,7 @@
 		fRef = 88A0BAA70E5944FF00DD4DC9 /* TTVDecoding.h */;
 		name = "TTVDecoding.h: 390";
 		rLen = 27;
-		rLoc = 8823;
+		rLoc = 8967;
 		rType = 0;
 		vrLen = 834;
 		vrLoc = 8251;
@@ -438,7 +577,7 @@
 		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
 		name = "TTVDecoding.m: 1732";
 		rLen = 0;
-		rLoc = 48507;
+		rLoc = 48856;
 		rType = 0;
 		vrLen = 751;
 		vrLoc = 48107;
@@ -448,7 +587,7 @@
 		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
 		name = "TTVDecoding.m: 1627";
 		rLen = 17;
-		rLoc = 45918;
+		rLoc = 46267;
 		rType = 0;
 		vrLen = 1000;
 		vrLoc = 46061;
@@ -458,7 +597,7 @@
 		fRef = 88A0BAA70E5944FF00DD4DC9 /* TTVDecoding.h */;
 		name = "TTVDecoding.h: 384";
 		rLen = 0;
-		rLoc = 8736;
+		rLoc = 8880;
 		rType = 0;
 		vrLen = 828;
 		vrLoc = 7829;
@@ -468,7 +607,7 @@
 		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
 		name = "TTVDecoding.m: 1627";
 		rLen = 17;
-		rLoc = 45918;
+		rLoc = 46267;
 		rType = 0;
 		vrLen = 1112;
 		vrLoc = 46143;
@@ -478,7 +617,7 @@
 		fRef = 88A0BAA70E5944FF00DD4DC9 /* TTVDecoding.h */;
 		name = "TTVDecoding.h: 384";
 		rLen = 0;
-		rLoc = 8736;
+		rLoc = 8880;
 		rType = 0;
 		vrLen = 828;
 		vrLoc = 7829;
@@ -488,7 +627,7 @@
 		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
 		name = "TTVDecoding.m: 1627";
 		rLen = 17;
-		rLoc = 45918;
+		rLoc = 46267;
 		rType = 0;
 		vrLen = 1112;
 		vrLoc = 46143;
@@ -498,7 +637,7 @@
 		fRef = 88A0BAA70E5944FF00DD4DC9 /* TTVDecoding.h */;
 		name = "TTVDecoding.h: 393";
 		rLen = 0;
-		rLoc = 8967;
+		rLoc = 9111;
 		rType = 0;
 		vrLen = 859;
 		vrLoc = 8251;
@@ -508,7 +647,7 @@
 		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
 		name = "TTVDecoding.m: 1596";
 		rLen = 15;
-		rLoc = 45273;
+		rLoc = 45620;
 		rType = 0;
 		vrLen = 755;
 		vrLoc = 44881;
@@ -518,7 +657,7 @@
 		fRef = 88A0BAA70E5944FF00DD4DC9 /* TTVDecoding.h */;
 		name = "TTVDecoding.h: 384";
 		rLen = 282;
-		rLoc = 8691;
+		rLoc = 8835;
 		rType = 0;
 		vrLen = 859;
 		vrLoc = 8251;
@@ -528,7 +667,7 @@
 		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
 		name = "TTVDecoding.m: 1728";
 		rLen = 0;
-		rLoc = 48599;
+		rLoc = 48948;
 		rType = 0;
 		vrLen = 854;
 		vrLoc = 48065;
@@ -538,7 +677,7 @@
 		fRef = 88A0BAA70E5944FF00DD4DC9 /* TTVDecoding.h */;
 		name = "TTVDecoding.h: 384";
 		rLen = 282;
-		rLoc = 8691;
+		rLoc = 8835;
 		rType = 0;
 		vrLen = 859;
 		vrLoc = 8251;
@@ -548,7 +687,7 @@
 		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
 		name = "TTVDecoding.m: 1729";
 		rLen = 0;
-		rLoc = 48599;
+		rLoc = 48948;
 		rType = 0;
 		vrLen = 806;
 		vrLoc = 48065;
@@ -558,7 +697,7 @@
 		fRef = 88A0BAA70E5944FF00DD4DC9 /* TTVDecoding.h */;
 		name = "TTVDecoding.h: 387";
 		rLen = 0;
-		rLoc = 8784;
+		rLoc = 8928;
 		rType = 0;
 		vrLen = 857;
 		vrLoc = 8251;
@@ -568,7 +707,7 @@
 		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
 		name = "TTVDecoding.m: 1727";
 		rLen = 0;
-		rLoc = 48412;
+		rLoc = 48761;
 		rType = 0;
 		vrLen = 811;
 		vrLoc = 48065;
@@ -578,7 +717,7 @@
 		fRef = 88A0BAA70E5944FF00DD4DC9 /* TTVDecoding.h */;
 		name = "TTVDecoding.h: 387";
 		rLen = 0;
-		rLoc = 8784;
+		rLoc = 8928;
 		rType = 0;
 		vrLen = 862;
 		vrLoc = 8251;
@@ -588,7 +727,7 @@
 		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
 		name = "TTVDecoding.m: 1733";
 		rLen = 0;
-		rLoc = 48779;
+		rLoc = 49128;
 		rType = 0;
 		vrLen = 717;
 		vrLoc = 48065;
@@ -598,7 +737,7 @@
 		fRef = 88A0BAA70E5944FF00DD4DC9 /* TTVDecoding.h */;
 		name = "TTVDecoding.h: 390";
 		rLen = 22;
-		rLoc = 8851;
+		rLoc = 8995;
 		rType = 0;
 		vrLen = 808;
 		vrLoc = 8251;
@@ -608,7 +747,7 @@
 		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
 		name = "TTVDecoding.m: 1732";
 		rLen = 0;
-		rLoc = 48507;
+		rLoc = 48856;
 		rType = 0;
 		vrLen = 751;
 		vrLoc = 48107;
@@ -618,7 +757,7 @@
 		fRef = 88A0BAA70E5944FF00DD4DC9 /* TTVDecoding.h */;
 		name = "TTVDecoding.h: 390";
 		rLen = 27;
-		rLoc = 8823;
+		rLoc = 8967;
 		rType = 0;
 		vrLen = 834;
 		vrLoc = 8251;
@@ -628,7 +767,7 @@
 		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
 		name = "TTVDecoding.m: 1728";
 		rLen = 0;
-		rLoc = 48408;
+		rLoc = 48757;
 		rType = 0;
 		vrLen = 709;
 		vrLoc = 48065;
@@ -652,7 +791,7 @@
 		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
 		name = "TTVDecoding.m: 1734";
 		rLen = 0;
-		rLoc = 48336;
+		rLoc = 48685;
 		rType = 0;
 		vrLen = 829;
 		vrLoc = 48205;
@@ -662,7 +801,7 @@
 		fRef = 88A0BAA70E5944FF00DD4DC9 /* TTVDecoding.h */;
 		name = "TTVDecoding.h: 352";
 		rLen = 8;
-		rLoc = 8063;
+		rLoc = 8207;
 		rType = 0;
 		vrLen = 920;
 		vrLoc = 7366;
@@ -672,7 +811,7 @@
 		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
 		name = "TTVDecoding.m: 1734";
 		rLen = 97;
-		rLoc = 48312;
+		rLoc = 48661;
 		rType = 0;
 		vrLen = 883;
 		vrLoc = 48205;
@@ -682,7 +821,7 @@
 		fRef = 88A0BAA70E5944FF00DD4DC9 /* TTVDecoding.h */;
 		name = "TTVDecoding.h: 342";
 		rLen = 34;
-		rLoc = 7822;
+		rLoc = 7966;
 		rType = 0;
 		vrLen = 920;
 		vrLoc = 7366;
@@ -692,7 +831,7 @@
 		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
 		name = "TTVDecoding.m: 1734";
 		rLen = 97;
-		rLoc = 48312;
+		rLoc = 48661;
 		rType = 0;
 		vrLen = 829;
 		vrLoc = 48205;
@@ -702,7 +841,7 @@
 		fRef = 88A0BAA70E5944FF00DD4DC9 /* TTVDecoding.h */;
 		name = "TTVDecoding.h: 352";
 		rLen = 8;
-		rLoc = 8063;
+		rLoc = 8207;
 		rType = 0;
 		vrLen = 920;
 		vrLoc = 7366;
@@ -712,7 +851,7 @@
 		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
 		name = "TTVDecoding.m: 1734";
 		rLen = 0;
-		rLoc = 48336;
+		rLoc = 48685;
 		rType = 0;
 		vrLen = 829;
 		vrLoc = 48205;
@@ -722,7 +861,7 @@
 		fRef = 88A0BAA70E5944FF00DD4DC9 /* TTVDecoding.h */;
 		name = "TTVDecoding.h: 352";
 		rLen = 0;
-		rLoc = 8072;
+		rLoc = 8216;
 		rType = 0;
 		vrLen = 918;
 		vrLoc = 7366;
@@ -732,7 +871,7 @@
 		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
 		name = "TTVDecoding.m: 1762";
 		rLen = 0;
-		rLoc = 48964;
+		rLoc = 49313;
 		rType = 0;
 		vrLen = 816;
 		vrLoc = 48720;
@@ -742,7 +881,7 @@
 		fRef = 88A0BAA70E5944FF00DD4DC9 /* TTVDecoding.h */;
 		name = "TTVDecoding.h: 342";
 		rLen = 34;
-		rLoc = 7822;
+		rLoc = 7966;
 		rType = 0;
 		vrLen = 977;
 		vrLoc = 7257;
@@ -752,7 +891,7 @@
 		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
 		name = "TTVDecoding.m: 1744";
 		rLen = 0;
-		rLoc = 48779;
+		rLoc = 49128;
 		rType = 0;
 		vrLen = 1046;
 		vrLoc = 48451;
@@ -762,7 +901,7 @@
 		fRef = 88A0BAA70E5944FF00DD4DC9 /* TTVDecoding.h */;
 		name = "TTVDecoding.h: 393";
 		rLen = 24;
-		rLoc = 8899;
+		rLoc = 9043;
 		rType = 0;
 		vrLen = 735;
 		vrLoc = 8251;
@@ -772,7 +911,7 @@
 		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
 		name = "TTVDecoding.m: 1748";
 		rLen = 0;
-		rLoc = 48726;
+		rLoc = 49075;
 		rType = 0;
 		vrLen = 890;
 		vrLoc = 48451;
@@ -782,7 +921,7 @@
 		fRef = 88A0BAA70E5944FF00DD4DC9 /* TTVDecoding.h */;
 		name = "TTVDecoding.h: 342";
 		rLen = 34;
-		rLoc = 7822;
+		rLoc = 7966;
 		rType = 0;
 		vrLen = 977;
 		vrLoc = 7257;
@@ -792,7 +931,7 @@
 		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
 		name = "TTVDecoding.m: 1762";
 		rLen = 0;
-		rLoc = 48964;
+		rLoc = 49313;
 		rType = 0;
 		vrLen = 816;
 		vrLoc = 48720;
@@ -802,7 +941,7 @@
 		fRef = 88A0BAA70E5944FF00DD4DC9 /* TTVDecoding.h */;
 		name = "TTVDecoding.h: 397";
 		rLen = 0;
-		rLoc = 8967;
+		rLoc = 9111;
 		rType = 0;
 		vrLen = 806;
 		vrLoc = 8395;
@@ -874,7 +1013,7 @@
 		fRef = 88A0BAA70E5944FF00DD4DC9 /* TTVDecoding.h */;
 		name = "TTVDecoding.h: 352";
 		rLen = 0;
-		rLoc = 8072;
+		rLoc = 8216;
 		rType = 0;
 		vrLen = 920;
 		vrLoc = 7366;
@@ -884,7 +1023,7 @@
 		fRef = 88A0BAA70E5944FF00DD4DC9 /* TTVDecoding.h */;
 		name = "TTVDecoding.h: 397";
 		rLen = 0;
-		rLoc = 8967;
+		rLoc = 9111;
 		rType = 0;
 		vrLen = 870;
 		vrLoc = 8395;
@@ -914,7 +1053,7 @@
 		fRef = 88A0BAA70E5944FF00DD4DC9 /* TTVDecoding.h */;
 		name = "TTVDecoding.h: 337";
 		rLen = 16;
-		rLoc = 7694;
+		rLoc = 7838;
 		rType = 0;
 		vrLen = 913;
 		vrLoc = 6951;
@@ -924,7 +1063,7 @@
 		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
 		name = "TTVDecoding.m: 1734";
 		rLen = 0;
-		rLoc = 48336;
+		rLoc = 48685;
 		rType = 0;
 		vrLen = 829;
 		vrLoc = 48205;
@@ -934,7 +1073,7 @@
 		fRef = 88A0BAA70E5944FF00DD4DC9 /* TTVDecoding.h */;
 		name = "TTVDecoding.h: 352";
 		rLen = 0;
-		rLoc = 8072;
+		rLoc = 8216;
 		rType = 0;
 		vrLen = 920;
 		vrLoc = 7366;
@@ -944,7 +1083,7 @@
 		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
 		name = "TTVDecoding.m: 1734";
 		rLen = 0;
-		rLoc = 48336;
+		rLoc = 48685;
 		rType = 0;
 		vrLen = 829;
 		vrLoc = 48205;
@@ -954,7 +1093,7 @@
 		fRef = 88A0BAA70E5944FF00DD4DC9 /* TTVDecoding.h */;
 		name = "TTVDecoding.h: 337";
 		rLen = 16;
-		rLoc = 7694;
+		rLoc = 7838;
 		rType = 0;
 		vrLen = 913;
 		vrLoc = 6951;
@@ -964,7 +1103,7 @@
 		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
 		name = "TTVDecoding.m: 1530";
 		rLen = 0;
-		rLoc = 44054;
+		rLoc = 44401;
 		rType = 0;
 		vrLen = 1229;
 		vrLoc = 43373;
@@ -974,7 +1113,7 @@
 		fRef = 88A0BAA70E5944FF00DD4DC9 /* TTVDecoding.h */;
 		name = "TTVDecoding.h: 397";
 		rLen = 0;
-		rLoc = 8967;
+		rLoc = 9111;
 		rType = 0;
 		vrLen = 806;
 		vrLoc = 8395;
@@ -1004,7 +1143,7 @@
 		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
 		name = "TTVDecoding.m: 1732";
 		rLen = 0;
-		rLoc = 48669;
+		rLoc = 49018;
 		rType = 0;
 		vrLen = 777;
 		vrLoc = 48233;
@@ -1014,7 +1153,7 @@
 		fRef = 88A0BAA70E5944FF00DD4DC9 /* TTVDecoding.h */;
 		name = "TTVDecoding.h: 397";
 		rLen = 0;
-		rLoc = 8967;
+		rLoc = 9111;
 		rType = 0;
 		vrLen = 806;
 		vrLoc = 8395;
@@ -1043,7 +1182,7 @@
 		isa = PBXTextBookmark;
 		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
 		rLen = 1;
-		rLoc = 1418;
+		rLoc = 1428;
 		rType = 1;
 	};
 	886EC28B0EC6158000CA72C0 /* PBXTextBookmark */ = {
@@ -1051,7 +1190,7 @@
 		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
 		name = "TTVDecoding.m: 1401";
 		rLen = 0;
-		rLoc = 41004;
+		rLoc = 41335;
 		rType = 0;
 		vrLen = 933;
 		vrLoc = 39749;
@@ -1061,7 +1200,7 @@
 		fRef = 88A0BAA70E5944FF00DD4DC9 /* TTVDecoding.h */;
 		name = "TTVDecoding.h: 397";
 		rLen = 0;
-		rLoc = 8967;
+		rLoc = 9111;
 		rType = 0;
 		vrLen = 806;
 		vrLoc = 8395;
@@ -1091,7 +1230,7 @@
 		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
 		name = "TTVDecoding.m: 1389";
 		rLen = 0;
-		rLoc = 40355;
+		rLoc = 40686;
 		rType = 0;
 		vrLen = 997;
 		vrLoc = 39604;
@@ -1101,7 +1240,7 @@
 		fRef = 88A0BAA70E5944FF00DD4DC9 /* TTVDecoding.h */;
 		name = "TTVDecoding.h: 329";
 		rLen = 31;
-		rLoc = 7462;
+		rLoc = 7574;
 		rType = 0;
 		vrLen = 809;
 		vrLoc = 7091;
@@ -1111,7 +1250,7 @@
 		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
 		name = "TTVDecoding.m: 1421";
 		rLen = 0;
-		rLoc = 41062;
+		rLoc = 41393;
 		rType = 0;
 		vrLen = 1028;
 		vrLoc = 40775;
@@ -1121,7 +1260,7 @@
 		fRef = 88A0BAA70E5944FF00DD4DC9 /* TTVDecoding.h */;
 		name = "TTVDecoding.h: 329";
 		rLen = 31;
-		rLoc = 7462;
+		rLoc = 7574;
 		rType = 0;
 		vrLen = 911;
 		vrLoc = 6951;
@@ -1131,7 +1270,7 @@
 		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
 		name = "TTVDecoding.m: 1387";
 		rLen = 0;
-		rLoc = 40375;
+		rLoc = 40706;
 		rType = 0;
 		vrLen = 1072;
 		vrLoc = 39978;
@@ -1141,7 +1280,7 @@
 		fRef = 88A0BAA70E5944FF00DD4DC9 /* TTVDecoding.h */;
 		name = "TTVDecoding.h: 329";
 		rLen = 31;
-		rLoc = 7462;
+		rLoc = 7574;
 		rType = 0;
 		vrLen = 911;
 		vrLoc = 6951;
@@ -1151,7 +1290,7 @@
 		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
 		name = "TTVDecoding.m: 1389";
 		rLen = 81;
-		rLoc = 40278;
+		rLoc = 40609;
 		rType = 0;
 		vrLen = 1033;
 		vrLoc = 39749;
@@ -1161,7 +1300,7 @@
 		fRef = 88A0BAA70E5944FF00DD4DC9 /* TTVDecoding.h */;
 		name = "TTVDecoding.h: 329";
 		rLen = 31;
-		rLoc = 7462;
+		rLoc = 7574;
 		rType = 0;
 		vrLen = 809;
 		vrLoc = 7091;
@@ -1171,7 +1310,7 @@
 		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
 		name = "TTVDecoding.m: 1389";
 		rLen = 0;
-		rLoc = 40355;
+		rLoc = 40686;
 		rType = 0;
 		vrLen = 997;
 		vrLoc = 39604;
@@ -1181,7 +1320,7 @@
 		fRef = 88A0BAA70E5944FF00DD4DC9 /* TTVDecoding.h */;
 		name = "TTVDecoding.h: 329";
 		rLen = 0;
-		rLoc = 7493;
+		rLoc = 7605;
 		rType = 0;
 		vrLen = 771;
 		vrLoc = 7091;
@@ -1191,7 +1330,7 @@
 		fRef = 88A0BAA70E5944FF00DD4DC9 /* TTVDecoding.h */;
 		name = "TTVDecoding.h: 397";
 		rLen = 0;
-		rLoc = 8967;
+		rLoc = 9111;
 		rType = 0;
 		vrLen = 754;
 		vrLoc = 8145;
@@ -1211,7 +1350,7 @@
 		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
 		name = "TTVDecoding.m: 1389";
 		rLen = 0;
-		rLoc = 40355;
+		rLoc = 40686;
 		rType = 0;
 		vrLen = 378;
 		vrLoc = 39978;
@@ -1229,7 +1368,7 @@
 		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
 		name = "TTVDecoding.m: 1389";
 		rLen = 0;
-		rLoc = 40355;
+		rLoc = 40686;
 		rType = 0;
 		vrLen = 378;
 		vrLoc = 39978;
@@ -1269,7 +1408,7 @@
 		fRef = 88A0BAA70E5944FF00DD4DC9 /* TTVDecoding.h */;
 		name = "TTVDecoding.h: 329";
 		rLen = 0;
-		rLoc = 7493;
+		rLoc = 7605;
 		rType = 0;
 		vrLen = 924;
 		vrLoc = 7221;
@@ -1279,7 +1418,7 @@
 		fRef = 88A0BAA70E5944FF00DD4DC9 /* TTVDecoding.h */;
 		name = "TTVDecoding.h: 397";
 		rLen = 0;
-		rLoc = 8967;
+		rLoc = 9111;
 		rType = 0;
 		vrLen = 754;
 		vrLoc = 8145;
@@ -1299,27 +1438,10 @@
 		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
 		name = "TTVDecoding.m: 1389";
 		rLen = 0;
-		rLoc = 40355;
+		rLoc = 40686;
 		rType = 0;
 		vrLen = 378;
 		vrLoc = 39978;
-	};
-	886EC2AE0EC618C600CA72C0 /* TTVDecoding.m:1428 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
-		functionName = "-skipForward";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 1428;
-		location = TikiTV;
-		modificationTime = 247863794.586085;
-		state = 1;
 	};
 	886EC2B00EC618CD00CA72C0 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -1336,7 +1458,7 @@
 		fRef = 88A0BAA70E5944FF00DD4DC9 /* TTVDecoding.h */;
 		name = "TTVDecoding.h: 329";
 		rLen = 0;
-		rLoc = 7493;
+		rLoc = 7605;
 		rType = 0;
 		vrLen = 988;
 		vrLoc = 7221;
@@ -1346,7 +1468,7 @@
 		fRef = 88A0BAA70E5944FF00DD4DC9 /* TTVDecoding.h */;
 		name = "TTVDecoding.h: 329";
 		rLen = 0;
-		rLoc = 7493;
+		rLoc = 7605;
 		rType = 0;
 		vrLen = 988;
 		vrLoc = 7221;
@@ -1356,7 +1478,7 @@
 		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
 		name = "TTVDecoding.m: 1389";
 		rLen = 0;
-		rLoc = 40355;
+		rLoc = 40686;
 		rType = 0;
 		vrLen = 951;
 		vrLoc = 40356;
@@ -1366,7 +1488,7 @@
 		fRef = 88A0BAA70E5944FF00DD4DC9 /* TTVDecoding.h */;
 		name = "TTVDecoding.h: 397";
 		rLen = 0;
-		rLoc = 8967;
+		rLoc = 9111;
 		rType = 0;
 		vrLen = 754;
 		vrLoc = 8145;
@@ -1399,7 +1521,7 @@
 		isa = PBXTextBookmark;
 		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
 		rLen = 1;
-		rLoc = 1607;
+		rLoc = 1617;
 		rType = 1;
 	};
 	886EC2BF0EC61A4A00CA72C0 /* PBXTextBookmark */ = {
@@ -1407,7 +1529,7 @@
 		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
 		name = "TTVDecoding.m: 1603";
 		rLen = 0;
-		rLoc = 45713;
+		rLoc = 46061;
 		rType = 0;
 		vrLen = 835;
 		vrLoc = 44900;
@@ -1427,7 +1549,7 @@
 		fRef = 88A0BAA70E5944FF00DD4DC9 /* TTVDecoding.h */;
 		name = "TTVDecoding.h: 397";
 		rLen = 0;
-		rLoc = 8967;
+		rLoc = 9111;
 		rType = 0;
 		vrLen = 754;
 		vrLoc = 8145;
@@ -1447,7 +1569,7 @@
 		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
 		name = "TTVDecoding.m: 1389";
 		rLen = 0;
-		rLoc = 40355;
+		rLoc = 40686;
 		rType = 0;
 		vrLen = 378;
 		vrLoc = 39978;
@@ -1467,7 +1589,7 @@
 		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
 		name = "TTVDecoding.m: 1603";
 		rLen = 0;
-		rLoc = 45713;
+		rLoc = 46061;
 		rType = 0;
 		vrLen = 835;
 		vrLoc = 44900;
@@ -1487,7 +1609,7 @@
 		fRef = 88A0BAA70E5944FF00DD4DC9 /* TTVDecoding.h */;
 		name = "TTVDecoding.h: 397";
 		rLen = 0;
-		rLoc = 8967;
+		rLoc = 9111;
 		rType = 0;
 		vrLen = 754;
 		vrLoc = 8145;
@@ -1516,7 +1638,7 @@
 		isa = PBXTextBookmark;
 		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
 		rLen = 1;
-		rLoc = 1418;
+		rLoc = 1428;
 		rType = 1;
 	};
 	886EC2D10EC61CA600CA72C0 /* PBXTextBookmark */ = {
@@ -1524,7 +1646,7 @@
 		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
 		name = "TTVDecoding.m: 1416";
 		rLen = 0;
-		rLoc = 40943;
+		rLoc = 41274;
 		rType = 0;
 		vrLen = 909;
 		vrLoc = 40097;
@@ -1544,7 +1666,7 @@
 		fRef = 88A0BAA70E5944FF00DD4DC9 /* TTVDecoding.h */;
 		name = "TTVDecoding.h: 397";
 		rLen = 0;
-		rLoc = 8967;
+		rLoc = 9111;
 		rType = 0;
 		vrLen = 754;
 		vrLoc = 8145;
@@ -1584,7 +1706,7 @@
 		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
 		name = "TTVDecoding.m: 1416";
 		rLen = 0;
-		rLoc = 40943;
+		rLoc = 41274;
 		rType = 0;
 		vrLen = 909;
 		vrLoc = 40097;
@@ -1594,7 +1716,7 @@
 		fRef = 88A0BAA70E5944FF00DD4DC9 /* TTVDecoding.h */;
 		name = "TTVDecoding.h: 397";
 		rLen = 0;
-		rLoc = 8967;
+		rLoc = 9111;
 		rType = 0;
 		vrLen = 754;
 		vrLoc = 8145;
@@ -1614,7 +1736,7 @@
 		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
 		name = "TTVDecoding.m: 1392";
 		rLen = 0;
-		rLoc = 40355;
+		rLoc = 40686;
 		rType = 0;
 		vrLen = 381;
 		vrLoc = 39978;
@@ -1644,7 +1766,7 @@
 		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
 		name = "TTVDecoding.m: 1416";
 		rLen = 0;
-		rLoc = 40943;
+		rLoc = 41274;
 		rType = 0;
 		vrLen = 910;
 		vrLoc = 40097;
@@ -1654,7 +1776,7 @@
 		fRef = 88A0BAA70E5944FF00DD4DC9 /* TTVDecoding.h */;
 		name = "TTVDecoding.h: 397";
 		rLen = 0;
-		rLoc = 8967;
+		rLoc = 9111;
 		rType = 0;
 		vrLen = 800;
 		vrLoc = 8145;
@@ -1668,6 +1790,1411 @@
 		rType = 0;
 		vrLen = 962;
 		vrLoc = 132;
+	};
+	886EC2E10EC6200600CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
+		rLen = 14;
+		rLoc = 25763;
+		rType = 0;
+	};
+	886EC2E40EC620DB00CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
+		name = "TTVDecoding.m: 1394";
+		rLen = 0;
+		rLoc = 40686;
+		rType = 0;
+		vrLen = 308;
+		vrLoc = 40059;
+	};
+	886EC2E60EC620DB00CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
+		name = "TTVDecoding.m: 829";
+		rLen = 0;
+		rLoc = 25771;
+		rType = 0;
+		vrLen = 245;
+		vrLoc = 25714;
+	};
+	886EC2E90EC620DC00CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
+		name = "TTVDecoding.m: 1394";
+		rLen = 0;
+		rLoc = 40686;
+		rType = 0;
+		vrLen = 308;
+		vrLoc = 40059;
+	};
+	886EC2EA0EC620DC00CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
+		name = "TTVDecoding.m: 829";
+		rLen = 0;
+		rLoc = 25771;
+		rType = 0;
+		vrLen = 245;
+		vrLoc = 25714;
+	};
+	886EC2EC0EC6210400CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 883ADA700E06BF0400B1ED8E /* tikitv_test.m */;
+		name = "tikitv_test.m: 42";
+		rLen = 23;
+		rLoc = 952;
+		rType = 0;
+		vrLen = 0;
+		vrLoc = 0;
+	};
+	886EC2ED0EC6210400CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 883ADCF00E0768CD00B1ED8E /* TTVMPEGSlicer.m */;
+		name = "TTVMPEGSlicer.m: 22";
+		rLen = 11;
+		rLoc = 566;
+		rType = 0;
+		vrLen = 962;
+		vrLoc = 132;
+	};
+	886EC2EE0EC6210400CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 883ADCF00E0768CD00B1ED8E /* TTVMPEGSlicer.m */;
+		name = "TTVMPEGSlicer.m: 53";
+		rLen = 0;
+		rLoc = 1935;
+		rType = 0;
+		vrLen = 1637;
+		vrLoc = 814;
+	};
+	886EC2EF0EC6210400CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88A0BAA70E5944FF00DD4DC9 /* TTVDecoding.h */;
+		name = "TTVDecoding.h: 143";
+		rLen = 72;
+		rLoc = 3151;
+		rType = 0;
+		vrLen = 1303;
+		vrLoc = 2711;
+	};
+	886EC2F00EC6210400CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
+		name = "TTVDecoding.m: 833";
+		rLen = 73;
+		rLoc = 25797;
+		rType = 0;
+		vrLen = 1391;
+		vrLoc = 25723;
+	};
+	886EC2F10EC6210400CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
+		name = "TTVDecoding.m: 833";
+		rLen = 73;
+		rLoc = 25797;
+		rType = 0;
+		vrLen = 1391;
+		vrLoc = 25723;
+	};
+	886EC2F20EC6210400CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88A0BAA70E5944FF00DD4DC9 /* TTVDecoding.h */;
+		name = "TTVDecoding.h: 143";
+		rLen = 72;
+		rLoc = 3151;
+		rType = 0;
+		vrLen = 1303;
+		vrLoc = 2711;
+	};
+	886EC2F30EC6210400CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
+		name = "TTVDecoding.m: 829";
+		rLen = 9;
+		rLoc = 25770;
+		rType = 0;
+		vrLen = 1343;
+		vrLoc = 25723;
+	};
+	886EC2F40EC6210400CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88FBA0160B65E4AB0034EF9E /* TTVAppDelegate.m */;
+		name = "TTVAppDelegate.m: 94";
+		rLen = 11;
+		rLoc = 2673;
+		rType = 0;
+		vrLen = 1330;
+		vrLoc = 1929;
+	};
+	886EC2F50EC6210400CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88A0BAA70E5944FF00DD4DC9 /* TTVDecoding.h */;
+		name = "TTVDecoding.h: 398";
+		rLen = 0;
+		rLoc = 9111;
+		rType = 0;
+		vrLen = 750;
+		vrLoc = 8146;
+	};
+	886EC2F70EC6212800CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
+		name = "TTVDecoding.m: 1394";
+		rLen = 0;
+		rLoc = 40686;
+		rType = 0;
+		vrLen = 308;
+		vrLoc = 40059;
+	};
+	886EC2F80EC6212800CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
+		name = "TTVDecoding.m: 829";
+		rLen = 0;
+		rLoc = 25771;
+		rType = 0;
+		vrLen = 245;
+		vrLoc = 25714;
+	};
+	886EC2FB0EC6223600CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 883ADA700E06BF0400B1ED8E /* tikitv_test.m */;
+		name = "tikitv_test.m: 42";
+		rLen = 23;
+		rLoc = 952;
+		rType = 0;
+		vrLen = 0;
+		vrLoc = 0;
+	};
+	886EC2FC0EC6223600CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 883ADCF00E0768CD00B1ED8E /* TTVMPEGSlicer.m */;
+		name = "TTVMPEGSlicer.m: 66";
+		rLen = 0;
+		rLoc = 2300;
+		rType = 0;
+		vrLen = 1160;
+		vrLoc = 1754;
+	};
+	886EC2FD0EC6223600CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88A0BAA70E5944FF00DD4DC9 /* TTVDecoding.h */;
+		name = "TTVDecoding.h: 333";
+		rLen = 31;
+		rLoc = 7629;
+		rType = 0;
+		vrLen = 922;
+		vrLoc = 6991;
+	};
+	886EC2FE0EC6223600CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
+		name = "TTVDecoding.m: 1367";
+		rLen = 0;
+		rLoc = 39892;
+		rType = 0;
+		vrLen = 1110;
+		vrLoc = 39049;
+	};
+	886EC2FF0EC6223600CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
+		name = "TTVDecoding.m: 1434";
+		rLen = 18;
+		rLoc = 41514;
+		rType = 0;
+		vrLen = 917;
+		vrLoc = 40769;
+	};
+	886EC3000EC6223600CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88A0BAA70E5944FF00DD4DC9 /* TTVDecoding.h */;
+		name = "TTVDecoding.h: 325";
+		rLen = 0;
+		rLoc = 7439;
+		rType = 0;
+		vrLen = 957;
+		vrLoc = 6991;
+	};
+	886EC3010EC6223600CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
+		name = "TTVDecoding.m: 1367";
+		rLen = 0;
+		rLoc = 39892;
+		rType = 0;
+		vrLen = 1110;
+		vrLoc = 39049;
+	};
+	886EC3020EC6223600CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88A0BAA70E5944FF00DD4DC9 /* TTVDecoding.h */;
+		name = "TTVDecoding.h: 333";
+		rLen = 31;
+		rLoc = 7629;
+		rType = 0;
+		vrLen = 922;
+		vrLoc = 6991;
+	};
+	886EC3030EC6223600CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
+		name = "TTVDecoding.m: 1391";
+		rLen = 0;
+		rLoc = 40377;
+		rType = 0;
+		vrLen = 889;
+		vrLoc = 39957;
+	};
+	886EC3040EC6223600CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88FBA0160B65E4AB0034EF9E /* TTVAppDelegate.m */;
+		name = "TTVAppDelegate.m: 94";
+		rLen = 11;
+		rLoc = 2673;
+		rType = 0;
+		vrLen = 1330;
+		vrLoc = 1929;
+	};
+	886EC3050EC6223600CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88A0BAA70E5944FF00DD4DC9 /* TTVDecoding.h */;
+		name = "TTVDecoding.h: 400";
+		rLen = 0;
+		rLoc = 9111;
+		rType = 0;
+		vrLen = 791;
+		vrLoc = 7945;
+	};
+	886EC3080EC6227F00CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 883ADA700E06BF0400B1ED8E /* tikitv_test.m */;
+		name = "tikitv_test.m: 42";
+		rLen = 23;
+		rLoc = 952;
+		rType = 0;
+		vrLen = 0;
+		vrLoc = 0;
+	};
+	886EC3090EC6227F00CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 883ADCF00E0768CD00B1ED8E /* TTVMPEGSlicer.m */;
+		name = "TTVMPEGSlicer.m: 172";
+		rLen = 0;
+		rLoc = 5449;
+		rType = 0;
+		vrLen = 773;
+		vrLoc = 5103;
+	};
+	886EC30A0EC6227F00CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
+		name = "TTVDecoding.m: 1391";
+		rLen = 0;
+		rLoc = 40377;
+		rType = 0;
+		vrLen = 889;
+		vrLoc = 39957;
+	};
+	886EC30B0EC6227F00CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88FBA0160B65E4AB0034EF9E /* TTVAppDelegate.m */;
+		name = "TTVAppDelegate.m: 94";
+		rLen = 11;
+		rLoc = 2673;
+		rType = 0;
+		vrLen = 1330;
+		vrLoc = 1929;
+	};
+	886EC30C0EC6227F00CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88A0BAA70E5944FF00DD4DC9 /* TTVDecoding.h */;
+		name = "TTVDecoding.h: 400";
+		rLen = 0;
+		rLoc = 9111;
+		rType = 0;
+		vrLen = 791;
+		vrLoc = 7945;
+	};
+	886EC30D0EC6229400CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
+		name = "TTVDecoding.m: 1399";
+		rLen = 0;
+		rLoc = 40686;
+		rType = 0;
+		vrLen = 346;
+		vrLoc = 39978;
+	};
+	886EC30E0EC6229400CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
+		name = "TTVDecoding.m: 829";
+		rLen = 0;
+		rLoc = 25771;
+		rType = 0;
+		vrLen = 245;
+		vrLoc = 25714;
+	};
+	886EC3100EC622F700CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
+		name = "TTVDecoding.m: 1399";
+		rLen = 0;
+		rLoc = 40686;
+		rType = 0;
+		vrLen = 346;
+		vrLoc = 39978;
+	};
+	886EC3110EC622F700CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
+		name = "TTVDecoding.m: 829";
+		rLen = 0;
+		rLoc = 25771;
+		rType = 0;
+		vrLen = 245;
+		vrLoc = 25714;
+	};
+	886EC3130EC6230D00CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 883ADA700E06BF0400B1ED8E /* tikitv_test.m */;
+		name = "tikitv_test.m: 42";
+		rLen = 23;
+		rLoc = 952;
+		rType = 0;
+		vrLen = 0;
+		vrLoc = 0;
+	};
+	886EC3140EC6230D00CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
+		rLen = 1;
+		rLoc = 1395;
+		rType = 1;
+	};
+	886EC3150EC6230D00CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
+		name = "TTVDecoding.m: 1395";
+		rLen = 0;
+		rLoc = 40510;
+		rType = 0;
+		vrLen = 910;
+		vrLoc = 39978;
+	};
+	886EC3160EC6230D00CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 883ADCF00E0768CD00B1ED8E /* TTVMPEGSlicer.m */;
+		name = "TTVMPEGSlicer.m: 140";
+		rLen = 5;
+		rLoc = 4411;
+		rType = 0;
+		vrLen = 1026;
+		vrLoc = 4291;
+	};
+	886EC3170EC6230D00CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88FBA0160B65E4AB0034EF9E /* TTVAppDelegate.m */;
+		name = "TTVAppDelegate.m: 94";
+		rLen = 11;
+		rLoc = 2673;
+		rType = 0;
+		vrLen = 1330;
+		vrLoc = 1929;
+	};
+	886EC3180EC6230D00CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88A0BAA70E5944FF00DD4DC9 /* TTVDecoding.h */;
+		name = "TTVDecoding.h: 400";
+		rLen = 0;
+		rLoc = 9111;
+		rType = 0;
+		vrLen = 791;
+		vrLoc = 7945;
+	};
+	886EC3190EC6233700CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
+		name = "TTVDecoding.m: 1400";
+		rLen = 0;
+		rLoc = 40686;
+		rType = 0;
+		vrLen = 346;
+		vrLoc = 39978;
+	};
+	886EC31A0EC6233700CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
+		name = "TTVDecoding.m: 829";
+		rLen = 0;
+		rLoc = 25771;
+		rType = 0;
+		vrLen = 245;
+		vrLoc = 25714;
+	};
+	886EC31C0EC6236200CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 883ADA700E06BF0400B1ED8E /* tikitv_test.m */;
+		name = "tikitv_test.m: 42";
+		rLen = 23;
+		rLoc = 952;
+		rType = 0;
+		vrLen = 0;
+		vrLoc = 0;
+	};
+	886EC31D0EC6236200CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 883ADCF00E0768CD00B1ED8E /* TTVMPEGSlicer.m */;
+		name = "TTVMPEGSlicer.m: 173";
+		rLen = 0;
+		rLoc = 5449;
+		rType = 0;
+		vrLen = 792;
+		vrLoc = 5103;
+	};
+	886EC31E0EC6236200CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
+		name = "TTVDecoding.m: 1440";
+		rLen = 18;
+		rLoc = 41514;
+		rType = 0;
+		vrLen = 806;
+		vrLoc = 40694;
+	};
+	886EC31F0EC6236200CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88FBA0160B65E4AB0034EF9E /* TTVAppDelegate.m */;
+		name = "TTVAppDelegate.m: 94";
+		rLen = 11;
+		rLoc = 2673;
+		rType = 0;
+		vrLen = 1330;
+		vrLoc = 1929;
+	};
+	886EC3200EC6236200CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88A0BAA70E5944FF00DD4DC9 /* TTVDecoding.h */;
+		name = "TTVDecoding.h: 400";
+		rLen = 0;
+		rLoc = 9111;
+		rType = 0;
+		vrLen = 791;
+		vrLoc = 7945;
+	};
+	886EC3220EC6238F00CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 883ADA700E06BF0400B1ED8E /* tikitv_test.m */;
+		name = "tikitv_test.m: 42";
+		rLen = 23;
+		rLoc = 952;
+		rType = 0;
+		vrLen = 0;
+		vrLoc = 0;
+	};
+	886EC3230EC6238F00CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 883ADCF00E0768CD00B1ED8E /* TTVMPEGSlicer.m */;
+		name = "TTVMPEGSlicer.m: 66";
+		rLen = 0;
+		rLoc = 2298;
+		rType = 0;
+		vrLen = 1064;
+		vrLoc = 1911;
+	};
+	886EC3240EC6238F00CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
+		name = "TTVDecoding.m: 1440";
+		rLen = 18;
+		rLoc = 41514;
+		rType = 0;
+		vrLen = 806;
+		vrLoc = 40694;
+	};
+	886EC3250EC6238F00CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88FBA0160B65E4AB0034EF9E /* TTVAppDelegate.m */;
+		name = "TTVAppDelegate.m: 94";
+		rLen = 11;
+		rLoc = 2673;
+		rType = 0;
+		vrLen = 1330;
+		vrLoc = 1929;
+	};
+	886EC3260EC6238F00CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88A0BAA70E5944FF00DD4DC9 /* TTVDecoding.h */;
+		name = "TTVDecoding.h: 400";
+		rLen = 0;
+		rLoc = 9111;
+		rType = 0;
+		vrLen = 791;
+		vrLoc = 7945;
+	};
+	886EC3280EC623AC00CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 883ADA700E06BF0400B1ED8E /* tikitv_test.m */;
+		name = "tikitv_test.m: 42";
+		rLen = 23;
+		rLoc = 952;
+		rType = 0;
+		vrLen = 0;
+		vrLoc = 0;
+	};
+	886EC3290EC623AC00CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 883ADCF00E0768CD00B1ED8E /* TTVMPEGSlicer.m */;
+		name = "TTVMPEGSlicer.m: 54";
+		rLen = 0;
+		rLoc = 1936;
+		rType = 0;
+		vrLen = 1064;
+		vrLoc = 1911;
+	};
+	886EC32A0EC623AC00CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
+		name = "TTVDecoding.m: 1440";
+		rLen = 18;
+		rLoc = 41514;
+		rType = 0;
+		vrLen = 806;
+		vrLoc = 40694;
+	};
+	886EC32B0EC623AC00CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88FBA0160B65E4AB0034EF9E /* TTVAppDelegate.m */;
+		name = "TTVAppDelegate.m: 94";
+		rLen = 11;
+		rLoc = 2673;
+		rType = 0;
+		vrLen = 1330;
+		vrLoc = 1929;
+	};
+	886EC32C0EC623AC00CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88A0BAA70E5944FF00DD4DC9 /* TTVDecoding.h */;
+		name = "TTVDecoding.h: 400";
+		rLen = 0;
+		rLoc = 9111;
+		rType = 0;
+		vrLen = 791;
+		vrLoc = 7945;
+	};
+	886EC32D0EC623DC00CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
+		name = "TTVDecoding.m: 1400";
+		rLen = 0;
+		rLoc = 40686;
+		rType = 0;
+		vrLen = 346;
+		vrLoc = 39978;
+	};
+	886EC32E0EC623DC00CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
+		name = "TTVDecoding.m: 829";
+		rLen = 0;
+		rLoc = 25771;
+		rType = 0;
+		vrLen = 245;
+		vrLoc = 25714;
+	};
+	886EC3300EC6240800CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 883ADA700E06BF0400B1ED8E /* tikitv_test.m */;
+		name = "tikitv_test.m: 42";
+		rLen = 23;
+		rLoc = 952;
+		rType = 0;
+		vrLen = 0;
+		vrLoc = 0;
+	};
+	886EC3310EC6240800CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 883ADCF00E0768CD00B1ED8E /* TTVMPEGSlicer.m */;
+		name = "TTVMPEGSlicer.m: 172";
+		rLen = 0;
+		rLoc = 5403;
+		rType = 0;
+		vrLen = 738;
+		vrLoc = 5320;
+	};
+	886EC3320EC6240800CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
+		name = "TTVDecoding.m: 1440";
+		rLen = 18;
+		rLoc = 41514;
+		rType = 0;
+		vrLen = 806;
+		vrLoc = 40694;
+	};
+	886EC3330EC6240800CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88FBA0160B65E4AB0034EF9E /* TTVAppDelegate.m */;
+		name = "TTVAppDelegate.m: 94";
+		rLen = 11;
+		rLoc = 2673;
+		rType = 0;
+		vrLen = 1330;
+		vrLoc = 1929;
+	};
+	886EC3340EC6240800CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88A0BAA70E5944FF00DD4DC9 /* TTVDecoding.h */;
+		name = "TTVDecoding.h: 400";
+		rLen = 0;
+		rLoc = 9111;
+		rType = 0;
+		vrLen = 791;
+		vrLoc = 7945;
+	};
+	886EC3370EC6245400CA72C0 /* TTVDecoding.m:1401 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
+		functionName = "-seekToFrame:";
+		hitCount = 1;
+		ignoreCount = 0;
+		lineNumber = 1401;
+		location = TikiChop;
+		modificationTime = 247866486.045218;
+		state = 1;
+	};
+	886EC3390EC6245F00CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 883ADA700E06BF0400B1ED8E /* tikitv_test.m */;
+		name = "tikitv_test.m: 42";
+		rLen = 23;
+		rLoc = 952;
+		rType = 0;
+		vrLen = 0;
+		vrLoc = 0;
+	};
+	886EC33A0EC6245F00CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
+		rLen = 1;
+		rLoc = 1395;
+		rType = 1;
+	};
+	886EC33B0EC6245F00CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
+		name = "TTVDecoding.m: 1394";
+		rLen = 36;
+		rLoc = 40433;
+		rType = 0;
+		vrLen = 929;
+		vrLoc = 40080;
+	};
+	886EC33C0EC6245F00CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 883ADCF00E0768CD00B1ED8E /* TTVMPEGSlicer.m */;
+		name = "TTVMPEGSlicer.m: 171";
+		rLen = 12;
+		rLoc = 5388;
+		rType = 0;
+		vrLen = 738;
+		vrLoc = 5320;
+	};
+	886EC33D0EC6245F00CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88FBA0160B65E4AB0034EF9E /* TTVAppDelegate.m */;
+		name = "TTVAppDelegate.m: 94";
+		rLen = 11;
+		rLoc = 2673;
+		rType = 0;
+		vrLen = 1330;
+		vrLoc = 1929;
+	};
+	886EC33E0EC6245F00CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88A0BAA70E5944FF00DD4DC9 /* TTVDecoding.h */;
+		name = "TTVDecoding.h: 400";
+		rLen = 0;
+		rLoc = 9111;
+		rType = 0;
+		vrLen = 791;
+		vrLoc = 7945;
+	};
+	886EC33F0EC624A300CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
+		name = "TTVDecoding.m: 1400";
+		rLen = 0;
+		rLoc = 40686;
+		rType = 0;
+		vrLen = 346;
+		vrLoc = 39978;
+	};
+	886EC3400EC624A300CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
+		name = "TTVDecoding.m: 829";
+		rLen = 0;
+		rLoc = 25771;
+		rType = 0;
+		vrLen = 245;
+		vrLoc = 25714;
+	};
+	886EC3410EC624A300CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
+		name = "TTVDecoding.m: 1400";
+		rLen = 0;
+		rLoc = 40686;
+		rType = 0;
+		vrLen = 346;
+		vrLoc = 39978;
+	};
+	886EC3420EC624A300CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
+		name = "TTVDecoding.m: 829";
+		rLen = 0;
+		rLoc = 25771;
+		rType = 0;
+		vrLen = 245;
+		vrLoc = 25714;
+	};
+	886EC3430EC624AF00CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 883ADA700E06BF0400B1ED8E /* tikitv_test.m */;
+		name = "tikitv_test.m: 42";
+		rLen = 23;
+		rLoc = 952;
+		rType = 0;
+		vrLen = 0;
+		vrLoc = 0;
+	};
+	886EC3440EC624AF00CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 883ADCF00E0768CD00B1ED8E /* TTVMPEGSlicer.m */;
+		name = "TTVMPEGSlicer.m: 40";
+		rLen = 0;
+		rLoc = 1437;
+		rType = 0;
+		vrLen = 1643;
+		vrLoc = 912;
+	};
+	886EC3450EC624AF00CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
+		name = "TTVDecoding.m: 1394";
+		rLen = 36;
+		rLoc = 40433;
+		rType = 0;
+		vrLen = 975;
+		vrLoc = 40080;
+	};
+	886EC3460EC624AF00CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88FBA0160B65E4AB0034EF9E /* TTVAppDelegate.m */;
+		name = "TTVAppDelegate.m: 94";
+		rLen = 11;
+		rLoc = 2673;
+		rType = 0;
+		vrLen = 1331;
+		vrLoc = 1929;
+	};
+	886EC3470EC624AF00CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88A0BAA70E5944FF00DD4DC9 /* TTVDecoding.h */;
+		name = "TTVDecoding.h: 400";
+		rLen = 0;
+		rLoc = 9111;
+		rType = 0;
+		vrLen = 834;
+		vrLoc = 7945;
+	};
+	886EC34A0EC624F200CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 883ADA700E06BF0400B1ED8E /* tikitv_test.m */;
+		name = "tikitv_test.m: 42";
+		rLen = 23;
+		rLoc = 952;
+		rType = 0;
+		vrLen = 0;
+		vrLoc = 0;
+	};
+	886EC34B0EC624F200CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 883ADCF00E0768CD00B1ED8E /* TTVMPEGSlicer.m */;
+		name = "TTVMPEGSlicer.m: 173";
+		rLen = 0;
+		rLoc = 5432;
+		rType = 0;
+		vrLen = 658;
+		vrLoc = 5497;
+	};
+	886EC34C0EC624F200CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
+		name = "TTVDecoding.m: 1394";
+		rLen = 36;
+		rLoc = 40433;
+		rType = 0;
+		vrLen = 929;
+		vrLoc = 40080;
+	};
+	886EC34D0EC624F200CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88FBA0160B65E4AB0034EF9E /* TTVAppDelegate.m */;
+		name = "TTVAppDelegate.m: 94";
+		rLen = 11;
+		rLoc = 2673;
+		rType = 0;
+		vrLen = 1330;
+		vrLoc = 1929;
+	};
+	886EC34E0EC624F200CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88A0BAA70E5944FF00DD4DC9 /* TTVDecoding.h */;
+		name = "TTVDecoding.h: 400";
+		rLen = 0;
+		rLoc = 9111;
+		rType = 0;
+		vrLen = 791;
+		vrLoc = 7945;
+	};
+	886EC34F0EC6253700CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 883ADA700E06BF0400B1ED8E /* tikitv_test.m */;
+		name = "tikitv_test.m: 42";
+		rLen = 23;
+		rLoc = 952;
+		rType = 0;
+		vrLen = 0;
+		vrLoc = 0;
+	};
+	886EC3500EC6253700CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 883ADCF00E0768CD00B1ED8E /* TTVMPEGSlicer.m */;
+		name = "TTVMPEGSlicer.m: 53";
+		rLen = 0;
+		rLoc = 1920;
+		rType = 0;
+		vrLen = 1532;
+		vrLoc = 1266;
+	};
+	886EC3510EC6253700CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
+		name = "TTVDecoding.m: 1394";
+		rLen = 36;
+		rLoc = 40433;
+		rType = 0;
+		vrLen = 929;
+		vrLoc = 40080;
+	};
+	886EC3520EC6253700CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88FBA0160B65E4AB0034EF9E /* TTVAppDelegate.m */;
+		name = "TTVAppDelegate.m: 94";
+		rLen = 11;
+		rLoc = 2673;
+		rType = 0;
+		vrLen = 1330;
+		vrLoc = 1929;
+	};
+	886EC3530EC6253700CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88A0BAA70E5944FF00DD4DC9 /* TTVDecoding.h */;
+		name = "TTVDecoding.h: 400";
+		rLen = 0;
+		rLoc = 9111;
+		rType = 0;
+		vrLen = 791;
+		vrLoc = 7945;
+	};
+	886EC3560EC6254700CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 883ADA700E06BF0400B1ED8E /* tikitv_test.m */;
+		name = "tikitv_test.m: 42";
+		rLen = 23;
+		rLoc = 952;
+		rType = 0;
+		vrLen = 0;
+		vrLoc = 0;
+	};
+	886EC3570EC6254700CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 883ADCF00E0768CD00B1ED8E /* TTVMPEGSlicer.m */;
+		name = "TTVMPEGSlicer.m: 53";
+		rLen = 0;
+		rLoc = 1920;
+		rType = 0;
+		vrLen = 1532;
+		vrLoc = 1266;
+	};
+	886EC3580EC6254700CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
+		name = "TTVDecoding.m: 1394";
+		rLen = 36;
+		rLoc = 40433;
+		rType = 0;
+		vrLen = 929;
+		vrLoc = 40080;
+	};
+	886EC3590EC6254700CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88FBA0160B65E4AB0034EF9E /* TTVAppDelegate.m */;
+		name = "TTVAppDelegate.m: 94";
+		rLen = 11;
+		rLoc = 2673;
+		rType = 0;
+		vrLen = 1330;
+		vrLoc = 1929;
+	};
+	886EC35A0EC6254700CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88A0BAA70E5944FF00DD4DC9 /* TTVDecoding.h */;
+		name = "TTVDecoding.h: 400";
+		rLen = 0;
+		rLoc = 9111;
+		rType = 0;
+		vrLen = 791;
+		vrLoc = 7945;
+	};
+	886EC35B0EC6257800CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
+		name = "TTVDecoding.m: 1400";
+		rLen = 0;
+		rLoc = 40686;
+		rType = 0;
+		vrLen = 346;
+		vrLoc = 39978;
+	};
+	886EC35C0EC6257800CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
+		name = "TTVDecoding.m: 829";
+		rLen = 0;
+		rLoc = 25771;
+		rType = 0;
+		vrLen = 245;
+		vrLoc = 25714;
+	};
+	886EC35D0EC625C500CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 883ADA700E06BF0400B1ED8E /* tikitv_test.m */;
+		name = "tikitv_test.m: 42";
+		rLen = 23;
+		rLoc = 952;
+		rType = 0;
+		vrLen = 0;
+		vrLoc = 0;
+	};
+	886EC35E0EC625C500CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 883ADCF00E0768CD00B1ED8E /* TTVMPEGSlicer.m */;
+		name = "TTVMPEGSlicer.m: 45";
+		rLen = 0;
+		rLoc = 1533;
+		rType = 0;
+		vrLen = 1262;
+		vrLoc = 973;
+	};
+	886EC35F0EC625C500CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
+		name = "TTVDecoding.m: 1394";
+		rLen = 36;
+		rLoc = 40433;
+		rType = 0;
+		vrLen = 975;
+		vrLoc = 40080;
+	};
+	886EC3600EC625C500CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88FBA0160B65E4AB0034EF9E /* TTVAppDelegate.m */;
+		name = "TTVAppDelegate.m: 94";
+		rLen = 11;
+		rLoc = 2673;
+		rType = 0;
+		vrLen = 1331;
+		vrLoc = 1929;
+	};
+	886EC3610EC625C500CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88A0BAA70E5944FF00DD4DC9 /* TTVDecoding.h */;
+		name = "TTVDecoding.h: 400";
+		rLen = 0;
+		rLoc = 9111;
+		rType = 0;
+		vrLen = 834;
+		vrLoc = 7945;
+	};
+	886EC3640EC626BB00CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 883ADA700E06BF0400B1ED8E /* tikitv_test.m */;
+		name = "tikitv_test.m: 42";
+		rLen = 23;
+		rLoc = 952;
+		rType = 0;
+		vrLen = 0;
+		vrLoc = 0;
+	};
+	886EC3650EC626BB00CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 883ADCF00E0768CD00B1ED8E /* TTVMPEGSlicer.m */;
+		name = "TTVMPEGSlicer.m: 41";
+		rLen = 0;
+		rLoc = 1256;
+		rType = 0;
+		vrLen = 1232;
+		vrLoc = 973;
+	};
+	886EC3660EC626BB00CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
+		name = "TTVDecoding.m: 1394";
+		rLen = 36;
+		rLoc = 40433;
+		rType = 0;
+		vrLen = 929;
+		vrLoc = 40080;
+	};
+	886EC3670EC626BB00CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88FBA0160B65E4AB0034EF9E /* TTVAppDelegate.m */;
+		name = "TTVAppDelegate.m: 94";
+		rLen = 11;
+		rLoc = 2673;
+		rType = 0;
+		vrLen = 1330;
+		vrLoc = 1929;
+	};
+	886EC3680EC626BB00CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88A0BAA70E5944FF00DD4DC9 /* TTVDecoding.h */;
+		name = "TTVDecoding.h: 400";
+		rLen = 0;
+		rLoc = 9111;
+		rType = 0;
+		vrLen = 791;
+		vrLoc = 7945;
+	};
+	886EC36A0EC626DB00CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 883ADA700E06BF0400B1ED8E /* tikitv_test.m */;
+		name = "tikitv_test.m: 42";
+		rLen = 23;
+		rLoc = 952;
+		rType = 0;
+		vrLen = 0;
+		vrLoc = 0;
+	};
+	886EC36B0EC626DB00CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 883ADCF00E0768CD00B1ED8E /* TTVMPEGSlicer.m */;
+		name = "TTVMPEGSlicer.m: 44";
+		rLen = 0;
+		rLoc = 1414;
+		rType = 0;
+		vrLen = 1224;
+		vrLoc = 973;
+	};
+	886EC36C0EC626DB00CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
+		name = "TTVDecoding.m: 1394";
+		rLen = 36;
+		rLoc = 40433;
+		rType = 0;
+		vrLen = 929;
+		vrLoc = 40080;
+	};
+	886EC36D0EC626DB00CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88FBA0160B65E4AB0034EF9E /* TTVAppDelegate.m */;
+		name = "TTVAppDelegate.m: 94";
+		rLen = 11;
+		rLoc = 2673;
+		rType = 0;
+		vrLen = 1330;
+		vrLoc = 1929;
+	};
+	886EC36E0EC626DB00CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88A0BAA70E5944FF00DD4DC9 /* TTVDecoding.h */;
+		name = "TTVDecoding.h: 400";
+		rLen = 0;
+		rLoc = 9111;
+		rType = 0;
+		vrLen = 791;
+		vrLoc = 7945;
+	};
+	886EC3710EC629E300CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 883ADA700E06BF0400B1ED8E /* tikitv_test.m */;
+		name = "tikitv_test.m: 42";
+		rLen = 23;
+		rLoc = 952;
+		rType = 0;
+		vrLen = 0;
+		vrLoc = 0;
+	};
+	886EC3720EC629E300CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88A0BAA70E5944FF00DD4DC9 /* TTVDecoding.h */;
+		name = "TTVDecoding.h: 331";
+		rLen = 20;
+		rLoc = 7553;
+		rType = 0;
+		vrLen = 819;
+		vrLoc = 7188;
+	};
+	886EC3730EC629E300CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
+		rLen = 1;
+		rLoc = 1593;
+		rType = 1;
+	};
+	886EC3740EC629E300CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
+		name = "TTVDecoding.m: 1770";
+		rLen = 0;
+		rLoc = 49489;
+		rType = 0;
+		vrLen = 763;
+		vrLoc = 48764;
+	};
+	886EC3750EC629E300CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88A0BAA70E5944FF00DD4DC9 /* TTVDecoding.h */;
+		name = "TTVDecoding.h: 331";
+		rLen = 20;
+		rLoc = 7553;
+		rType = 0;
+		vrLen = 819;
+		vrLoc = 7188;
+	};
+	886EC3760EC629E300CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
+		name = "TTVDecoding.m: 1775";
+		rLen = 0;
+		rLoc = 49507;
+		rType = 0;
+		vrLen = 861;
+		vrLoc = 48886;
+	};
+	886EC3770EC629E300CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 883ADCF00E0768CD00B1ED8E /* TTVMPEGSlicer.m */;
+		name = "TTVMPEGSlicer.m: 44";
+		rLen = 0;
+		rLoc = 1414;
+		rType = 0;
+		vrLen = 1224;
+		vrLoc = 973;
+	};
+	886EC3780EC629E300CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88FBA0160B65E4AB0034EF9E /* TTVAppDelegate.m */;
+		name = "TTVAppDelegate.m: 94";
+		rLen = 11;
+		rLoc = 2673;
+		rType = 0;
+		vrLen = 1330;
+		vrLoc = 1929;
+	};
+	886EC3790EC629E300CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88A0BAA70E5944FF00DD4DC9 /* TTVDecoding.h */;
+		name = "TTVDecoding.h: 401";
+		rLen = 0;
+		rLoc = 9111;
+		rType = 0;
+		vrLen = 797;
+		vrLoc = 7934;
+	};
+	886EC37B0EC62B4D00CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 883ADA700E06BF0400B1ED8E /* tikitv_test.m */;
+		name = "tikitv_test.m: 42";
+		rLen = 23;
+		rLoc = 952;
+		rType = 0;
+		vrLen = 0;
+		vrLoc = 0;
+	};
+	886EC37C0EC62B4D00CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 883ADCF00E0768CD00B1ED8E /* TTVMPEGSlicer.m */;
+		name = "TTVMPEGSlicer.m: 65";
+		rLen = 0;
+		rLoc = 2298;
+		rType = 0;
+		vrLen = 865;
+		vrLoc = 1671;
+	};
+	886EC37D0EC62B4D00CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
+		name = "TTVDecoding.m: 1438";
+		rLen = 6;
+		rLoc = 41456;
+		rType = 0;
+		vrLen = 953;
+		vrLoc = 40324;
+	};
+	886EC37E0EC62B4D00CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88FBA0160B65E4AB0034EF9E /* TTVAppDelegate.m */;
+		name = "TTVAppDelegate.m: 94";
+		rLen = 11;
+		rLoc = 2673;
+		rType = 0;
+		vrLen = 1330;
+		vrLoc = 1929;
+	};
+	886EC37F0EC62B4D00CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88A0BAA70E5944FF00DD4DC9 /* TTVDecoding.h */;
+		name = "TTVDecoding.h: 401";
+		rLen = 0;
+		rLoc = 9111;
+		rType = 0;
+		vrLen = 797;
+		vrLoc = 7934;
+	};
+	886EC3800EC633C200CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
+		name = "TTVDecoding.m: 1402";
+		rLen = 0;
+		rLoc = 40686;
+		rType = 0;
+		vrLen = 346;
+		vrLoc = 39978;
+	};
+	886EC3810EC633C200CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
+		name = "TTVDecoding.m: 829";
+		rLen = 0;
+		rLoc = 25771;
+		rType = 0;
+		vrLen = 245;
+		vrLoc = 25714;
+	};
+	886EC3820EC633C400CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 883ADA700E06BF0400B1ED8E /* tikitv_test.m */;
+		name = "tikitv_test.m: 42";
+		rLen = 23;
+		rLoc = 952;
+		rType = 0;
+		vrLen = 0;
+		vrLoc = 0;
+	};
+	886EC3830EC633C400CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 883ADCF00E0768CD00B1ED8E /* TTVMPEGSlicer.m */;
+		name = "TTVMPEGSlicer.m: 65";
+		rLen = 0;
+		rLoc = 2298;
+		rType = 0;
+		vrLen = 891;
+		vrLoc = 1671;
+	};
+	886EC3840EC633C400CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
+		name = "TTVDecoding.m: 1438";
+		rLen = 6;
+		rLoc = 41456;
+		rType = 0;
+		vrLen = 978;
+		vrLoc = 40324;
+	};
+	886EC3850EC633C400CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88FBA0160B65E4AB0034EF9E /* TTVAppDelegate.m */;
+		name = "TTVAppDelegate.m: 94";
+		rLen = 11;
+		rLoc = 2673;
+		rType = 0;
+		vrLen = 1331;
+		vrLoc = 1929;
+	};
+	886EC3860EC633C400CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88A0BAA70E5944FF00DD4DC9 /* TTVDecoding.h */;
+		name = "TTVDecoding.h: 401";
+		rLen = 0;
+		rLoc = 9111;
+		rType = 0;
+		vrLen = 844;
+		vrLoc = 7934;
+	};
+	886EC3870EC633D100CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 883ADA700E06BF0400B1ED8E /* tikitv_test.m */;
+		name = "tikitv_test.m: 42";
+		rLen = 23;
+		rLoc = 952;
+		rType = 0;
+		vrLen = 0;
+		vrLoc = 0;
+	};
+	886EC3880EC633D100CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 883ADCF00E0768CD00B1ED8E /* TTVMPEGSlicer.m */;
+		name = "TTVMPEGSlicer.m: 65";
+		rLen = 0;
+		rLoc = 2300;
+		rType = 0;
+		vrLen = 891;
+		vrLoc = 1671;
+	};
+	886EC3890EC633D100CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
+		name = "TTVDecoding.m: 1438";
+		rLen = 6;
+		rLoc = 41456;
+		rType = 0;
+		vrLen = 978;
+		vrLoc = 40324;
+	};
+	886EC38A0EC633D100CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88FBA0160B65E4AB0034EF9E /* TTVAppDelegate.m */;
+		name = "TTVAppDelegate.m: 94";
+		rLen = 11;
+		rLoc = 2673;
+		rType = 0;
+		vrLen = 1331;
+		vrLoc = 1929;
+	};
+	886EC38B0EC633D100CA72C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88A0BAA70E5944FF00DD4DC9 /* TTVDecoding.h */;
+		name = "TTVDecoding.h: 401";
+		rLen = 0;
+		rLoc = 9111;
+		rType = 0;
+		vrLen = 844;
+		vrLoc = 7934;
 	};
 	8884E3860CE18D2900489F77 /* VSDecoder.h */ = {
 		uiCtxt = {
@@ -1690,8 +3217,8 @@
 	88A0BAA70E5944FF00DD4DC9 /* TTVDecoding.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1022, 6160}}";
-			sepNavSelRange = "{8967, 0}";
-			sepNavVisRange = "{8145, 800}";
+			sepNavSelRange = "{9111, 0}";
+			sepNavVisRange = "{7934, 844}";
 			sepNavWindowFrame = "{{218, 181}, {1226, 655}}";
 		};
 	};
@@ -1862,9 +3389,9 @@
 	};
 	88F62D8E0EBE96C000472168 /* TTVDecoding.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1034, 26684}}";
-			sepNavSelRange = "{40943, 0}";
-			sepNavVisRange = "{40097, 910}";
+			sepNavIntBoundsRect = "{{0, 0}, {1034, 27664}}";
+			sepNavSelRange = "{41456, 6}";
+			sepNavVisRange = "{40324, 978}";
 			sepNavWindowFrame = "{{216, 191}, {1081, 621}}";
 		};
 	};
@@ -1901,23 +3428,6 @@
 		);
 		variableFormatDictionary = {
 		};
-	};
-	88F633940EC55B3400472168 /* TTVDecoding.m:1518 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
-		functionName = "-buildIndex";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 1518;
-		location = TikiTV;
-		modificationTime = 247863794.58526;
-		state = 1;
 	};
 	88F637FB0EC6050800472168 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;

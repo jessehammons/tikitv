@@ -37,13 +37,14 @@
 	[_markOutSlider setTarget:self];
 	[_markOutSlider setAction:@selector(setEndFrame:)];
 
-//	TTVInputContext *inputContext = [[[TTVInputContext alloc] initWithFile:@"/selects/tl_subway_ntsc.m2v"] autorelease];
-//	TTVInputContext *inputContext = [[[TTVInputContext alloc] initWithFile:@"/selects/clouds-blue.m2v"] autorelease];
-//	TTVInputContext *inputContext = [[[TTVInputContext alloc] initWithFile:@"/selects/2001-streamers-looped.m2v"] autorelease];
-	TTVInputContext *inputContext = [[[TTVInputContext alloc] initWithFile:@"/selects/earthviews-firsthalf.m2v"] autorelease];
+//	NSString *filename = @"/selects/tl_subway_ntsc.m2v";
+//	NSString *filename = @"/selects/clouds-blue.m2v";
+//	NSString *filename = @"/selects/2001-streamers-looped.m2v";
+//	NSString *filename = @"/selects/earthviews-firsthalf.m2v";
+	NSString *filename = @"/selects/castles2_test.m2v";
 	
+	TTVInputContext *inputContext = [[[TTVInputContext alloc] initWithFile:filename] autorelease];
 	
-
 	_clips = [[TTVClipList alloc] initWithFile:[inputContext clipListFilename]];
 	if ([[self clips] clipCount] == 0) {
 		[_clips release];
@@ -52,19 +53,16 @@
 	}
 
 
-	TTVVideoStream *stream = [[[TTVVideoStream alloc] initWithTextureClass:[VSYUVProgramTexture class]] autorelease];
-//	_decoder = [[TTVDecoderThread alloc] initWithFile:@"/selects/tl_subway_ntsc.m2v" stream:stream];	
-//	_decoder = [[TTVDecoderThread alloc] initWithFile:@"/selects/clouds-blue.m2v" stream:stream];
-//	_decoder = [[TTVDecoderThread alloc] initWithFile:@"/selects/2001-streamers-looped.m2v" stream:stream];	
-	_decoder = [[TTVDecoderThread alloc] initWithFile:@"/selects/earthviews-firsthalf.m2v" stream:stream];
-	
+	TTVVideoStream *stream = [[[TTVVideoStream alloc] initWithTextureClass:[VSYUVProgramTexture class] queueSize:2] autorelease];
+	_decoder = [[TTVDecoderThread alloc] initWithFile:filename stream:stream];
 	
 	[_markInSlider setMinValue:0];
 	int frameCount = [[[_decoder mediaReader] inputContext] frameCount];
 	NSLog(@"framecount %d", frameCount);
 	[_markInSlider setMaxValue:frameCount-1];
 	[_markOutSlider setMaxValue:frameCount-1];
-	
+
+	[[[_decoder mediaReader] inputContext] setSkipAmount:20];
 	
 	[_clipsTableView selectRow:0 byExtendingSelection:NO];
 	
@@ -167,6 +165,14 @@
 		[self advance];
 	}
 }
+- (void)moveLeft:(id)sender {
+	if (_paused) {
+		[_decoder skipBackward];
+		[[_decoder stream] reset];
+		[self advance];
+	}
+}
+
 - (void)renderThread
 {
 	int frame = 0;

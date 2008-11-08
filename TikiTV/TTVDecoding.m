@@ -826,12 +826,11 @@ static	NSLock *_glLock = nil;
 
 @implementation TTVVideoStream 
 
-+ (int)queueSize
-{
++ (int)defaultQueueSize {
 	return 12;
 }
 
-- (id)initWithTextureClass:(Class)textureClass {
+- (id)initWithTextureClass:(Class)textureClass queueSize:(int)queueSize {
 	self = [super init];
 	if (self != nil) {
 		_buffers = [[NSMutableArray array] retain];
@@ -843,13 +842,16 @@ static	NSLock *_glLock = nil;
 		_adjust[2] = 3.3;
 		_adjust[3] = 1.0;
 	}
-	for(int i = 0; i < [[self class] queueSize]; i++) {
+	for(int i = 0; i < queueSize; i++) {
 		[_buffers addObject:[[[textureClass alloc] initWithContext:NULL] autorelease]];
 		[_freeBuffers enqueue:[_buffers objectAtIndex:i]];
 	}
 	return self;
 }
 
+- (id)initWithTextureClass:(Class)textureClass {
+	return [self initWithTextureClass:textureClass queueSize:[[self class] defaultQueueSize]];
+}
 
 - (void)fillBuffer:(AVPicture*)decodedPicture size:(NSSize)size decodeTime:(NSTimeInterval)time frameNumber:(int)frameNumber context:(CGLContextObj)cgl_ctx {
 	VSAbstractProgramTexture *texture = [_freeBuffers dequeue];
@@ -1362,6 +1364,7 @@ NSLock *__ffmpegLock = nil;
 	}
 	if (self) {
 		TTV_KVC_SET(index, [[[TTVFrameIndex alloc] initWithFile:[self indexFilename]] autorelease]);
+		_skipAmount = 600;
 	}
 	return self;
 }
@@ -1384,7 +1387,14 @@ NSLock *__ffmpegLock = nil;
 	[super dealloc];
 }
 
+- (void)setSkipAmount:(int)amt {
+	_skipAmount = amt;
+}
+
+- (int)currentFrame { return _currentFrameIndex; }
+
 - (void)seekToFrame:(int)newFrame {
+	NSLog(@"seeking to fraem %d", newFrame);
 	if ([self _codecValid]) {
 		long long byte_offset = 0;
 		if (newFrame) {
@@ -1425,11 +1435,11 @@ NSLock *__ffmpegLock = nil;
 }
 
 - (void)skipForward {
-	[self seekToFrame:_currentFrameIndex + 600];
+	[self seekToFrame:_currentFrameIndex + _skipAmount];
 }
 
 - (void)skipBackward {
-	[self seekToFrame:_currentFrameIndex - 600];
+	[self seekToFrame:_currentFrameIndex - _skipAmount];
 }
 
 - (TTVPacket*)readNextFrame {
@@ -1608,9 +1618,11 @@ NSLock *__ffmpegLock = nil;
 - (void)skipForward {
 	[[self inputContext] skipForward];
 }
+
 - (void)skipBackward {
 	[[self inputContext] skipBackward];
 }
+
 - (TTVPacket*)readNextFrame {
 	TTVPacket *pkt = [super readNextFrame];
 	if (pkt == nil) {
@@ -1753,6 +1765,18 @@ NSLock *__ffmpegLock = nil;
 		_currentClipIndex = [[self clips] clipCount]-1;
 	}
 	[[self inputContext] setExtents:[self currentClip]];
+}
+
+- (TTVPacket*)readNextFrame {
+	if ([[self inputContext] currentFrame] >= [[self currentClip] endFrame]) {
+		[self skipForward];
+	}
+	TTVPacket *pkt = [super readNextFrame];
+	if (pkt == nil) {
+		[[self inputContext] gotoBeginning];
+		pkt = [super readNextFrame];
+	}
+	return pkt;
 }
 
 @end

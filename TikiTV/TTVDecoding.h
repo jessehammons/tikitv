@@ -140,6 +140,7 @@ void ttv_print_gl_error(int error);
 	float _adjust[4];
 }
 
+- (id)initWithTextureClass:(Class)textureClass queueSize:(int)queueSize;
 - (id)initWithTextureClass:(Class)textureClass;
 - (void)fillBuffer:(AVPicture*)decodedPicture size:(NSSize)size decodeTime:(NSTimeInterval)time frameNumber:(int)frameNumber context:(CGLContextObj)cgl_ctx;
 - (void)advance;
@@ -321,13 +322,16 @@ void ttv_print_gl_error(int error);
 	NSLock *_ffmpegLock;
 	int _frameCount;
 	int _currentFrameIndex;
+	int _skipAmount;
 	TTVFrameIndex *_index;
 	int _startFrame;
 	int _endFrame;
 }
 - (id)initWithFile:(NSString*)path;
+- (int)currentFrame;
 - (void)seekToFrame:(int)frame;
 - (void)gotoBeginning;
+- (void)setSkipAmount:(int)amt;
 - (void)skipForward;
 - (void)skipBackward;
 - (TTVPacket*)readNextFrame;
