@@ -86,12 +86,12 @@ int set_realtime(int period, int computation, int constraint) {
 - (void)moveLeft {
 	int index = [[[self delegate] activeCommandView] streamIndex];
 	TTVDeck *deck = [[self delegate] previewDeck];
-	[[[[deck pictureSource] decoder:index%3] mediaReader] skipBackward];
+	[[[deck pictureSource] decoder:index%3] skipBackward];
 }
 - (void)moveRight {
 	int index = [[[self delegate] activeCommandView] streamIndex];
 	TTVDeck *deck = [[self delegate] previewDeck];
-	[[[[deck pictureSource] decoder:index%3] mediaReader] skipForward];
+	[[[deck pictureSource] decoder:index%3] skipForward];
 }
 
 - (BOOL)handleEvent:(NSEvent*)event {
@@ -681,6 +681,10 @@ extern int __fullScreenIsMainScreen;
 		[self setMode:nil];
 		handled = YES;
 	}
+	else if (event != nil && ([event type] == NSKeyDown) && ([event keyCode] == 0x3)) {
+		[self toggleFullscreen:nil];
+		handled = YES;
+	}	
 	else if (event != nil && ([event type] == NSKeyDown) && ([event keyCode] == 0x30)) {
 		[self activateNextCommandView:_mode!=nil];
 		handled = YES;
@@ -909,16 +913,16 @@ extern int __fullScreenIsMainScreen;
 	
 //	CGDirectDisplayID displayID = [self displayIDForOutputWindow];
 
-//	if (CGDisplayCapture([self displayIDForOutputWindow]) == kCGErrorSuccess) {
+	if (CGDisplayCapture([[VSOpenGLContext fullscreenContext] displayID]) == kCGErrorSuccess) {
 //	if (CGDisplayCapture(kCGDirectMainDisplay) == kCGErrorSuccess) {
 //		CGDisplayHideCursor(kCGDirectMainDisplay);
 		//_screenSize.width = CGDisplayPixelsWide(kCGDirectMainDisplay);
 		//_screenSize.height = CGDisplayPixelsHigh(kCGDirectMainDisplay);
-		NSLog(@"setting fullscreen");
+		NSLog(@"setting fullscreen on %d", [[VSOpenGLContext fullscreenContext] displayID]);
 //		_activeContexts = _fullscreenContexts;
 		[[VSOpenGLContext fullscreenContext] enterFullscreen];
 //		[[[VSOpenGLContext fullscreenContext] openGLContext] makeCurrentContext];
-//	}
+	}
 }
 
 - (void)exitFullscreen {

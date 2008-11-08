@@ -9,6 +9,8 @@
 from Foundation import *
 from AppKit import *
 
+##class TTVMode(NSResponder):
+
 class PikiTVAppDelegate(NSObject):
 	numbersInput = objc.ivar(u"numbersInput")
 	numbersResult = objc.ivar(u"numbersResult")
@@ -16,6 +18,10 @@ class PikiTVAppDelegate(NSObject):
 	def applicationDidFinishLaunching_(self, sender):
 		#self.numbersResult.setIntValue_(7)
 		NSLog("Application did finish launching.")
+		NSLog("bundle %@", NSBundle.mainBundle().privateFrameworksPath())
+		path = NSBundle.mainBundle().bundlePath() + u'/../VSDecoder.h'
+		NSLog("path %@", path)
+		NSLog("text %@", NSString.stringWithContentsOfFile_(NSBundle.mainBundle().bundlePath() + u'/../VSDecoder.h'))
 
 	def awakeFromNib(self):
 		#self.numbersResult.setIntValue_(5)

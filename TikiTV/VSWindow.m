@@ -30,13 +30,17 @@
 	}
 }
 
+- (BOOL)handleEvent:(NSEvent*)event {
+	return NO;
+}
+
 - (BOOL)isFullscreen
 {
 	return _isFullscreen;
 }
 
 - (void)noResponderFor:(SEL)eventSelector {
-	NSLog(@"VSWindow: no responder for %@", NSStringFromSelector(eventSelector));
+//	NSLog(@"VSWindow: no responder for %@", NSStringFromSelector(eventSelector));
 }
 
 

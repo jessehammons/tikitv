@@ -13,4 +13,5 @@
 - (NSString*)pathForFilename:(NSString*)filename;
 - (NSString*)filenameForRow:(int)row;
 - (NSString*)pathForBookmark:(NSString*)mark;
+- (NSString*)bookmarksPath;
 @end

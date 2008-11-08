@@ -197,48 +197,7 @@
 	<key>Notifications</key>
 	<array/>
 	<key>OpenEditors</key>
-	<array>
-		<dict>
-			<key>Content</key>
-			<dict>
-				<key>PBXProjectModuleGUID</key>
-				<string>881E9DE90E4C17CD005C3840</string>
-				<key>PBXProjectModuleLabel</key>
-				<string>PikiTVAppDelegate.py</string>
-				<key>PBXSplitModuleInNavigatorKey</key>
-				<dict>
-					<key>Split0</key>
-					<dict>
-						<key>PBXProjectModuleGUID</key>
-						<string>881E9DEA0E4C17CD005C3840</string>
-						<key>PBXProjectModuleLabel</key>
-						<string>PikiTVAppDelegate.py</string>
-						<key>_historyCapacity</key>
-						<integer>0</integer>
-						<key>bookmark</key>
-						<string>881E9DEB0E4C17CD005C3840</string>
-						<key>history</key>
-						<array>
-							<string>881E9DBB0E488914005C3840</string>
-						</array>
-					</dict>
-					<key>SplitCount</key>
-					<string>1</string>
-				</dict>
-				<key>StatusBarVisibility</key>
-				<true/>
-			</dict>
-			<key>Geometry</key>
-			<dict>
-				<key>Frame</key>
-				<string>{{0, 20}, {573, 517}}</string>
-				<key>PBXModuleWindowStatusBarHidden2</key>
-				<false/>
-				<key>RubberWindowFrame</key>
-				<string>417 178 573 558 0 0 1440 878 </string>
-			</dict>
-		</dict>
-	</array>
+	<array/>
 	<key>PerspectiveWidths</key>
 	<array>
 		<integer>-1</integer>
@@ -309,7 +268,6 @@
 							<array>
 								<string>29B97314FDCFA39411CA2CEA</string>
 								<string>1C37FBAC04509CD000000102</string>
-								<string>881E9DE50E4C17CD005C3840</string>
 								<string>1C37FABC05509CD000000102</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
@@ -422,9 +380,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>881E9DE60E4C17CD005C3840</string>
+				<string>88F637F50EC6050400472168</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>881E9DE70E4C17CD005C3840</string>
+				<string>88F637F60EC6050400472168</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -558,14 +516,13 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>881E9DEC0E4C17CD005C3840</string>
-		<string>881E9DED0E4C17CD005C3840</string>
-		<string>881E9DEE0E4C17CD005C3840</string>
+		<string>88F637F70EC6050400472168</string>
+		<string>88F637F80EC6050400472168</string>
+		<string>88F637F90EC6050400472168</string>
 		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>881E9DA60E4884F7005C3840</string>
-		<string>/Users/jesse/code/tikirobot/TikiTV/PikiTV/PikiTV.xcodeproj</string>
-		<string>881E9DE90E4C17CD005C3840</string>
+		<string>/Users/jesse/projects/tikitv/TikiTV/PikiTV/PikiTV.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
 	<string>274 134 690 397 0 0 1440 878 </string>
@@ -645,7 +602,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>881E9DA60E4884F7005C3840</string>
-				<string>881E9DA70E4884F7005C3840</string>
+				<string>88F6299A0EBC23C000472168</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -687,8 +644,8 @@
 										<string>yes</string>
 										<key>sizes</key>
 										<array>
-											<string>{{0, 0}, {316, 185}}</string>
-											<string>{{316, 0}, {378, 185}}</string>
+											<string>{{0, 0}, {316, 194}}</string>
+											<string>{{316, 0}, {378, 194}}</string>
 										</array>
 									</dict>
 									<key>VerticalSplitView</key>
@@ -703,8 +660,8 @@
 										<string>yes</string>
 										<key>sizes</key>
 										<array>
-											<string>{{0, 0}, {694, 185}}</string>
-											<string>{{0, 185}, {694, 196}}</string>
+											<string>{{0, 0}, {694, 194}}</string>
+											<string>{{0, 194}, {694, 187}}</string>
 										</array>
 									</dict>
 								</dict>
@@ -737,7 +694,7 @@
 										<real>148</real>
 									</array>
 									<key>Frame</key>
-									<string>{{316, 0}, {378, 185}}</string>
+									<string>{{316, 0}, {378, 194}}</string>
 									<key>RubberWindowFrame</key>
 									<string>263 197 694 422 0 0 1440 878 </string>
 								</dict>
@@ -765,13 +722,13 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1CD10A99069EF8BA00B06720</string>
-				<string>881E9DA80E4884F7005C3840</string>
+				<string>88F6299B0EBC23C000472168</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>881E9DA90E4884F7005C3840</string>
-				<string>881E9DAA0E4884F7005C3840</string>
-				<string>881E9DAB0E4884F7005C3840</string>
-				<string>881E9DAC0E4884F7005C3840</string>
-				<string>881E9DAD0E4884F7005C3840</string>
+				<string>88F6299C0EBC23C000472168</string>
+				<string>88F6299D0EBC23C000472168</string>
+				<string>88F6299E0EBC23C000472168</string>
+				<string>88F6299F0EBC23C000472168</string>
+				<string>88F629A00EBC23C000472168</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
@@ -935,7 +892,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C78EAAD065D492600B07095</string>
-				<string>881E9DAE0E4884F7005C3840</string>
+				<string>88F629A10EBC23C000472168</string>
 				<string>1C78EAAC065D492600B07095</string>
 			</array>
 			<key>ToolbarConfiguration</key>

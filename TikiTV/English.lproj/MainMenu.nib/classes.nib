@@ -14,27 +14,6 @@
 		</dict>
 		<dict>
 			<key>CLASS</key>
-			<string>TTVMPEGSlicer</string>
-			<key>LANGUAGE</key>
-			<string>ObjC</string>
-			<key>OUTLETS</key>
-			<dict>
-				<key>_controlsView</key>
-				<string>VSOpenGLView</string>
-				<key>_markInSlider</key>
-				<string>NSSlider</string>
-				<key>_markInTextField</key>
-				<string>NSTextField</string>
-				<key>_markOutSlider</key>
-				<string>NSSlider</string>
-				<key>_markOutTextField</key>
-				<string>NSTextField</string>
-			</dict>
-			<key>SUPERCLASS</key>
-			<string>NSObject</string>
-		</dict>
-		<dict>
-			<key>CLASS</key>
 			<string>FirstResponder</string>
 			<key>LANGUAGE</key>
 			<string>ObjC</string>
@@ -61,7 +40,15 @@
 		<dict>
 			<key>ACTIONS</key>
 			<dict>
+				<key>reloadClipSequence</key>
+				<string>id</string>
+				<key>toggleDeck</key>
+				<string>id</string>
 				<key>toggleFullscreen</key>
+				<string>id</string>
+				<key>toggleOutputActive</key>
+				<string>id</string>
+				<key>togglePause</key>
 				<string>id</string>
 			</dict>
 			<key>CLASS</key>

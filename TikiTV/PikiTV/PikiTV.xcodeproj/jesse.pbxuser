@@ -40,7 +40,7 @@
 					203,
 					60,
 					20,
-					48.16259765625,
+					48,
 					43,
 					43,
 				);
@@ -54,12 +54,8 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 239633500;
-			PBXWorkspaceStateSaveDate = 239633500;
-		};
-		perUserProjectItems = {
-			881E9DBB0E488914005C3840 /* PBXBookmark */ = 881E9DBB0E488914005C3840 /* PBXBookmark */;
-			881E9DEB0E4C17CD005C3840 /* PBXTextBookmark */ = 881E9DEB0E4C17CD005C3840 /* PBXTextBookmark */;
+			PBXPerProjectTemplateStateSaveDate = 247210840;
+			PBXWorkspaceStateSaveDate = 247210840;
 		};
 		sourceControlManager = 881E9DA40E48847B005C3840 /* Source Control */;
 		userBuildSettings = {
@@ -91,10 +87,10 @@
 	};
 	7790198E0C07548A00326F66 /* PikiTVAppDelegate.py */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {514, 486}}";
-			sepNavSelRange = "{210, 0}";
-			sepNavVisRange = "{0, 726}";
-			sepNavWindowFrame = "{{417, 178}, {573, 558}}";
+			sepNavIntBoundsRect = "{{0, 0}, {809, 496}}";
+			sepNavSelRange = "{607, 0}";
+			sepNavVisRange = "{0, 996}";
+			sepNavWindowFrame = "{{417, 168}, {868, 568}}";
 		};
 	};
 	881E9D9E0E48845C005C3840 /* PikiTV */ = {
@@ -133,20 +129,6 @@
 	881E9DA50E48847B005C3840 /* Code sense */ = {
 		isa = PBXCodeSenseManager;
 		indexTemplatePath = "";
-	};
-	881E9DBB0E488914005C3840 /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = 7790198E0C07548A00326F66 /* PikiTVAppDelegate.py */;
-	};
-	881E9DEB0E4C17CD005C3840 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 7790198E0C07548A00326F66 /* PikiTVAppDelegate.py */;
-		name = "PikiTVAppDelegate.py: 12";
-		rLen = 0;
-		rLoc = 210;
-		rType = 0;
-		vrLen = 726;
-		vrLoc = 0;
 	};
 	8D1107260486CEB800E47090 /* PikiTV */ = {
 		activeExec = 0;

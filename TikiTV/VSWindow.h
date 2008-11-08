@@ -11,5 +11,6 @@
 
 - (void)setFullscreen:(BOOL)fullscreen;
 - (BOOL)isFullscreen;
+- (BOOL)handleEvent:(NSEvent*)event;
 
 @end

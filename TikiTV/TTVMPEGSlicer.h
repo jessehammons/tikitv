@@ -7,15 +7,22 @@
 
 @interface TTVMPEGSlicer : NSObject
 {
+	IBOutlet NSTextField *_frameNumberTextField;
 	IBOutlet NSSlider *_markInSlider;
 	IBOutlet NSTextField *_markInTextField;
 	IBOutlet NSSlider *_markOutSlider;
 	IBOutlet NSTextField *_markOutTextField;	
 	IBOutlet VSOpenGLView *_controlsView;
+	IBOutlet NSTableView *_clipsTableView;
 	
-//	VSDecoder *_decoder;
-	TTVDeck *_deck;
+	TTVDecoderThread *_decoder;
 	BOOL _initialized;
 	BOOL _paused;
+	TTVClipList *_clips;
 }
+
+- (TTVClipList *)clips;
+
+- (IBAction)addClip:(id)sender;
+
 @end

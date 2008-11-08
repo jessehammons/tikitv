@@ -110,15 +110,19 @@ void ttv_print_gl_error(int error);
 	GLuint		_dl;
 	NSData *_data;
 	NSTimeInterval _decodeTime;
+	int _drawCount;
 	BOOL _invalid;
+	int _frameNumber;
 }
 - (id)initWithProgramText:(GLcharARB*)text context:(CGLContextObj)cgl_ctx;
-- (void)uploadPicture:(AVPicture*)picture size:(NSSize)size decodeTime:(NSTimeInterval)time context:(CGLContextObj)cgl_ctx;
+- (void)uploadPicture:(AVPicture*)picture size:(NSSize)size decodeTime:(NSTimeInterval)time frameNumber:(int)frameNumber context:(CGLContextObj)cgl_ctx;
 - (void)uploadTextureInContext:(CGLContextObj)cgl_ctx;
 - (void)drawInRect:(NSRect)rect context:(CGLContextObj)cgl_ctx;
 - (void)previewInRect:(NSRect)rect context:(CGLContextObj)cgl_ctx;
 - (NSData*)data;
 - (NSTimeInterval)decodeTime;
+- (void)recordDroppedFrame;
+- (int)frameNumber;
 - (BOOL)invalid;
 - (void)invalidate;
 - (void)setAdjustments:(float*)adjust context:(CGLContextObj)cgl_ctx;
@@ -137,7 +141,7 @@ void ttv_print_gl_error(int error);
 }
 
 - (id)initWithTextureClass:(Class)textureClass;
-- (void)fillBuffer:(AVPicture*)decodedPicture size:(NSSize)size decodeTime:(NSTimeInterval)time context:(CGLContextObj)cgl_ctx;
+- (void)fillBuffer:(AVPicture*)decodedPicture size:(NSSize)size decodeTime:(NSTimeInterval)time frameNumber:(int)frameNumber context:(CGLContextObj)cgl_ctx;
 - (void)advance;
 - (void)reset;
 - (void)previewInRect:(NSRect)rect context:(CGLContextObj)cgl_ctx;
@@ -153,7 +157,7 @@ void ttv_print_gl_error(int error);
 	NSArray *_textures;
 }
 - (id)initWithContext:(CGLContextObj)cgl_ctx;
-- (void)uploadPicture:(AVPicture*)picture size:(NSSize)size decodeTime:(NSTimeInterval)time context:(CGLContextObj)cgl_ctx;
+- (void)uploadPicture:(AVPicture*)picture size:(NSSize)size decodeTime:(NSTimeInterval)time frameNumber:(int)frameNumber context:(CGLContextObj)cgl_ctx;
 - (void)drawInRect:(NSRect)rect context:(CGLContextObj)cgl_ctx;
 @end
 
@@ -163,7 +167,7 @@ void ttv_print_gl_error(int error);
 	VSTextureUnitTexture *_texture;
 }
 - (id)initWithContext:(CGLContextObj)cgl_ctx;
-- (void)uploadPicture:(AVPicture*)picture size:(NSSize)size decodeTime:(NSTimeInterval)time context:(CGLContextObj)cgl_ctx;
+- (void)uploadPicture:(AVPicture*)picture size:(NSSize)size decodeTime:(NSTimeInterval)time frameNumber:(int)frameNumber context:(CGLContextObj)cgl_ctx;
 - (void)drawInRect:(NSRect)rect context:(CGLContextObj)cgl_ctx;
 - (void)previewInRect:(NSRect)rect context:(CGLContextObj)cgl_ctx;
 @end
@@ -227,6 +231,72 @@ void ttv_print_gl_error(int error);
 - (void)drawOutput:(NSRect)rect context:(NSOpenGLContext*)context pictureSource:(TTVPictureSource*)pictureSource;
 
 @end
+
+@interface TTVFrameIndexEntry : NSObject
+{
+	long long _offset;
+	int _length;
+	int _frameNumber;
+	int _frameType;
+}
+- (id)initWithOffset:(long long )offset length:(int)length frameNumber:(int)frameNumber frameType:(int)frameType;
+- (id)initWithDictionary:(NSDictionary*)d;
+- (long long)offset;
+- (int)length;
+- (int)frameNumber;
+- (int)frameType;
+- (id)plistify;
+@end
+
+@interface TTVFrameIndex : NSObject
+{
+	NSString *_filename;
+	NSMutableArray *_entries;
+}
+
+- (id)initWithFile:(NSString*)file;
+- (NSString*)filename;
+- (int)frameCount;
+- (void)addEntry:(TTVFrameIndexEntry*)entry;
+- (void)save;
+- (TTVFrameIndexEntry*)closestEntryForFrame:(int)frame;
+- (long long)byteOffsetForFrame:(int)frame;
+
+@end
+
+@interface TTVClip : NSObject
+{
+	int _startFrame;
+	int _endFrame;
+	NSString *_name;
+}
+- (id)initWithStartFrame:(int)startFrame endFrame:(int)endFrame;
+- (id)initWithDictionary:(NSDictionary*)d;
+- (int)startFrame;
+- (void)setStartFrame:(int)frame;
+- (int)endFrame;
+- (void)setEndFrame:(int)frame;
+- (void)setName:(NSString*)name;
+- (NSString*)name;
+- (id)plistify;
+@end
+
+@interface TTVClipList : NSObject
+{
+	NSString *_filename;
+	NSMutableArray *_clips;
+}
+- (id)initWithFile:(NSString*)filename;
+- (NSString*)filename;
+- (int)clipCount;
+- (TTVClip*)clipAtIndex:(int)clipIndex;
+- (void)addClip:(int)startFrame endFrame:(int)endFrame;
+- (void)adjustClip:(int)clipIndex startFrame:(int)startFrame;
+- (void)adjustClip:(int)clipIndex endFrame:(int)endFrame;
+- (void)adjustClip:(int)clipIndex rename:(NSString*)name;
+- (void)save;
+@end
+
 @interface TTVPacket : NSObject
 {
 	/* ... from avformat.h ...
@@ -243,44 +313,33 @@ void ttv_print_gl_error(int error);
 
 @end
 
-@interface TTVMediaTOCEntry : NSObject
-{
-	int offset;
-	int length;
-	int frameNumber;
-	int frameType;
-}
-- (id)initWithOffset:(int)offset length:(int)length frameNumber:(int)frameNumber frameType:(int)frameType;
-- (int)offset;
-- (int)length;
-- (int)frameNumber;
-- (int)frameType;
-@end
-
 @interface TTVInputContext : NSObject
 {
 	AVFormatContext *_ffmpegContext;
 	AVFrame *_ffmpegFrame;
 	BOOL _codecOpened;
 	NSLock *_ffmpegLock;
+	int _frameCount;
+	int _currentFrameIndex;
+	TTVFrameIndex *_index;
+	int _startFrame;
+	int _endFrame;
 }
 - (id)initWithFile:(NSString*)path;
-- (void)seekToOffset:(int)offset;
+- (void)seekToFrame:(int)frame;
 - (void)gotoBeginning;
 - (void)skipForward;
 - (void)skipBackward;
 - (TTVPacket*)readNextFrame;
 - (AVFrame*)decodeFrame:(TTVPacket*)packet;
-@end
-
-@interface TTVMediaTOC : NSObject
-{
-	NSMutableArray *_entries;
-}
-- (id)initWithData:(NSData*)data;
-- (void)buildTOCFromContext:(TTVInputContext*)inputContext;
-- (NSData*)serialize;
-
+- (void)buildIndex;
+- (NSString*)indexFilename;
+- (NSString*)clipListFilename;
+- (int)frameCount;
+- (TTVFrameIndex*)index;
+- (void)setStartFrame:(int)frame;
+- (void)setEndFrame:(int)frame;
+- (void)setExtents:(TTVClip*)clip;
 @end
 
 @interface TTVMediaReader : NSObject
@@ -301,7 +360,6 @@ void ttv_print_gl_error(int error);
 
 @interface TTVFileReader : TTVMediaReader
 {
-	
 }
 - (id)initWithFile:(NSString*)path;
 - (void)skipForward;
@@ -318,10 +376,27 @@ void ttv_print_gl_error(int error);
 }
 - (id)initWithFile:(NSString*)path;
 - (NSString*)_currentFile;
+- (void)_openCurrentFile;
 - (void)skipForward;
 - (void)skipBackward;
 - (AVFrame*)decodeNextFrame;
 @end
+
+@interface TTVClipListReader : TTVMediaReader
+{
+	TTVClipList *_clips;
+	int _currentClipIndex;
+}
+- (id)initWithFile:(NSString*)path;
+- (NSString*)mediaFilename;
+- (TTVClipList*)clips;
+- (int)currentClipIndex;
+- (TTVClip*)currentClip;
+- (void)skipForward;
+- (void)skipBackward;
+
+@end
+
 
 /*
  delegate:
@@ -351,6 +426,10 @@ void ttv_print_gl_error(int error);
 - (TTVMediaReader*)mediaReader;
 - (TTVVideoStream*)stream;
 - (NSString*)inputFilename;
+- (void)skipForward;
+- (void)skipBackward;
+- (void)setStartFrame:(int)startFrame;
+- (void)setEndFrame:(int)endFrame;
 - (void)allDone;
 
 @end
