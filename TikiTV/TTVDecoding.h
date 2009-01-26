@@ -239,14 +239,18 @@ void ttv_print_gl_error(int error);
 	int _length;
 	int _frameNumber;
 	int _frameType;
+	int _position;
 }
 - (id)initWithOffset:(long long )offset length:(int)length frameNumber:(int)frameNumber frameType:(int)frameType;
 - (id)initWithDictionary:(NSDictionary*)d;
 - (long long)offset;
 - (int)length;
 - (int)frameNumber;
+- (void)setFrameType:(int)frameType;
 - (int)frameType;
 - (id)plistify;
+- (void)setPosition:(int)position;
+- (int)position;
 @end
 
 @interface TTVFrameIndex : NSObject
@@ -261,7 +265,10 @@ void ttv_print_gl_error(int error);
 - (void)addEntry:(TTVFrameIndexEntry*)entry;
 - (void)save;
 - (TTVFrameIndexEntry*)closestEntryForFrame:(int)frame;
+- (TTVFrameIndexEntry*)entryAtIndex:(int)index;
 - (long long)byteOffsetForFrame:(int)frame;
+- (TTVFrameIndexEntry*)previousEntry:(TTVFrameIndexEntry*)entry;
+- (TTVFrameIndexEntry*)nextEntry:(TTVFrameIndexEntry*)entry;
 
 @end
 
@@ -328,6 +335,7 @@ void ttv_print_gl_error(int error);
 	int _endFrame;
 }
 - (id)initWithFile:(NSString*)path;
+- (NSString*)filename;
 - (int)currentFrame;
 - (void)seekToFrame:(int)frame;
 - (void)gotoBeginning;
@@ -346,13 +354,22 @@ void ttv_print_gl_error(int error);
 - (void)setExtents:(TTVClip*)clip;
 @end
 
+@class TTVSequenceReader;
+
 @interface TTVMediaReader : NSObject
 {
 	NSString *_filePath;
 	TTVInputContext *_inputContext;
+	id _delegate;
+	BOOL _noDecode;
 }
 + (TTVMediaReader*)mediaReaderForFile:(NSString*)path;
 - (id)initWithFile:(NSString*)path;
+- (void)setDelegate:(id)value;
+- (id)delegate;
+- (void)setNoDecode:(BOOL)value;
+- (BOOL)noDecode;
+//- (BOOL)mediaReader:(TTVSequenceReader*)reader shouldSkipForward;
 - (NSString*)filePath;
 - (void)skipForward;
 - (void)skipBackward;
@@ -360,6 +377,7 @@ void ttv_print_gl_error(int error);
 - (AVFrame*)decodeNextFrame;
 - (TTVInputContext *)inputContext;
 - (NSSize)currentSize;
+- (int)repeatFrames;
 @end
 
 @interface TTVFileReader : TTVMediaReader
@@ -377,6 +395,7 @@ void ttv_print_gl_error(int error);
 	TTVFileReader *_reader;
 	NSMutableArray *_sequence;	
 	int _sequenceIndex;
+	int _currentFrameIndex;
 }
 - (id)initWithFile:(NSString*)path;
 - (NSString*)_currentFile;
@@ -385,6 +404,22 @@ void ttv_print_gl_error(int error);
 - (void)skipBackward;
 - (AVFrame*)decodeNextFrame;
 @end
+
+@interface TTVMultiReader : TTVSequenceReader
+{
+	NSMutableArray *_readers;
+}
+- (id)initWithFile:(NSString*)path;
+@end
+
+@interface TTVSheepReader : TTVSequenceReader
+{
+	NSDictionary *_sheep;
+	NSString *_currentPath;
+}
+- (id)initWithFile:(NSString*)path;
+@end
+
 
 @interface TTVClipListReader : TTVMediaReader
 {
@@ -434,6 +469,8 @@ void ttv_print_gl_error(int error);
 - (void)skipBackward;
 - (void)setStartFrame:(int)startFrame;
 - (void)setEndFrame:(int)endFrame;
+- (void)gotoBeginning;
+- (void)gotoEnd;
 - (void)allDone;
 
 @end

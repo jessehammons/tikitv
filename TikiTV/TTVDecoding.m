@@ -50,7 +50,7 @@ void ttv_writePList(id plist, NSString *filename) {
 id ttv_readPList(NSString *filename) {
 	NSData *data = [NSData dataWithContentsOfFile:filename];
 	if (data == nil) {
-		NSLog(@"error reading data for plist: %@", filename);
+		//NSLog(@"error reading data for plist: %@", filename);
 		return nil;
 	}
 	NSString *serror = nil;
@@ -187,6 +187,7 @@ int __fullScreenIsMainScreen = 1;
 			//														NSOpenGLPFAScreenMask, CGDisplayIDToOpenGLDisplayMask(kCGDirectMainDisplay),
 			//														NSOpenGLPFAScreenMask, CGDisplayIDToOpenGLDisplayMask(reallyFSDisplayID),
 			NSOpenGLPFAScreenMask, CGDisplayIDToOpenGLDisplayMask(fullscreenDisplayId),														
+//			NSOpenGLPFAOffScreen,
 			
 			NSOpenGLPFANoRecovery,
 			NSOpenGLPFADoubleBuffer,
@@ -199,8 +200,8 @@ int __fullScreenIsMainScreen = 1;
 		//		if (![[[NSProcessInfo processInfo] processName] isEqualToString:@"TikiTV"]) {
 		//			NSLog(@"SETTING VBL");
 		/* request this context sync with VBL */
-		long							value = 1;
-		[[fullscreenContext openGLContext] setValues:(const GLint *)&value forParameter:NSOpenGLCPSwapInterval];
+//		long							value = 1;
+//		[[fullscreenContext openGLContext] setValues:(const GLint *)&value forParameter:NSOpenGLCPSwapInterval];
 		
 		//		}
 		NSLog(@"fullscreen is %@ on %d", fullscreenContext, fullscreenDisplayId);
@@ -341,7 +342,7 @@ int __fullScreenIsMainScreen = 1;
 {
 	return _textureID;
 }
-
+#define HEIGHT 580
 - (void)uploadPlane:(void*)data size:(NSSize)size rowBytes:(GLint)rowBytes program:(GLhandleARB)program context:(CGLContextObj)cgl_ctx
 {
 	glEnable(GL_TEXTURE_RECTANGLE_EXT);
@@ -384,48 +385,59 @@ int __fullScreenIsMainScreen = 1;
 		glTexParameteri(GL_TEXTURE_RECTANGLE_EXT, GL_TEXTURE_STORAGE_HINT_APPLE , GL_STORAGE_CACHED_APPLE); //VRAM
 		//		glTexParameteri(GL_TEXTURE_RECTANGLE_EXT, GL_TEXTURE_STORAGE_HINT_APPLE , GL_STORAGE_SHARED_APPLE); //AGP
 		
-		glTexImage2D(GL_TEXTURE_RECTANGLE_EXT, 0, GL_LUMINANCE, _baseRowBytes, size.height, 0, GL_LUMINANCE, GL_UNSIGNED_BYTE, _base);
+//		glTexImage2D(GL_TEXTURE_RECTANGLE_EXT, 0, GL_LUMINANCE, _baseRowBytes, size.height, 0, GL_LUMINANCE, GL_UNSIGNED_BYTE, _base);
+		glTexImage2D(GL_TEXTURE_RECTANGLE_EXT, 0, GL_LUMINANCE, _baseRowBytes, HEIGHT, 0, GL_LUMINANCE, GL_UNSIGNED_BYTE, _base);
+//		glTexImage2D(GL_TEXTURE_RECTANGLE_EXT, 0, GL_RGBA, _baseRowBytes, size.height, 0, GL_LUMINANCE, GL_UNSIGNED_BYTE, _base);		
 		ttv_check_gl_error();
 		glGenBuffers(1, &_pbo);
 		ttv_check_gl_error();
 		
-		glBindBuffer(GL_PIXEL_UNPACK_BUFFER_ARB, _pbo);
+//		glBindBuffer(GL_PIXEL_UNPACK_BUFFER_ARB, _pbo);
 		ttv_check_gl_error();
-		glBufferData(GL_PIXEL_UNPACK_BUFFER_ARB, _baseRowBytes*size.height, _base, GL_STREAM_DRAW);
+//		glBufferData(GL_PIXEL_UNPACK_BUFFER_ARB, _baseRowBytes*size.height, _base, GL_STREAM_DRAW);
 		ttv_check_gl_error();
-		glBindBuffer(GL_PIXEL_UNPACK_BUFFER_ARB, 0);
+//		glBindBuffer(GL_PIXEL_UNPACK_BUFFER_ARB, 0);
 		ttv_check_gl_error();
 	}
-	glBindBuffer(GL_PIXEL_UNPACK_BUFFER_ARB, _pbo);
+//	glBindBuffer(GL_PIXEL_UNPACK_BUFFER_ARB, _pbo);
 	ttv_check_gl_error();
-	glBufferData(GL_PIXEL_UNPACK_BUFFER_ARB, _baseRowBytes*size.height, NULL, GL_STREAM_DRAW);
+//	glBufferData(GL_PIXEL_UNPACK_BUFFER_ARB, _baseRowBytes*size.height, NULL, GL_STREAM_DRAW);
 	ttv_check_gl_error();
-	void* ioMem = glMapBuffer(GL_PIXEL_UNPACK_BUFFER_ARB, GL_WRITE_ONLY);
+//	void* ioMem = glMapBuffer(GL_PIXEL_UNPACK_BUFFER_ARB, GL_WRITE_ONLY);
 	ttv_check_gl_error();
-	void *ptr = data;
-	for(int i = 0; i < size.height; i++) {
-		memcpy(ioMem, ptr, rowBytes);
-		ioMem += _baseRowBytes;
-		ptr += rowBytes;
-	}
-	glUnmapBuffer(GL_PIXEL_UNPACK_BUFFER_ARB);
+//	void *ptr = data;
+//	for(int i = 0; i < size.height; i++) {
+//		memcpy(ioMem, ptr, rowBytes);
+//		ioMem += _baseRowBytes;
+//		ptr += rowBytes;
+//	}
+//	memcpy(ioMem, data, _baseRowBytes*size.height);
+//	glUnmapBuffer(GL_PIXEL_UNPACK_BUFFER_ARB);
 	ttv_check_gl_error();
-	glBindBuffer(GL_PIXEL_UNPACK_BUFFER_ARB, 0);
-	ttv_check_gl_error();
-	
+
+//	glBufferSubData(GL_PIXEL_UNPACK_BUFFER_ARB, 0, _baseRowBytes*size.height, data);
+	ttv_check_gl_error();	
+
 	_cachedSize = size;
 	_cachedRowBytes = rowBytes;
+
+	glTexSubImage2D(GL_TEXTURE_RECTANGLE_EXT, 0, 0, 0, rowBytes, _cachedSize.height, GL_LUMINANCE, GL_UNSIGNED_BYTE, data);
+	ttv_check_gl_error();
+	
+//	glBindBuffer(GL_PIXEL_UNPACK_BUFFER_ARB, 0);
+	ttv_check_gl_error();
+	
 }
 
 - (void)uploadTextureInContext:(CGLContextObj)cgl_ctx {
 	if (_cachedSize.width == 0 || _cachedSize.height == 0)
 		return;
 	[self bindInContext:cgl_ctx];
-	glBindBuffer(GL_PIXEL_UNPACK_BUFFER_ARB, _pbo);
+//	glBindBuffer(GL_PIXEL_UNPACK_BUFFER_ARB, _pbo);
 	ttv_check_gl_error();
-	glTexSubImage2D(GL_TEXTURE_RECTANGLE_EXT, 0, 0, 0, _baseRowBytes, _cachedSize.height, GL_LUMINANCE, GL_UNSIGNED_BYTE, 0);
+//	glTexSubImage2D(GL_TEXTURE_RECTANGLE_EXT, 0, 0, 0, _baseRowBytes, _cachedSize.height, GL_LUMINANCE, GL_UNSIGNED_BYTE, 0);
 	ttv_check_gl_error();	
-	glBindBuffer(GL_PIXEL_UNPACK_BUFFER_ARB, 0);
+//	glBindBuffer(GL_PIXEL_UNPACK_BUFFER_ARB, 0);
 	ttv_check_gl_error();
 }
 
@@ -485,7 +497,7 @@ int __fullScreenIsMainScreen = 1;
 		glAttachObjectARB(_programHandle, shaderHandle);
 		glLinkProgramARB(_programHandle);
 		[self _printInfoLog:_programHandle pname:GL_OBJECT_LINK_STATUS_ARB context:cgl_ctx];
-		int length = 752*480*2;
+		int length = 752*HEIGHT*2;
 		void *buffer = malloc(length);
 		_data = [[NSData dataWithBytesNoCopy:buffer length:length freeWhenDone:YES] retain];
 	}
@@ -541,7 +553,7 @@ int __fullScreenIsMainScreen = 1;
 	//	glPixelStorei(GL_UNPACK_CLIENT_STORAGE_APPLE, 1);
 	//	ttv_check_gl_error();
 	//	glTexParameteri(GL_TEXTURE_RECTANGLE_EXT, GL_TEXTURE_STORAGE_HINT_APPLE , GL_STORAGE_CACHED_APPLE); //VRAM
-	//	glTexParameteri(GL_TEXTURE_RECTANGLE_EXT, GL_TEXTURE_STORAGE_HINT_APPLE , GL_STORAGE_SHARED_APPLE); //AGP
+//		glTexParameteri(GL_TEXTURE_RECTANGLE_EXT, GL_TEXTURE_STORAGE_HINT_APPLE , GL_STORAGE_SHARED_APPLE); //AGP
 	ttv_check_gl_error();
 	_frameNumber = frameNumber;
 	_cachedSize = size;
@@ -624,7 +636,7 @@ int __fullScreenIsMainScreen = 1;
 	"}\n";
 	if ((self = [super initWithProgramText:yuv_program context:cgl_ctx]) != nil) {
 		AVPicture picture;
-		avpicture_fill(&picture, (uint8_t*)[_data bytes], PIX_FMT_YUV420P, 752, 480);
+		avpicture_fill(&picture, (uint8_t*)[_data bytes], PIX_FMT_YUV420P, 752, HEIGHT);
 		_textures = [[NSArray arrayWithObjects:
 					  [[[VSTextureUnitTexture alloc] initWithTextureUnit:GL_TEXTURE1 textureUnitIndex:1 name:"Utex" base:picture.data[2] rowBytes:picture.linesize[2]] autorelease],
 					  [[[VSTextureUnitTexture alloc] initWithTextureUnit:GL_TEXTURE2 textureUnitIndex:2 name:"Vtex" base:picture.data[1] rowBytes:picture.linesize[1]] autorelease],
@@ -1115,7 +1127,16 @@ static	NSLock *_glLock = nil;
 - (long long)offset { return _offset; }
 - (int)length { return _length; }
 - (int)frameNumber { return _frameNumber; }
+
+- (void)setFrameType:(int)frameType {
+	_frameType = frameType;
+}
 - (int)frameType { return _frameType; }
+
+- (void)setPosition:(int)value {
+	_position = value;
+}
+- (int)position { return _position; }
 
 @end
 
@@ -1156,14 +1177,21 @@ static	NSLock *_glLock = nil;
 }
 
 - (void)addEntry:(TTVFrameIndexEntry*)entry {
+	[entry setPosition:[_entries count]];
 	[_entries addObject:entry];
+}
+
+- (TTVFrameIndexEntry*)entryAtIndex:(int)index {
+	return [_entries objectAtIndex:index];
 }
 
 - (void)save {
 	NSMutableArray *entries = [NSMutableArray array];
 	for(int i = 0; i < [_entries count]; i++) {
-		[entries addObject:[[_entries objectAtIndex:i] plistify]];
-		NSLog(@"entries %@", [entries objectAtIndex:i]);
+//		if ([[_entries objectAtIndex:i] frameType] == 4) {
+			[entries addObject:[[_entries objectAtIndex:i] plistify]];
+			NSLog(@"entries %@", [entries lastObject]);
+//		}
 	}
 	ttv_writePList(entries, [self filename]);	
 }
@@ -1176,6 +1204,22 @@ static	NSLock *_glLock = nil;
 		index--;
 	}
 	return entry;
+}
+
+- (TTVFrameIndexEntry*)previousEntry:(TTVFrameIndexEntry*)entry {
+	int position = [entry position] - 1;
+	if (position >= 0) {
+		return [_entries objectAtIndex:position];
+	}
+	return nil;
+}
+
+- (TTVFrameIndexEntry*)nextEntry:(TTVFrameIndexEntry*)entry {
+	int position = [entry position] + 1;
+	if (position < [_entries count]) {
+		return [_entries objectAtIndex:position];
+	}
+	return nil;
 }
 
 - (long long)byteOffsetForFrame:(int)frame {
@@ -1345,6 +1389,9 @@ NSLock *__ffmpegLock = nil;
 - (id)initWithFile:(NSString*)path {
 	self = [super init];
 	if (self != nil) {
+		if (path == nil) {
+			NSLog(@"opening %@", path);
+		}
 		[self lockFFMPEG];
 		av_register_all(); /* this only does stuff the first time it's called */
 		int rv = av_open_input_file(&_ffmpegContext, [path fileSystemRepresentation], NULL, 0, NULL);
@@ -1369,6 +1416,7 @@ NSLock *__ffmpegLock = nil;
 	return self;
 }
 - (void)dealloc {
+	//NSLog(@"DEALLOC%@", [self filename]);	
 	if ([self _codecValid]) {
 		[self lockFFMPEG];
 		avcodec_close(_ffmpegContext->streams[0]->codec);
@@ -1394,7 +1442,7 @@ NSLock *__ffmpegLock = nil;
 - (int)currentFrame { return _currentFrameIndex; }
 
 - (void)seekToFrame:(int)newFrame {
-	NSLog(@"seeking to fraem %d", newFrame);
+//	NSLog(@"seeking to fraem %d", newFrame);
 	if ([self _codecValid]) {
 		long long byte_offset = 0;
 		if (newFrame) {
@@ -1442,7 +1490,17 @@ NSLock *__ffmpegLock = nil;
 	[self seekToFrame:_currentFrameIndex - _skipAmount];
 }
 
+- (BOOL)isBlack {
+	return NO;
+	return [[[[self indexFilename] lastPathComponent] stringByDeletingPathExtension] isEqualToString:@"black2"];
+}
+
 - (TTVPacket*)readNextFrame {
+	static TTVPacket *black = nil;
+	if (black == nil) {
+		black = [[TTVPacket alloc] init];
+	}
+	if ([self isBlack]) { return black; }
 	TTVPacket *packet = nil;
 	if ([self _codecValid]) {
 		packet = [[[TTVPacket alloc] init] autorelease];
@@ -1457,19 +1515,6 @@ NSLock *__ffmpegLock = nil;
 	return packet;
 }
 
-- (AVFrame*)decodeFrame:(TTVPacket*)packet {
-	AVFrame *frame = NULL;
-	if ([self _codecValid]) {
-		int got_frame = 0;
-		avcodec_decode_video(_ffmpegContext->streams[0]->codec, _ffmpegFrame, &got_frame, [packet dataPtr], [packet dataSize]);
-		if (got_frame) {
-			_ffmpegFrame->error[0] = _currentFrameIndex;
-			frame = _ffmpegFrame;
-		}
-	}
-	return frame;
-}
-
 - (NSSize)currentSize {
 	if ([self _codecValid]) {
 		return NSMakeSize(_ffmpegContext->streams[0]->codec->width, _ffmpegContext->streams[0]->codec->height);
@@ -1478,6 +1523,33 @@ NSLock *__ffmpegLock = nil;
 		return NSZeroSize;
 	}
 }
+
+- (AVFrame*)decodeFrame:(TTVPacket*)packet {
+	AVFrame *frame = NULL;
+	if ([self _codecValid]) {
+		
+		if ([self isBlack] && _ffmpegFrame->data[0] != NULL) {
+			memset(_ffmpegFrame->data[0], 250, _ffmpegFrame->linesize[0]*([self currentSize].height));
+			memset(_ffmpegFrame->data[1], 100, _ffmpegFrame->linesize[1]*([self currentSize].height/2));
+			memset(_ffmpegFrame->data[2], 100, _ffmpegFrame->linesize[2]*([self currentSize].height/2));			
+			return _ffmpegFrame;
+		}
+				   
+		int got_frame = 0;
+		avcodec_decode_video(_ffmpegContext->streams[0]->codec, _ffmpegFrame, &got_frame, [packet dataPtr], [packet dataSize]);
+		if (got_frame) {
+			_ffmpegFrame->error[0] = _currentFrameIndex;
+//			AVFrame *f = _ffmpegFrame;
+//			if ([[self clipListFilename] isEqualToString:@"/Users/jesse/videos/selects/aaa_test.ttvclips"]) {
+//				NSLog(@"key %d, ptype %d, pts %qd pts, cpn %d, dpn %d, q %d, age %d,  ref %d, int %d, tff %d", f->key_frame, f->pict_type, f->pts, f->coded_picture_number, 
+//				  f->display_picture_number, f->quality, 0, f->reference, f->interlaced_frame, f->top_field_first);
+//			}
+			frame = _ffmpegFrame;
+		}
+	}
+	return frame;
+}
+
 
 - (NSString*)filename {
 	return [NSString stringWithCString:_ffmpegContext->filename encoding:NSUTF8StringEncoding];
@@ -1521,25 +1593,64 @@ NSLock *__ffmpegLock = nil;
  [moreInfoSheet orderOut: self];	
 */
 
-- (void)buildIndex {
+- (void)xxx_buildIndex {
 	TTVPacket *pkt = nil;
 	long long frameNumber = 0;
-	do {		
-		long long pos = url_ftell(_ffmpegContext->pb);		
+	do {
+		long long offset = url_ftell(_ffmpegContext->pb);
 		pkt = [self readNextFrame];
 		AVFrame *frame = [self decodeFrame:pkt];
-		//NSLog(@"frametype %d", _ffmpegContext->streams[0]->codec->frame_type);
-		if (frame && frame->key_frame) {
-
-			//NSLog(@"frametype %d, keyframe %d, pos %qd", frame->pict_type, frame->key_frame, pos);
-			NSDictionary *entry = [NSDictionary dictionaryWithObjectsAndKeys:
-							   [NSNumber numberWithLongLong: pos], @"offset",
-							   [NSNumber numberWithLongLong: frameNumber], @"frameNumber",
+		unsigned char *p = [pkt dataPtr];		
+		NSDictionary *entry = [NSDictionary dictionaryWithObjectsAndKeys:
+							   [NSNumber numberWithLongLong:offset], @"offset",
+							   [NSNumber numberWithLongLong:frameNumber], @"frameNumber",
 							   nil];
-			[[self index] addEntry:[[[TTVFrameIndexEntry alloc] initWithDictionary:entry] autorelease]];			
+		[[self index] addEntry:[[[TTVFrameIndexEntry alloc] initWithDictionary:entry] autorelease]];
+		NSLog(@"frametype %d, keyframe %d, cpn %d, fn %qd, pos %qd, %X %X %X %X, bptr %d",  frame ? frame->pict_type : -1, frame ? frame->key_frame : -1, frame ? frame->coded_picture_number : -1, frameNumber, offset, p[0], p[1], p[2], p[3], (int)_ffmpegContext->pb->buf_ptr);
+		if (frame && frame->key_frame) {
+			int index = frame->coded_picture_number;
+			if (index)
+				index--;
+			TTVFrameIndexEntry *entry = [[self index] entryAtIndex:index];
+			NSAssert(entry, @"Fail4");
 		}
 		frameNumber++;
 	} while(pkt != nil);
+	[self _saveIndex];
+}
+// check this code over, rebuild old indexes if necessary, make command line app for buidling index
+- (void)buildIndex {
+	NSData *data = nil;
+	int frameNumber = 0;
+	int size = 4096*10;
+	long long offset = 0;
+	NSFileHandle *input = [NSFileHandle fileHandleForReadingAtPath:[self filename]];
+	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
+	do {
+		/* need to keep data obj valid for do/while test */
+		[pool release];
+		pool = [[NSAutoreleasePool alloc] init];
+		data = [input readDataOfLength:size];
+		const unsigned char *p = [data bytes];
+		int len = [data length];
+		for(int i = 0; i < len-4; i++) {
+			if (p[i] == 0x0 && p[i+1] == 0x0 && p[i+2] == 0x1) {
+				/* picture start code */
+				if (p[i+3] == 0x0) {
+					frameNumber++;
+				}
+				/* sequence start code */
+				if (p[i+3] == 0xb3) {
+					NSDictionary *entry = [NSDictionary dictionaryWithObjectsAndKeys:
+										   [NSNumber numberWithLongLong:offset+i], @"offset",
+										   [NSNumber numberWithLongLong:frameNumber], @"frameNumber",
+										   nil];
+					[[self index] addEntry:[[[TTVFrameIndexEntry alloc] initWithDictionary:entry] autorelease]];
+				}
+			}
+		}
+		offset += size;
+	} while([data length] != 0);
 	[self _saveIndex];
 }
 
@@ -1564,6 +1675,8 @@ NSLock *__ffmpegLock = nil;
 	NSDictionary *readerMap = [NSDictionary dictionaryWithObjectsAndKeys:
 							   [TTVSequenceReader class], @"ttv_seq",
 							   [TTVClipListReader class], @"ttvclips",
+							   [TTVMultiReader class], @"ttv_multi",
+							   [TTVSheepReader class], @"ttv_sheep",
 							   [TTVFileReader class], @"m2v",
 							   nil];
 	Class readerClass = [readerMap objectForKey:[path pathExtension]];
@@ -1583,6 +1696,11 @@ NSLock *__ffmpegLock = nil;
 	TTV_KVC_SET(inputContext, nil);
 	[super dealloc];
 }
+- (void)setDelegate:(id)value { _delegate = value; }
+- (id)delegate { return _delegate; }
+- (void)setNoDecode:(BOOL)value { _noDecode = value; }
+- (BOOL)noDecode { return _noDecode; }
+//- (BOOL)sequenceReader:(TTVSequenceReader*)reader shouldSkipForward {}
 - (NSString*)filePath {
 	return _filePath;
 }
@@ -1602,6 +1720,10 @@ NSLock *__ffmpegLock = nil;
 }
 - (AVFrame*)decodeNextFrame {
 	return [[self inputContext] decodeFrame:[self readNextFrame]];
+}
+
+- (int)repeatFrames {
+	return 1;
 }
 
 @end
@@ -1647,7 +1769,7 @@ NSLock *__ffmpegLock = nil;
 			NSMutableArray *newPlaylist = [[NSMutableArray array] retain];
 			for(int i = 0; i < [tmp count]; i++) {
 				NSString *path = [[VSFileLibrary library] pathForFilename:[tmp objectAtIndex:i]];
-				if ([[NSFileManager defaultManager] fileExistsAtPath:path] == YES) {
+				if ([[[tmp objectAtIndex:i] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] length] > 0 && [[NSFileManager defaultManager] fileExistsAtPath:path] == YES) {
 					[newPlaylist addObject:[tmp objectAtIndex:i]];
 				}
 			}
@@ -1665,6 +1787,7 @@ NSLock *__ffmpegLock = nil;
 - (void)dealloc {
 	TTV_KVC_SET(reader, nil);
 	TTV_KVC_SET(sequence, nil);
+	TTV_KVC_SET(inputContext, nil);
 	[super dealloc];
 }
 - (BOOL)valid {
@@ -1672,8 +1795,15 @@ NSLock *__ffmpegLock = nil;
 }
 
 - (void)_openCurrentFile {
-	[[self inputContext] release];
-	TTV_KVC_SET(inputContext, [[TTVInputContext alloc] initWithFile:[self _currentFile]]);
+	if (![self noDecode]) {
+//		[[self inputContext] release];
+		TTV_KVC_SET(inputContext, [[[TTVInputContext alloc] initWithFile:[self _currentFile]] autorelease]);
+	}
+	//NSLog(@"OPEN CURRENT FILE %@, %@", _inputContext, [self _currentFile]);
+	int nextIndex = _sequenceIndex;
+	if (nextIndex >= [_sequence count]) {
+		nextIndex = 0;
+	}
 }
 
 - (void)skipForward {
@@ -1682,7 +1812,7 @@ NSLock *__ffmpegLock = nil;
 		if (_sequenceIndex >= [_sequence count]) {
 			_sequenceIndex = 0;
 		}
-		[self _openCurrentFile];		
+		[self _openCurrentFile];
 	}
 }	
 
@@ -1706,17 +1836,145 @@ NSLock *__ffmpegLock = nil;
 
 - (AVFrame*)decodeNextFrame {
 	AVFrame *frame = NULL;
+	_currentFrameIndex++;	
 	if ([self valid]) {
 		TTVPacket *pkt = [self readNextFrame];
+		//NSLog(@"PACKET %@", pkt);
 		if (pkt == nil) {
-			[self skipForward];
+//			if ([self delegate] == nil || [[self delegate] sequenceReader:self shouldSkipForward]) {
+				[self skipForward];
+//			}
 			pkt = [self readNextFrame];
 		}
 		frame = [[self inputContext] decodeFrame:pkt];
+		//NSLog(@"FRAME %X", frame);
 	}
 	return frame;
 }
 
+@end
+
+@implementation TTVMultiReader
+
+- (id)initWithFile:(NSString*)path {
+	self = [super initWithFile:path];
+	if (self) {
+	}
+	return self;
+}
+- (void) dealloc {
+	TTV_KVC_SET(readers, nil);
+	[super dealloc];
+}
+
+- (NSString*)_currentFile {
+	if (_readers == nil) {
+		TTV_KVC_SET(readers, [NSMutableArray array]);
+		for(int i = 0; i < [_sequence count]; i++) {
+			NSString *path = [[[VSFileLibrary library] libraryPath] stringByAppendingPathComponent:[_sequence objectAtIndex:i]];
+			[_readers addObject:[TTVMediaReader mediaReaderForFile:path]];
+			[[_readers lastObject] setNoDecode:YES];
+		}
+	}
+	NSString *current = nil;
+	if ([_readers count] && _sequenceIndex < [_readers count]) {
+		TTVSequenceReader *reader = [_readers objectAtIndex:_sequenceIndex];
+		current = [[reader _currentFile] retain];
+		//current = @"/selects/2001-streamers.m2v";
+	}
+	return current;
+}
+
+- (void)skipForward {
+	[super skipForward];
+	if ([_readers count] && _sequenceIndex < [_readers count]) {
+		TTVSequenceReader *reader = [_readers objectAtIndex:_sequenceIndex];
+		[reader skipForward];
+	}
+}
+
+- (void)skipBackward {
+	[super skipBackward];
+	if ([_readers count] && _sequenceIndex < [_readers count]) {
+		TTVSequenceReader *reader = [_readers objectAtIndex:_sequenceIndex];
+		[reader skipBackward];
+	}
+}
+
+@end
+
+@implementation TTVSheepReader
+
+- (id)initWithFile:(NSString*)path {
+	self = [super init];
+	if (self) {
+		NSMutableDictionary *sheep = [NSMutableDictionary dictionary];
+		NSArray *paths = [[NSFileManager defaultManager] subpathsAtPath:path];
+		for(int i = 0; i < [paths count]; i++) {
+			NSString *sheepPath = [path stringByAppendingPathComponent:[paths objectAtIndex:i]];
+			NSArray *parts = [[paths objectAtIndex:i] componentsSeparatedByString:@"="];
+			NSString *key = [parts objectAtIndex:2];
+			/* crude way of avoiding loops */
+			if ([[[parts objectAtIndex:3] stringByDeletingPathExtension] isEqualToString:key]) {
+				continue;
+			}
+			NSMutableArray *continuations = [sheep objectForKey:key];
+			if (!continuations) {
+				continuations = [NSMutableArray array];
+				[sheep setObject:continuations forKey:key];
+			}
+			[continuations addObject:sheepPath];
+		}
+		TTV_KVC_SET(sheep, sheep);
+	}
+	return self;
+}
+- (void) dealloc {
+	TTV_KVC_SET(sheep, nil);
+	[super dealloc];
+}
+
+- (NSString*)_currentFile {
+	return _currentPath;
+}
+
+- (void)skipForward {
+	NSArray *all = [_sheep allValues];
+	if (!_currentPath) {
+		_currentPath = [[all objectAtIndex:random()%([all count]-1)] objectAtIndex:0];
+		NSLog(@"INITIAL path %@", _currentPath);
+	}
+	else {
+		NSString *key = [[[[_currentPath lastPathComponent] componentsSeparatedByString:@"="] objectAtIndex:3] stringByDeletingPathExtension];
+		NSArray *continuations = [_sheep objectForKey:key];
+		if (!continuations) {
+			_currentPath = [[all objectAtIndex:random()%([all count]-1)] objectAtIndex:0];
+			NSLog(@"NO CONTINUATIONS!! path %@", _currentPath);
+		}
+		else {
+			int index = random() % [continuations count];
+			_currentPath = [continuations objectAtIndex:index];
+			NSLog(@"key %@, idnex %d, path %@", key, index, _currentPath);
+		}
+
+	}
+	[self _openCurrentFile];
+}
+
+- (void)skipBackward {
+	NSLog(@"implement me!! %@", NSStringFromSelector(_cmd));
+}
+
+- (AVFrame*)decodeNextFrame {
+	AVFrame *frame = NULL;
+	TTVPacket *pkt = [self readNextFrame];
+	if (pkt == nil) {
+		[self skipForward];
+		pkt = [self readNextFrame];
+	}
+	frame = [[self inputContext] decodeFrame:pkt];
+	return frame;
+}
 
 @end
 
@@ -1726,7 +1984,8 @@ NSLock *__ffmpegLock = nil;
 	self = [super initWithFile:path];
 	if (self != nil) {
 		TTV_KVC_SET(clips, [[[TTVClipList alloc] initWithFile:path] autorelease]);
-		TTV_KVC_SET(inputContext, [[TTVInputContext alloc] initWithFile:[self mediaFilename]]);
+		TTV_KVC_SET(inputContext, [[[TTVInputContext alloc] initWithFile:[self mediaFilename]] autorelease]);
+		[[self inputContext] setExtents:[self currentClip]];
 	}
 	return self;
 }
@@ -1835,12 +2094,27 @@ NSLock *__ffmpegLock = nil;
 	[self _deferredExecutionForSelector:_cmd withObject:path];
 }
 
+- (void)gotoBeginning {
+	[self _deferredExecutionForSelector:_cmd withObject:nil];
+}
+- (void)_gotoBeginning {
+	[[[self mediaReader] inputContext] gotoBeginning];
+}
+
+- (void)gotoEnd {
+	[self _deferredExecutionForSelector:_cmd withObject:nil];
+}
+- (void)_gotoEnd {
+	[[[self mediaReader] inputContext] gotoEnd];
+}
+
+
 - (void)setStartFrame:(int)startFrame {
 	[self _deferredExecutionForSelector:_cmd withObject:[NSNumber numberWithInt:startFrame]];
 }
 - (void)_setStartFrame:(NSNumber*)start {
 	[[[self mediaReader] inputContext] setStartFrame:[start intValue]];
-	[[[self mediaReader] inputContext] gotoBeginning];
+//	[[[self mediaReader] inputContext] gotoBeginning];
 }
 
 - (void)setEndFrame:(int)endFrame {
@@ -1885,14 +2159,21 @@ NSLock *__ffmpegLock = nil;
 
 
 - (void)_decodeLoop {
+	AVFrame *frame = NULL;
+	int frame_count = 0;
 	while(_allDone == NO) {		
 		NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
 		NSTimeInterval start = [NSDate timeIntervalSinceReferenceDate];
-		AVFrame *frame = [[self mediaReader] decodeNextFrame];
+		if (frame == NULL || [self mediaReader] == nil || (frame_count%[[self mediaReader] repeatFrames]) == 0) {
+			frame = [[self mediaReader] decodeNextFrame];
+		}
 		NSTimeInterval decodeTime = [NSDate timeIntervalSinceReferenceDate] - start;
 		if (frame != NULL) {
+//			NSLog(@"size %@, rb %d", NSStringFromSize([[self mediaReader] currentSize]), frame->linesize[0]);
 			[_stream fillBuffer:(AVPicture*)frame size:[[self mediaReader] currentSize] decodeTime:decodeTime frameNumber:frame->error[0] context:[self CGLContextObj]];
+//			[_stream fillBuffer:(AVPicture*)frame size:NSMakeSize(720,HEIGHT) decodeTime:decodeTime frameNumber:frame->error[0] context:[self CGLContextObj]];			
 		}
+		frame_count++;
 		while ([_commandQueue objectsAvailable]) {
 			NSInvocation *invocation = [_commandQueue dequeue];
 			[invocation invoke];

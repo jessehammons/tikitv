@@ -182,6 +182,25 @@ int set_realtime(int period, int computation, int constraint) {
 
 @end
 
+@interface TTVMatchOutputMode : TTVMode { }
+@end
+
+@implementation TTVMatchOutputMode
+
+- (NSString*)displayName { return @"MatchOutput:"; }
+
+- (BOOL)handleEvent:(NSEvent*)event {
+	TTVDeck *previewDeck = [[self delegate] previewDeck];
+	TTVDeck *outputDeck = [[self delegate] outputDeck];
+	for(int i = 0; i < 3; i++) {
+		[[[previewDeck pictureSource] decoder:i] changeMediaFile:[[[outputDeck pictureSource] decoder:i] inputFilename]];
+	}
+	[[self delegate] setMode:nil];
+	return YES;
+}
+
+@end
+
 @interface TTVSwapChannelMode : TTVMode { }
 @end
 
@@ -682,7 +701,7 @@ extern int __fullScreenIsMainScreen;
 		handled = YES;
 	}
 	else if (event != nil && ([event type] == NSKeyDown) && ([event keyCode] == 0x3)) {
-		[self toggleFullscreen:nil];
+		//[self toggleFullscreen:nil];
 		handled = YES;
 	}	
 	else if (event != nil && ([event type] == NSKeyDown) && ([event keyCode] == 0x30)) {
@@ -796,16 +815,15 @@ extern int __fullScreenIsMainScreen;
 	return [_decks objectAtIndex:_outputDeckIndex];
 }
 
-- (void)drawPreview:(NSRect)iRect viewRect:(NSRect)vrect context:(NSOpenGLContext*)context
+- (void)drawPreview:(NSRect)iRect viewRect:(NSRect)vrect context:(NSOpenGLContext*)context deck:(TTVDeck*)deck
 {
 	//NSLog(@"thread 0x%X, context 0x%X, before drawPreview", (int)[NSThread currentThread], (int)[NSOpenGLContext currentContext]);
 	CGLContextObj cgl_ctx = [context CGLContextObj];
-
 	double ar = 16.0/9.0;
 	double previewOffset = 0.3*NSHeight(vrect);
 	double outputHeight = (NSHeight(vrect)-previewOffset);
 	double outputWidth = outputHeight*ar;
-	NSRect outputRect = NSInsetRect(NSMakeRect(0, 0, outputWidth, outputHeight), 10, 10);
+	NSRect outputRect = NSInsetRect(NSMakeRect(vrect.origin.x, 0, outputWidth, outputHeight), 10, 10);
 	
 	glMatrixMode(GL_PROJECTION);
 	glLoadIdentity();
@@ -813,24 +831,23 @@ extern int __fullScreenIsMainScreen;
 	ttv_check_gl_error();
 	
 	/* this is essential, it uploads the textures from the PBO */
-	[[self previewDeck] drawOutput:outputRect context:context];
+	[deck drawOutput:outputRect context:context];
 	
-	double previewWidth = NSWidth(vrect)/3 - 10;
+	double previewWidth = NSWidth(vrect)/6 - 10;
 	double previewHeight = previewWidth/ar;
 	//double previewGap = 10;
-	NSRect previewRect = NSMakeRect(10, NSHeight(vrect)-previewHeight, previewWidth, 200);
-	TTVDeck *previewDeck = [self previewDeck];
+	NSRect previewRect = NSMakeRect(vrect.origin.x, NSHeight(vrect)-previewHeight, previewWidth, 200);
 
 	for(int i = 0; i < 3; i++) {
-		[[[previewDeck pictureSource] streamAtIndex:i] previewInRect:previewRect context:[context CGLContextObj]];
+		[[[deck pictureSource] streamAtIndex:i] previewInRect:previewRect context:[context CGLContextObj]];
 		previewRect.origin.x += previewWidth+10;
 	}
 
-	for(int i = 0 ; i < [_timings count]; i++) {
-		NSRect xrect = NSMakeRect(1250, 400, 200, 250);
+	for(int i = 0 ; 0 && i < [_timings count]; i++) {
+		NSRect xrect = NSMakeRect(1250, 400, 20, 250);
 //		NSRect xrect = NSMakeRect(outputRect.size.width, 400, 200, 250);
 		[[_timings objectAtIndex:i] drawInRect:xrect context:[context CGLContextObj]];
-		glTranslatef(0, 40, 0);
+		glTranslatef(0, 4, 0);
 	}
 	
 	//NSLog(@"thread 0x%X, context 0x%X, after drawPreview", (int)[NSThread currentThread], (int)[NSOpenGLContext currentContext]);
@@ -888,10 +905,16 @@ extern int __fullScreenIsMainScreen;
 			[[_controlsView openGLContext] makeCurrentContext];
 			CGLContextObj cgl_ctx = [[_controlsView openGLContext] CGLContextObj];
 			glClearColor(0.0, 0.0, 0.0, 1.0);
-			glClear(GL_COLOR_BUFFER_BIT);		
-			[self drawPreview:NSMakeRect(-2*ar/2, -1, 2*ar, 2) viewRect:[_controlsView frame] context:[_controlsView openGLContext]];
+			glClear(GL_COLOR_BUFFER_BIT);
+			NSRect r = [_controlsView frame];
+//			r.origin.x = -r.size.width/4;
+			r.origin.x = -10;
+//			r.size.width /= 2;
+			[self drawPreview:NSMakeRect(-1*ar/2, -1, 2, 2) viewRect:r context:[_controlsView openGLContext] deck:[self previewDeck]];
+			r.origin.x += 30+r.size.width/2;
+			[self drawPreview:NSMakeRect(-1*ar/2, -1, 2, 2) viewRect:r context:[_controlsView openGLContext] deck:[self outputDeck]];
 			[[_controlsView openGLContext] flushBuffer];
-		}
+		}		
 	}
 
 	if (!_timings) {
@@ -1025,6 +1048,7 @@ extern int __fullScreenIsMainScreen;
 	[self addMode:[TTVAffectOutputMode class] forKey:@"o"];
 	[self addMode:[TTVAdjustMode class] forKey:@"a"];
 	[self addMode:[TTVSwapChannelMode class] forKey:@"s"];
+	[self addMode:[TTVMatchOutputMode class] forKey:@"t"];
 	[self setMode:nil];
 	[[_controlsView window] setInitialFirstResponder:[self activeCommandView]];
 	
@@ -1036,13 +1060,14 @@ extern int __fullScreenIsMainScreen;
 	[[_controlsView window] setFrame:windowRect display:YES];
 	
 	float windowHeight = NSHeight([[_controlsView window] frame]);
-	float searchViewHeight = windowHeight-400;
-	float searchViewWidth = (NSWidth([[_controlsView window] frame]) - NSWidth([_controlsView frame])) / 3 - 15;
+	float searchViewHeight = windowHeight-600;
+//	float searchViewWidth = (NSWidth([[_controlsView window] frame]) - NSWidth([_controlsView frame])) / 3 - 15;
+	float searchViewWidth = 210;
 	_commandViews = [[NSMutableArray alloc] init];
 
 
 	for(int i = 0; i < 3; i++) {
-		TTVCommandView *view = [[TTVCommandView alloc] initWithFrame:NSMakeRect(10+(i)*(10+searchViewWidth), 10, searchViewWidth, searchViewHeight-50)];
+		TTVCommandView *view = [[TTVCommandView alloc] initWithFrame:NSMakeRect(10+(i)*(10+searchViewWidth), windowHeight-searchViewHeight, searchViewWidth, searchViewHeight-50)];
 		[_commandViews addObject:view];
 		[view setStreamIndex:i+3];
 		[view setDelegate:self];

@@ -24,6 +24,7 @@
 		883ADD070E08A32100B1ED8E /* DPQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 883ADD060E08A32100B1ED8E /* DPQueue.m */; };
 		883ADD080E08A32100B1ED8E /* DPQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 883ADD060E08A32100B1ED8E /* DPQueue.m */; };
 		886EC2760EC6145400CA72C0 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 886EC2740EC6145400CA72C0 /* MainMenu.nib */; };
+		886EC39A0EC636F000CA72C0 /* TTVScrubSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 886EC3990EC636F000CA72C0 /* TTVScrubSlider.m */; };
 		886F643B0E0A020200066F64 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 886F643A0E0A020200066F64 /* IOKit.framework */; };
 		886F643C0E0A020200066F64 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 886F643A0E0A020200066F64 /* IOKit.framework */; };
 		8884E3880CE18D2900489F77 /* VSDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 8884E3870CE18D2900489F77 /* VSDecoder.m */; };
@@ -104,6 +105,8 @@
 		883ADD050E08A32100B1ED8E /* DPQueue.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DPQueue.h; sourceTree = "<group>"; };
 		883ADD060E08A32100B1ED8E /* DPQueue.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = DPQueue.m; sourceTree = "<group>"; };
 		886EC2750EC6145400CA72C0 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		886EC3980EC636F000CA72C0 /* TTVScrubSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTVScrubSlider.h; sourceTree = "<group>"; };
+		886EC3990EC636F000CA72C0 /* TTVScrubSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTVScrubSlider.m; sourceTree = "<group>"; };
 		886F643A0E0A020200066F64 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = /System/Library/Frameworks/IOKit.framework; sourceTree = "<absolute>"; };
 		8884E3860CE18D2900489F77 /* VSDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSDecoder.h; sourceTree = "<group>"; };
 		8884E3870CE18D2900489F77 /* VSDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSDecoder.m; sourceTree = "<group>"; };
@@ -269,6 +272,8 @@
 		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
+				886EC3980EC636F000CA72C0 /* TTVScrubSlider.h */,
+				886EC3990EC636F000CA72C0 /* TTVScrubSlider.m */,
 				88A0BAA70E5944FF00DD4DC9 /* TTVDecoding.h */,
 				8822A3D90E53D6AA00685048 /* TTVCore.h */,
 				8822A3DA0E53D6AA00685048 /* TTVCore.m */,
@@ -525,6 +530,7 @@
 				88F62ED70EC4100F00472168 /* main.m in Sources */,
 				88F62F180EC4118F00472168 /* VSOpenGLView.m in Sources */,
 				88F634D70EC571F900472168 /* VSWindow.m in Sources */,
+				886EC39A0EC636F000CA72C0 /* TTVScrubSlider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

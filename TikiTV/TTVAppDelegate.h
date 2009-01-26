@@ -79,7 +79,7 @@
 
 @interface TTVAppDelegate : NSObject
 {
-	NSOpenGLView *_controlsView;
+	IBOutlet NSOpenGLView *_controlsView;
 	NSWindow *_mainWindow;
 	
 	NSMutableArray *_decks;

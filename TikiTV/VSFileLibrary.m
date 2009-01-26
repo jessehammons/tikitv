@@ -16,7 +16,7 @@
 	self = [super init];
 	if (self != nil) {
 		NSArray *files = [[[NSFileManager defaultManager] directoryContentsAtPath:[self libraryPath]] retain];
-		_files = [[files filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"not SELF beginswith[c] '.' and (SELF endswith[c] '.m2v' or SELF endswith[c] '.mpg' or SELF endswith[c] '.ttv_seq' or SELF endswith[c] '.vob' or SELF endswith[c] '.ttvclips' ) "]] retain];
+		_files = [[files filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"not SELF beginswith[c] '.' and (SELF endswith[c] '.m2v' or SELF endswith[c] '.mpg' or SELF endswith[c] '.ttv_seq' or SELF endswith[c] '.vob' or SELF endswith[c] '.ttvclips' or SELF endswith[c] '.ttv_multi' or SELF endswith[c] '.ttv_sheep' ) "]] retain];
 		[[NSFileManager defaultManager] createDirectoryAtPath:[self bookmarksPath] attributes:nil];
 	}
 	return self;

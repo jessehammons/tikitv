@@ -45,6 +45,9 @@
 
 
 - (void)sendEvent:(NSEvent *)event {
+	if ([[self firstResponder] isKindOfClass:[NSTextView class]]) {
+		return [super sendEvent:event];
+	}
 	if ([[self delegate] handleEvent:event] == NO) {
 		return [super sendEvent:event];
 	}
