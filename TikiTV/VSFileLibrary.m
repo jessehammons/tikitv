@@ -46,15 +46,8 @@
 
 - (NSString*)libraryPath
 {
-//	return @"/Volumes/TikiVideo/videos/library/ntsc";
-//	return @"/Users/jesse/videos/library/ntsc";
-//	return @"/Users/jesse/Desktop/electricsheep-megapack701";
-	return @"/Users/jesse/videos/selects";
-	
-//	return @"/Users/jesse/videos/library/xga";
-//	return @"/Users/jesse/videos/library/qvga";
-//	return @"/Volumes/Video/library/qvga";	
-//	return @"/Volumes/Video/library/ntsc";	
+//	return [[NSBundle mainBundle] pathForResource:@"selects" ofType:nil];
+	return @"/selects/";
 }
 
 - (int)numberOfRowsInTableView:(NSTableView *)aTableView {

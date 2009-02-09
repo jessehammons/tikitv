@@ -1074,83 +1074,22 @@ extern int __fullScreenIsMainScreen;
 		[[_controlsView superview] addSubview:view];
 	}
 	
-	NSString *inputs[] = {
-//		@"/Users/jesse/Desktop/tron/tron-lt two sec-hq24-one-pass-mp2.m2v",
-		//@"/Users/jesse/ffmpeg/funhouse.m2v", 
-//		@"/Users/jesse/videos/flowers-peo-red-slow-loop-hq-one-pass-mp2.m2v",
-//		@"/Users/jesse/videos/library/ntsc/spot_reworks_vob_01t_009.vob.m2v",
-//		@"/Users/jesse/videos/library/ntsc/spot_reworks_vob_01t_009.vob.m2v",
-//		@"/Users/jesse/videos/library/ntsc/spot_reworks_vob_01t_009.vob.m2v",
-		@"/Users/jesse/videos/selects/black2.m2v",
-		@"/Users/jesse/videos/selects/black2.m2v",
-		@"/Users/jesse/videos/selects/black2.m2v",
-		@"/Users/jesse/videos/selects/black2.m2v",
-		@"/Users/jesse/videos/selects/black2.m2v",
-		@"/Users/jesse/videos/selects/black2.m2v",
-		@"/Users/jesse/videos/selects/tl_subway_ntsc.m2v",
-		@"/Users/jesse/videos/selects/tl_subway_ntsc.m2v",
-		@"/Users/jesse/videos/selects/tl_subway_ntsc.m2v",
-		@"/Users/jesse/videos/selects/black.m2v",
-
-		@"/Users/jesse/Desktop/electricsheep-megapack701/00202=70102=70102=70102.mpg",
-		@"/Users/jesse/videos/selects/clouds-red.m2v",
-		@"/Users/jesse/videos/library/ntsc/earth_vob_01t_016.vob.m2v",		
-		@"/Users/jesse/videos/selects/tl_subway_ntsc.m2v",
-		@"/Users/jesse/videos/selects/tl_subway_ntsc.m2v",
-		@"/Users/jesse/videos/selects/tl_subway_ntsc.m2v",
-		@"/Users/jesse/videos/library/ntsc/earth_vob_01t_016.vob.m2v",
-		@"/Users/jesse/videos/library/ntsc/cloudsEZBeta_vob_01t_005.vob.m2v",
-		@"/Users/jesse/videos/library/ntsc/tron3x.vob",
-
-		@"/Users/jesse/videos/library/ntsc/spot_reworks_vob_01t_004.vob.m2v",
-		@"/Users/jesse/videos/library/ntsc/cloudsEZBeta_vob_01t_002.vob.m2v",		
-		@"/Users/jesse/videos/library/ntsc/movement2.m2v",
-		@"/Users/jesse/videos/library/ntsc/tron3x.vob",
-		@"/Users/jesse/videos/library/ntsc/tron-X all by dur 3X-hq24-one-pass-mp2.m2v.m2v",
-
-
-		@"/Users/jesse/videos/library/ntsc/bboy_vob_01t_005.vob",
-
-
-			@"/Users/jesse/videos/library/ntsc/spot_reworks_vob_01t_001.vob.m2v",
-
-
-		@"/Users/jesse/videos/library/ntsc/spot_reworks_vob_01t_005.vob.m2v",
-		@"/Users/jesse/videos/library/ntsc/spot_reworks_vob_01t_013.vob.m2v",
-		@"/Users/jesse/videos/library/ntsc/spot_reworks_vob_01t_002.vob.m2v",
-
-
-		@"/Users/jesse/videos/library/xga/tl_subway_xga.m2v",
-		@"/Users/jesse/videos/library/xga/tl_subway_xga.m2v",
-		@"/Users/jesse/videos/library/xga/tl_subway_xga.m2v",
-
-
-		@"/Users/jesse/videos/library/ntsc/spot_reworks_vob_01t_005.vob.m2v",
-		@"/Users/jesse/videos/library/ntsc/spot_reworks_vob_01t_013.vob.m2v",
-		@"/Users/jesse/videos/library/ntsc/spot_reworks_vob_01t_002.vob.m2v",
-		@"/Users/jesse/videos/library/ntsc/spot_reworks_vob_01t_016.vob.m2v",
-		@"/Users/jesse/videos/library/ntsc/cloudsEZBeta_vob_01t_005.vob.m2v",
-		@"/Users/jesse/videos/library/ntsc/spot_reworks_vob_01t_007.vob.m2v",
-		@"/Users/jesse/videos/library/ntsc/spot_reworks_vob_01t_004.vob.m2v",
-
-
-
-		@"/Users/jesse/videos/library/ntsc/tron-X all by dur 3X-hq24-one-pass-mp2.m2v.m2v",		
-		@"/Users/jesse/videos/library/ntsc/tron-X all by dur 3X-hq24-one-pass-mp2.m2v.m2v",		
-
-		@"/Users/jesse/videos/bVTS_01_5.VOB",
-		@"/Users/jesse/videos/aVTS_01_1.VOB.mpg",
-		
-		@"/Users/jesse/videos/flowers-peo-red-slow-loop-hq-one-pass-mp2.m2v",		
-		
-		@"/Users/jesse/videos/a1024_iframe1.mpg",
-		@"/Users/jesse/videos/a1024_iframe1.mpg",
-		@"/Users/jesse/videos/a1024_iframe1.mpg",
-		@"/Users/jesse/videos/a1024_iframe1.mpg",
-	};
+	NSString *inputs[20];
+	for(int i = 0; i < 6; i++) {
+		inputs[i] = [[VSFileLibrary library] pathForFilename:@"black2.m2v"];
+	}
+//	inputs[0] = [[VSFileLibrary library] pathForFilename:@"dark-drive.m2v"];
+//	inputs[1] = [[VSFileLibrary library] pathForFilename:@"freezer-002-test.m2v"];
+//	inputs[2] = [[VSFileLibrary library] pathForFilename:@"marching_vob_01t_001.m2v"];
+//	inputs[3] = [[VSFileLibrary library] pathForFilename:@"ocean-seaweed-forest.m2v"];
+//	inputs[4] = [[VSFileLibrary library] pathForFilename:@"sheep-2008.m2v"];
+//	inputs[5] = [[VSFileLibrary library] pathForFilename:@"tv-noise-slow.m2v"];
+	NSLog(@"inputs %@", inputs[0]);
 
 	NSLog (@"image browser is %@", _imageBrowser);
 	NSLog (@" browser datasource is %@", [_imageBrowser dataSource]);
+
+	[[_controlsView window] setInitialFirstResponder:_controlsView];
 	
 	[_imageBrowser setCellSize:NSMakeSize(100, 100)];
 

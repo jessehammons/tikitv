@@ -1015,7 +1015,7 @@ static	NSLock *_glLock = nil;
 - (NSString *) imageRepresentationType { return IKImageBrowserPathRepresentationType; }
 //- (NSString *) imageRepresentationType { return IKImageBrowserQTMoviePathRepresentationType; }
 - (NSString *) imageUID { return [self path]; }
-//- (id)imageRepresentation { return @"/Users/jesse/projects/tikirobotreader/TikiTV/foo.png"; }
+
 - (id)imageRepresentation {
 	NSString *proxyPath = [[[self path] stringByDeletingLastPathComponent] stringByAppendingPathComponent:[NSString stringWithFormat:@".%@001.png", [[[self path] lastPathComponent] stringByDeletingPathExtension]]];
 	if ([[NSFileManager defaultManager] fileExistsAtPath:proxyPath] == NO) {
@@ -1539,11 +1539,6 @@ NSLock *__ffmpegLock = nil;
 		avcodec_decode_video(_ffmpegContext->streams[0]->codec, _ffmpegFrame, &got_frame, [packet dataPtr], [packet dataSize]);
 		if (got_frame) {
 			_ffmpegFrame->error[0] = _currentFrameIndex;
-//			AVFrame *f = _ffmpegFrame;
-//			if ([[self clipListFilename] isEqualToString:@"/Users/jesse/videos/selects/aaa_test.ttvclips"]) {
-//				NSLog(@"key %d, ptype %d, pts %qd pts, cpn %d, dpn %d, q %d, age %d,  ref %d, int %d, tff %d", f->key_frame, f->pict_type, f->pts, f->coded_picture_number, 
-//				  f->display_picture_number, f->quality, 0, f->reference, f->interlaced_frame, f->top_field_first);
-//			}
 			frame = _ffmpegFrame;
 		}
 	}

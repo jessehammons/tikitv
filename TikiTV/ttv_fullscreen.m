@@ -166,13 +166,6 @@ int main_yyy(int argc, char **argv) {
 	printf("client configured to use %s\n", ([sendPort class] ==  [NSSocketPort self]) ? "sockets" : "Mach ports");
 
 	NSString *inputs[] = {
-		@"/Users/jesse/videos/library/ntsc/1vbitest.m2v",
-		@"/Users/jesse/videos/library/ntsc/60numbers.m2v",
-		@"/Users/jesse/videos/library/ntsc/spot_reworks_vob_01t_013.vob.m2v",
-		@"/Users/jesse/videos/library/ntsc/spot_reworks_vob_01t_002.vob.m2v",
-		@"/Users/jesse/videos/library/ntsc/spot_reworks_vob_01t_001.vob.m2v",			
-		@"/Users/jesse/videos/library/ntsc/60numbers.m2v",
-
 	};
 	NSRect outputRect = [[[NSScreen screens] objectAtIndex:0] frame];
 	glMatrixMode(GL_PROJECTION);
