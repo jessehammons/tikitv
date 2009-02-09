@@ -1156,6 +1156,11 @@ static	NSLock *_glLock = nil;
 		TTV_KVC_SET(filename, file);
 		TTV_KVC_SET(entries, [NSMutableArray array]);
 		NSArray *saved = ttv_readPList([self filename]);
+		int repeatFrames = [[[saved objectAtIndex:0] objectForKey:@"repeat_frames_count"] intValue];
+		if (!repeatFrames) {
+			repeatFrames = 1;
+		}
+		_repeatFrames = repeatFrames;
 		for(int i = 0; i < [saved count]; i++) {
 			[self addEntry:[[[TTVFrameIndexEntry alloc] initWithDictionary:[saved objectAtIndex:i]] autorelease]];
 		}		
@@ -1174,6 +1179,10 @@ static	NSLock *_glLock = nil;
 
 - (int)frameCount {
 	return [[_entries lastObject] frameNumber] + 1;
+}
+
+- (int)repeatFrames {
+	return _repeatFrames;
 }
 
 - (void)addEntry:(TTVFrameIndexEntry*)entry {
@@ -1718,7 +1727,7 @@ NSLock *__ffmpegLock = nil;
 }
 
 - (int)repeatFrames {
-	return 1;
+	return [[[self inputContext] index] repeatFrames];
 }
 
 @end
@@ -1905,6 +1914,7 @@ NSLock *__ffmpegLock = nil;
 	if (self) {
 		NSMutableDictionary *sheep = [NSMutableDictionary dictionary];
 		NSArray *paths = [[NSFileManager defaultManager] subpathsAtPath:path];
+		_history = [[NSMutableArray alloc] init];
 		for(int i = 0; i < [paths count]; i++) {
 			NSString *sheepPath = [path stringByAppendingPathComponent:[paths objectAtIndex:i]];
 			NSArray *parts = [[paths objectAtIndex:i] componentsSeparatedByString:@"="];
@@ -1940,6 +1950,7 @@ NSLock *__ffmpegLock = nil;
 		NSLog(@"INITIAL path %@", _currentPath);
 	}
 	else {
+		[_history addObject:_currentPath];
 		NSString *key = [[[[_currentPath lastPathComponent] componentsSeparatedByString:@"="] objectAtIndex:3] stringByDeletingPathExtension];
 		NSArray *continuations = [_sheep objectForKey:key];
 		if (!continuations) {
@@ -1951,13 +1962,21 @@ NSLock *__ffmpegLock = nil;
 			_currentPath = [continuations objectAtIndex:index];
 			NSLog(@"key %@, idnex %d, path %@", key, index, _currentPath);
 		}
-
 	}
 	[self _openCurrentFile];
 }
 
 - (void)skipBackward {
-	NSLog(@"implement me!! %@", NSStringFromSelector(_cmd));
+	NSString *path = [_history lastObject];
+	if (path) {
+		_currentPath = path;
+		[_history removeLastObject];
+		[self _openCurrentFile];
+	}
+}
+
+- (int)repeatFrames {
+	return 3;
 }
 
 - (AVFrame*)decodeNextFrame {
