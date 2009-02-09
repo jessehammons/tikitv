@@ -2,13 +2,15 @@
 {
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
 		activeArchitecture = i386;
-		activeBuildConfigurationName = Release;
+		activeBuildConfigurationName = Debug;
 		activeExecutable = 88F32A710B79BE46000D334C /* TikiTV */;
 		activeTarget = 8D1107260486CEB800E47090 /* TikiTV */;
 		addToTargets = (
 			8D1107260486CEB800E47090 /* TikiTV */,
 		);
 		breakpoints = (
+			888916360F3FD85C00FC6D6B /* TTVDecoding.m:2151 */,
+			888916490F3FD89200FC6D6B /* TTVDecoding.m:1970 */,
 		);
 		codeSenseManager = 88F32A7B0B79BE53000D334C /* Code sense */;
 		executables = (
@@ -98,18 +100,50 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 255829652;
-			PBXWorkspaceStateSaveDate = 255829652;
+			PBXPerProjectTemplateStateSaveDate = 255841917;
+			PBXWorkspaceStateSaveDate = 255841917;
 		};
 		perUserProjectItems = {
-			886C53430F3AB8B700FE5581 = 886C53430F3AB8B700FE5581 /* PBXBookmark */;
-			886C53470F3ABA1C00FE5581 = 886C53470F3ABA1C00FE5581 /* PBXBookmark */;
-			886C53550F3F9FEA00FE5581 = 886C53550F3F9FEA00FE5581 /* PBXTextBookmark */;
-			886C535A0F3F9FEA00FE5581 = 886C535A0F3F9FEA00FE5581 /* PBXTextBookmark */;
-			886C535B0F3F9FEA00FE5581 = 886C535B0F3F9FEA00FE5581 /* PBXTextBookmark */;
-			886C535E0F3F9FEA00FE5581 = 886C535E0F3F9FEA00FE5581 /* PBXTextBookmark */;
-			886C53610F3F9FEA00FE5581 = 886C53610F3F9FEA00FE5581 /* PBXTextBookmark */;
-			886F07480F3A8F0A00BB4DB4 = 886F07480F3A8F0A00BB4DB4 /* PBXTextBookmark */;
+			8815A7E80F3FD2CF00D40D2C = 8815A7E80F3FD2CF00D40D2C /* PBXTextBookmark */;
+			888915EA0F3FD5F900FC6D6B = 888915EA0F3FD5F900FC6D6B /* PBXTextBookmark */;
+			888915FE0F3FD67500FC6D6B = 888915FE0F3FD67500FC6D6B /* PBXTextBookmark */;
+			888915FF0F3FD67500FC6D6B = 888915FF0F3FD67500FC6D6B /* PBXTextBookmark */;
+			8889161B0F3FD69100FC6D6B /* PBXTextBookmark */ = 8889161B0F3FD69100FC6D6B /* PBXTextBookmark */;
+			8889161E0F3FD69100FC6D6B /* PBXTextBookmark */ = 8889161E0F3FD69100FC6D6B /* PBXTextBookmark */;
+			8889161F0F3FD69100FC6D6B /* PBXTextBookmark */ = 8889161F0F3FD69100FC6D6B /* PBXTextBookmark */;
+			8889162B0F3FD70300FC6D6B /* PBXTextBookmark */ = 8889162B0F3FD70300FC6D6B /* PBXTextBookmark */;
+			8889162C0F3FD70300FC6D6B /* PBXTextBookmark */ = 8889162C0F3FD70300FC6D6B /* PBXTextBookmark */;
+			8889162E0F3FD81700FC6D6B /* PBXTextBookmark */ = 8889162E0F3FD81700FC6D6B /* PBXTextBookmark */;
+			8889162F0F3FD81700FC6D6B /* PBXTextBookmark */ = 8889162F0F3FD81700FC6D6B /* PBXTextBookmark */;
+			888916300F3FD81700FC6D6B /* PBXTextBookmark */ = 888916300F3FD81700FC6D6B /* PBXTextBookmark */;
+			888916310F3FD81700FC6D6B /* PBXTextBookmark */ = 888916310F3FD81700FC6D6B /* PBXTextBookmark */;
+			888916320F3FD81700FC6D6B /* PBXTextBookmark */ = 888916320F3FD81700FC6D6B /* PBXTextBookmark */;
+			888916330F3FD81700FC6D6B /* PBXTextBookmark */ = 888916330F3FD81700FC6D6B /* PBXTextBookmark */;
+			888916340F3FD84900FC6D6B /* PBXTextBookmark */ = 888916340F3FD84900FC6D6B /* PBXTextBookmark */;
+			888916390F3FD85F00FC6D6B /* PBXTextBookmark */ = 888916390F3FD85F00FC6D6B /* PBXTextBookmark */;
+			8889163F0F3FD86700FC6D6B /* PBXTextBookmark */ = 8889163F0F3FD86700FC6D6B /* PBXTextBookmark */;
+			888916400F3FD86700FC6D6B /* PBXTextBookmark */ = 888916400F3FD86700FC6D6B /* PBXTextBookmark */;
+			888916410F3FD86700FC6D6B /* PBXTextBookmark */ = 888916410F3FD86700FC6D6B /* PBXTextBookmark */;
+			888916440F3FD86700FC6D6B /* PBXTextBookmark */ = 888916440F3FD86700FC6D6B /* PBXTextBookmark */;
+			8889164B0F3FD8AD00FC6D6B /* PBXTextBookmark */ = 8889164B0F3FD8AD00FC6D6B /* PBXTextBookmark */;
+			8889164C0F3FD8AD00FC6D6B /* PBXTextBookmark */ = 8889164C0F3FD8AD00FC6D6B /* PBXTextBookmark */;
+			8889164D0F3FD8AD00FC6D6B /* PBXTextBookmark */ = 8889164D0F3FD8AD00FC6D6B /* PBXTextBookmark */;
+			8889164E0F3FD8C000FC6D6B /* PBXTextBookmark */ = 8889164E0F3FD8C000FC6D6B /* PBXTextBookmark */;
+			8889164F0F3FD8C200FC6D6B /* PBXTextBookmark */ = 8889164F0F3FD8C200FC6D6B /* PBXTextBookmark */;
+			888916510F3FD90D00FC6D6B /* PBXTextBookmark */ = 888916510F3FD90D00FC6D6B /* PBXTextBookmark */;
+			888916520F3FD90D00FC6D6B /* PBXTextBookmark */ = 888916520F3FD90D00FC6D6B /* PBXTextBookmark */;
+			888916530F3FD90D00FC6D6B /* PBXTextBookmark */ = 888916530F3FD90D00FC6D6B /* PBXTextBookmark */;
+			888916540F3FD94400FC6D6B /* PBXTextBookmark */ = 888916540F3FD94400FC6D6B /* PBXTextBookmark */;
+			888916570F3FD97000FC6D6B /* PBXTextBookmark */ = 888916570F3FD97000FC6D6B /* PBXTextBookmark */;
+			888916580F3FD97000FC6D6B /* PBXTextBookmark */ = 888916580F3FD97000FC6D6B /* PBXTextBookmark */;
+			888916590F3FD97000FC6D6B /* PBXTextBookmark */ = 888916590F3FD97000FC6D6B /* PBXTextBookmark */;
+			8889165A0F3FD99A00FC6D6B /* PBXTextBookmark */ = 8889165A0F3FD99A00FC6D6B /* PBXTextBookmark */;
+			8889165C0F3FD9C200FC6D6B /* PBXTextBookmark */ = 8889165C0F3FD9C200FC6D6B /* PBXTextBookmark */;
+			8889165D0F3FD9C200FC6D6B /* PBXTextBookmark */ = 8889165D0F3FD9C200FC6D6B /* PBXTextBookmark */;
+			8889165E0F3FD9C200FC6D6B /* PBXTextBookmark */ = 8889165E0F3FD9C200FC6D6B /* PBXTextBookmark */;
+			8889165F0F3FD9E600FC6D6B /* PBXTextBookmark */ = 8889165F0F3FD9E600FC6D6B /* PBXTextBookmark */;
+			888916600F3FD9EF00FC6D6B /* PBXTextBookmark */ = 888916600F3FD9EF00FC6D6B /* PBXTextBookmark */;
+			888916610F3FD9F000FC6D6B /* PBXTextBookmark */ = 888916610F3FD9F000FC6D6B /* PBXTextBookmark */;
 		};
 		sourceControlManager = 88F32A7A0B79BE53000D334C /* Source Control */;
 		userBuildSettings = {
@@ -139,6 +173,16 @@
 			sepNavVisRange = "{616, 262}";
 			sepNavWindowFrame = "{{15, 243}, {1257, 630}}";
 		};
+	};
+	8815A7E80F3FD2CF00D40D2C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 883ADA700E06BF0400B1ED8E /* tikitv_test.m */;
+		name = "tikitv_test.m: 42";
+		rLen = 23;
+		rLoc = 952;
+		rType = 0;
+		vrLen = 0;
+		vrLoc = 0;
 	};
 	8822A3D90E53D6AA00685048 /* TTVCore.h */ = {
 		uiCtxt = {
@@ -241,64 +285,6 @@
 			sepNavWindowFrame = "{{84, 259}, {1099, 551}}";
 		};
 	};
-	886C53430F3AB8B700FE5581 /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = 88FBA0160B65E4AB0034EF9E /* TTVAppDelegate.m */;
-	};
-	886C53470F3ABA1C00FE5581 /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = 88CD2DC70CFA0B8000E3409C /* VSFileLibrary.m */;
-	};
-	886C53550F3F9FEA00FE5581 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 883ADA700E06BF0400B1ED8E /* tikitv_test.m */;
-		name = "tikitv_test.m: 42";
-		rLen = 23;
-		rLoc = 952;
-		rType = 0;
-		vrLen = 0;
-		vrLoc = 0;
-	};
-	886C535A0F3F9FEA00FE5581 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
-		name = "TTVDecoding.m: 1937";
-		rLen = 27;
-		rLoc = 55114;
-		rType = 0;
-		vrLen = 992;
-		vrLoc = 54968;
-	};
-	886C535B0F3F9FEA00FE5581 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
-		name = "TTVDecoding.m: 1721";
-		rLen = 0;
-		rLoc = 49666;
-		rType = 0;
-		vrLen = 776;
-		vrLoc = 49130;
-	};
-	886C535E0F3F9FEA00FE5581 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 88CD2DC70CFA0B8000E3409C /* VSFileLibrary.m */;
-		name = "VSFileLibrary.m: 50";
-		rLen = 0;
-		rLoc = 1560;
-		rType = 0;
-		vrLen = 1137;
-		vrLoc = 822;
-	};
-	886C53610F3F9FEA00FE5581 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 88FBA0160B65E4AB0034EF9E /* TTVAppDelegate.m */;
-		name = "TTVAppDelegate.m: 1237";
-		rLen = 24;
-		rLoc = 36887;
-		rType = 0;
-		vrLen = 1217;
-		vrLoc = 35895;
-	};
 	886EC3980EC636F000CA72C0 /* TTVScrubSlider.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {684, 448}}";
@@ -313,16 +299,6 @@
 			sepNavVisRange = "{0, 473}";
 			sepNavWindowFrame = "{{245, 143}, {743, 520}}";
 		};
-	};
-	886F07480F3A8F0A00BB4DB4 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 883ADA700E06BF0400B1ED8E /* tikitv_test.m */;
-		name = "tikitv_test.m: 42";
-		rLen = 23;
-		rLoc = 952;
-		rType = 0;
-		vrLen = 0;
-		vrLoc = 0;
 	};
 	8884E3860CE18D2900489F77 /* VSDecoder.h */ = {
 		uiCtxt = {
@@ -342,11 +318,426 @@
 			sepNavWindowFrame = "{{171, 102}, {1220, 527}}";
 		};
 	};
+	888915EA0F3FD5F900FC6D6B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
+		rLen = 12;
+		rLoc = 49917;
+		rType = 0;
+	};
+	888915FE0F3FD67500FC6D6B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 883ADA700E06BF0400B1ED8E /* tikitv_test.m */;
+		name = "tikitv_test.m: 42";
+		rLen = 23;
+		rLoc = 952;
+		rType = 0;
+		vrLen = 0;
+		vrLoc = 0;
+	};
+	888915FF0F3FD67500FC6D6B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
+		name = "TTVDecoding.m: 1185";
+		rLen = 0;
+		rLoc = 35728;
+		rType = 0;
+		vrLen = 689;
+		vrLoc = 35267;
+	};
+	8889161B0F3FD69100FC6D6B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 883ADA700E06BF0400B1ED8E /* tikitv_test.m */;
+		name = "tikitv_test.m: 42";
+		rLen = 23;
+		rLoc = 952;
+		rType = 0;
+		vrLen = 0;
+		vrLoc = 0;
+	};
+	8889161E0F3FD69100FC6D6B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
+		name = "TTVDecoding.m: 1185";
+		rLen = 0;
+		rLoc = 35728;
+		rType = 0;
+		vrLen = 689;
+		vrLoc = 35267;
+	};
+	8889161F0F3FD69100FC6D6B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
+		name = "TTVDecoding.m: 1159";
+		rLen = 7;
+		rLoc = 35155;
+		rType = 0;
+		vrLen = 846;
+		vrLoc = 34763;
+	};
+	8889162B0F3FD70300FC6D6B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 883ADA700E06BF0400B1ED8E /* tikitv_test.m */;
+		name = "tikitv_test.m: 42";
+		rLen = 23;
+		rLoc = 952;
+		rType = 0;
+		vrLen = 0;
+		vrLoc = 0;
+	};
+	8889162C0F3FD70300FC6D6B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
+		name = "TTVDecoding.m: 1973";
+		rLen = 0;
+		rLoc = 56416;
+		rType = 0;
+		vrLen = 995;
+		vrLoc = 55433;
+	};
+	8889162E0F3FD81700FC6D6B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 883ADA700E06BF0400B1ED8E /* tikitv_test.m */;
+		name = "tikitv_test.m: 42";
+		rLen = 23;
+		rLoc = 952;
+		rType = 0;
+		vrLen = 0;
+		vrLoc = 0;
+	};
+	8889162F0F3FD81700FC6D6B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88A0BAA70E5944FF00DD4DC9 /* TTVDecoding.h */;
+		name = "TTVDecoding.h: 421";
+		rLen = 0;
+		rLoc = 9690;
+		rType = 0;
+		vrLen = 710;
+		vrLoc = 9234;
+	};
+	888916300F3FD81700FC6D6B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
+		name = "TTVDecoding.m: 1910";
+		rLen = 14;
+		rLoc = 54334;
+		rType = 0;
+		vrLen = 1149;
+		vrLoc = 54148;
+	};
+	888916310F3FD81700FC6D6B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
+		name = "TTVDecoding.m: 1910";
+		rLen = 14;
+		rLoc = 54334;
+		rType = 0;
+		vrLen = 1149;
+		vrLoc = 54148;
+	};
+	888916320F3FD81700FC6D6B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88A0BAA70E5944FF00DD4DC9 /* TTVDecoding.h */;
+		name = "TTVDecoding.h: 421";
+		rLen = 0;
+		rLoc = 9690;
+		rType = 0;
+		vrLen = 710;
+		vrLoc = 9234;
+	};
+	888916330F3FD81700FC6D6B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
+		name = "TTVDecoding.m: 1974";
+		rLen = 0;
+		rLoc = 56377;
+		rType = 0;
+		vrLen = 1013;
+		vrLoc = 55343;
+	};
+	888916340F3FD84900FC6D6B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88FBA0160B65E4AB0034EF9E /* TTVAppDelegate.m */;
+		rLen = 7;
+		rLoc = 2673;
+		rType = 0;
+	};
+	888916360F3FD85C00FC6D6B /* TTVDecoding.m:2151 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
+		functionName = "-skipBackward";
+		hitCount = 1;
+		ignoreCount = 0;
+		lineNumber = 2151;
+		location = TikiTV;
+		modificationTime = 255842414.241994;
+		state = 1;
+	};
+	888916390F3FD85F00FC6D6B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88FBA0160B65E4AB0034EF9E /* TTVAppDelegate.m */;
+		name = "TTVAppDelegate.m: 94";
+		rLen = 7;
+		rLoc = 2673;
+		rType = 0;
+		vrLen = 421;
+		vrLoc = 2394;
+	};
+	8889163F0F3FD86700FC6D6B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 883ADA700E06BF0400B1ED8E /* tikitv_test.m */;
+		name = "tikitv_test.m: 42";
+		rLen = 23;
+		rLoc = 952;
+		rType = 0;
+		vrLen = 0;
+		vrLoc = 0;
+	};
+	888916400F3FD86700FC6D6B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
+		rLen = 1;
+		rLoc = 2149;
+		rType = 1;
+	};
+	888916410F3FD86700FC6D6B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
+		name = "TTVDecoding.m: 2150";
+		rLen = 23;
+		rLoc = 60621;
+		rType = 0;
+		vrLen = 777;
+		vrLoc = 60111;
+	};
+	888916440F3FD86700FC6D6B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88FBA0160B65E4AB0034EF9E /* TTVAppDelegate.m */;
+		name = "TTVAppDelegate.m: 89";
+		rLen = 12;
+		rLoc = 2483;
+		rType = 0;
+		vrLen = 1330;
+		vrLoc = 1929;
+	};
+	888916490F3FD89200FC6D6B /* TTVDecoding.m:1970 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
+		functionName = "-skipBackward";
+		hitCount = 1;
+		ignoreCount = 0;
+		lineNumber = 1970;
+		location = TikiTV;
+		modificationTime = 255842452.330035;
+		state = 1;
+	};
+	8889164B0F3FD8AD00FC6D6B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 883ADA700E06BF0400B1ED8E /* tikitv_test.m */;
+		name = "tikitv_test.m: 42";
+		rLen = 23;
+		rLoc = 952;
+		rType = 0;
+		vrLen = 0;
+		vrLoc = 0;
+	};
+	8889164C0F3FD8AD00FC6D6B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
+		name = "TTVDecoding.m: 2151";
+		rLen = 23;
+		rLoc = 60621;
+		rType = 0;
+		vrLen = 845;
+		vrLoc = 60069;
+	};
+	8889164D0F3FD8AD00FC6D6B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88FBA0160B65E4AB0034EF9E /* TTVAppDelegate.m */;
+		name = "TTVAppDelegate.m: 89";
+		rLen = 12;
+		rLoc = 2483;
+		rType = 0;
+		vrLen = 1330;
+		vrLoc = 1929;
+	};
+	8889164E0F3FD8C000FC6D6B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88FBA0160B65E4AB0034EF9E /* TTVAppDelegate.m */;
+		name = "TTVAppDelegate.m: 94";
+		rLen = 7;
+		rLoc = 2673;
+		rType = 0;
+		vrLen = 421;
+		vrLoc = 2394;
+	};
+	8889164F0F3FD8C200FC6D6B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88FBA0160B65E4AB0034EF9E /* TTVAppDelegate.m */;
+		name = "TTVAppDelegate.m: 94";
+		rLen = 7;
+		rLoc = 2673;
+		rType = 0;
+		vrLen = 421;
+		vrLoc = 2394;
+	};
+	888916510F3FD90D00FC6D6B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 883ADA700E06BF0400B1ED8E /* tikitv_test.m */;
+		name = "tikitv_test.m: 42";
+		rLen = 23;
+		rLoc = 952;
+		rType = 0;
+		vrLen = 0;
+		vrLoc = 0;
+	};
+	888916520F3FD90D00FC6D6B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
+		name = "TTVDecoding.m: 1964";
+		rLen = 0;
+		rLoc = 56187;
+		rType = 0;
+		vrLen = 1055;
+		vrLoc = 55323;
+	};
+	888916530F3FD90D00FC6D6B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88FBA0160B65E4AB0034EF9E /* TTVAppDelegate.m */;
+		name = "TTVAppDelegate.m: 89";
+		rLen = 12;
+		rLoc = 2483;
+		rType = 0;
+		vrLen = 1330;
+		vrLoc = 1929;
+	};
+	888916540F3FD94400FC6D6B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88FBA0160B65E4AB0034EF9E /* TTVAppDelegate.m */;
+		name = "TTVAppDelegate.m: 94";
+		rLen = 7;
+		rLoc = 2673;
+		rType = 0;
+		vrLen = 421;
+		vrLoc = 2394;
+	};
+	888916570F3FD97000FC6D6B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 883ADA700E06BF0400B1ED8E /* tikitv_test.m */;
+		name = "tikitv_test.m: 42";
+		rLen = 23;
+		rLoc = 952;
+		rType = 0;
+		vrLen = 0;
+		vrLoc = 0;
+	};
+	888916580F3FD97000FC6D6B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
+		name = "TTVDecoding.m: 1972";
+		rLen = 0;
+		rLoc = 56284;
+		rType = 0;
+		vrLen = 1035;
+		vrLoc = 55341;
+	};
+	888916590F3FD97000FC6D6B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88FBA0160B65E4AB0034EF9E /* TTVAppDelegate.m */;
+		name = "TTVAppDelegate.m: 89";
+		rLen = 12;
+		rLoc = 2483;
+		rType = 0;
+		vrLen = 1330;
+		vrLoc = 1929;
+	};
+	8889165A0F3FD99A00FC6D6B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88FBA0160B65E4AB0034EF9E /* TTVAppDelegate.m */;
+		name = "TTVAppDelegate.m: 94";
+		rLen = 7;
+		rLoc = 2673;
+		rType = 0;
+		vrLen = 421;
+		vrLoc = 2394;
+	};
+	8889165C0F3FD9C200FC6D6B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 883ADA700E06BF0400B1ED8E /* tikitv_test.m */;
+		name = "tikitv_test.m: 42";
+		rLen = 23;
+		rLoc = 952;
+		rType = 0;
+		vrLen = 0;
+		vrLoc = 0;
+	};
+	8889165D0F3FD9C200FC6D6B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88F62D8E0EBE96C000472168 /* TTVDecoding.m */;
+		name = "TTVDecoding.m: 1973";
+		rLen = 0;
+		rLoc = 56284;
+		rType = 0;
+		vrLen = 1062;
+		vrLoc = 55343;
+	};
+	8889165E0F3FD9C200FC6D6B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88FBA0160B65E4AB0034EF9E /* TTVAppDelegate.m */;
+		name = "TTVAppDelegate.m: 89";
+		rLen = 12;
+		rLoc = 2483;
+		rType = 0;
+		vrLen = 1330;
+		vrLoc = 1929;
+	};
+	8889165F0F3FD9E600FC6D6B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88FBA0160B65E4AB0034EF9E /* TTVAppDelegate.m */;
+		name = "TTVAppDelegate.m: 94";
+		rLen = 7;
+		rLoc = 2673;
+		rType = 0;
+		vrLen = 421;
+		vrLoc = 2394;
+	};
+	888916600F3FD9EF00FC6D6B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 88FBA0160B65E4AB0034EF9E /* TTVAppDelegate.m */;
+		name = "TTVAppDelegate.m: 94";
+		rLen = 7;
+		rLoc = 2673;
+		rType = 0;
+		vrLen = 421;
+		vrLoc = 2394;
+	};
+	888916610F3FD9F000FC6D6B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 883ADA700E06BF0400B1ED8E /* tikitv_test.m */;
+		name = "tikitv_test.m: 42";
+		rLen = 23;
+		rLoc = 952;
+		rType = 0;
+		vrLen = 0;
+		vrLoc = 0;
+	};
 	88A0BAA70E5944FF00DD4DC9 /* TTVDecoding.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1112, 6958}}";
-			sepNavSelRange = "{10337, 16}";
-			sepNavVisRange = "{9955, 984}";
+			sepNavIntBoundsRect = "{{0, 0}, {1112, 6986}}";
+			sepNavSelRange = "{9690, 0}";
+			sepNavVisRange = "{9234, 710}";
 			sepNavWindowFrame = "{{171, 183}, {1171, 578}}";
 		};
 	};
@@ -465,9 +856,9 @@
 	};
 	88F0EEDD0CE9789300B4B08A /* VSWindow.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1298, 798}}";
-			sepNavSelRange = "{1055, 0}";
-			sepNavVisRange = "{393, 780}";
+			sepNavIntBoundsRect = "{{0, 0}, {789, 854}}";
+			sepNavSelRange = "{1106, 12}";
+			sepNavVisRange = "{815, 359}";
 			sepNavVisRect = "{{0, 181}, {1318, 505}}";
 			sepNavWindowFrame = "{{15, 92}, {1357, 578}}";
 		};
@@ -517,9 +908,9 @@
 	};
 	88F62D8E0EBE96C000472168 /* TTVDecoding.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1112, 31304}}";
-			sepNavSelRange = "{49666, 0}";
-			sepNavVisRange = "{49130, 776}";
+			sepNavIntBoundsRect = "{{0, 0}, {1034, 31976}}";
+			sepNavSelRange = "{56377, 0}";
+			sepNavVisRange = "{56118, 266}";
 			sepNavWindowFrame = "{{171, 183}, {1171, 578}}";
 		};
 	};
@@ -576,9 +967,9 @@
 	};
 	88FBA0160B65E4AB0034EF9E /* TTVAppDelegate.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1076, 18690}}";
-			sepNavSelRange = "{36887, 24}";
-			sepNavVisRange = "{35895, 1217}";
+			sepNavIntBoundsRect = "{{0, 0}, {789, 19026}}";
+			sepNavSelRange = "{2673, 7}";
+			sepNavVisRange = "{2394, 421}";
 			sepNavVisRect = "{{0, 5728}, {1019, 678}}";
 			sepNavWindowFrame = "{{343, 127}, {1058, 751}}";
 		};

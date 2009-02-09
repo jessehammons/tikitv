@@ -284,10 +284,10 @@ int set_realtime(int period, int computation, int constraint) {
 	//If the user pressed the [Esc] key, we need to exit	
 //	if(event != nil && ([event type] == NSKeyDown) && ([event keyCode] == 0x35)) {
 //	}
-//	BOOL handled = [[self delegate] handleEvent:event];
-//	if (handled == NO) {
+	BOOL handled = [[self delegate] handleEvent:event];
+	if (handled == NO) {
 		[super sendEvent:event];
-//	}	
+	}	
 }
 #endif
 
@@ -691,7 +691,7 @@ extern int __fullScreenIsMainScreen;
 	if (event != nil && ([event modifierFlags] & NSDeviceIndependentModifierFlagsMask) != 0) {
 //		return NO;
 	}
-	///NSLog(@"event %@", event);	
+	NSLog(@"event %@", event);	
 	if(event != nil && ([event type] == NSKeyDown) && ([event keyCode] == 0x32)) {	
 		[self toggleDeck:nil];
 		handled = YES;
@@ -700,12 +700,13 @@ extern int __fullScreenIsMainScreen;
 		[self setMode:nil];
 		handled = YES;
 	}
-	else if (event != nil && ([event type] == NSKeyDown) && ([event keyCode] == 0x3)) {
-		//[self toggleFullscreen:nil];
-		handled = YES;
-	}	
+//	else if (event != nil && ([event type] == NSKeyDown) && ([event keyCode] == 0x3)) {
+//		//[self toggleFullscreen:nil];
+//		handled = YES;
+//	}	
 	else if (event != nil && ([event type] == NSKeyDown) && ([event keyCode] == 0x30)) {
-		[self activateNextCommandView:_mode!=nil];
+		//[self activateNextCommandView:_mode!=nil];
+		[self activateNextCommandView:YES];
 		handled = YES;
 	}	
 	else if (event != nil && ([event type] == NSKeyDown) && ([[event characters] isEqualToString:@" "])) {
@@ -724,14 +725,18 @@ extern int __fullScreenIsMainScreen;
 			NSString *chars = [event characters];
 			if (chars != nil) {
 				NSDictionary *d = [_modeMap objectForKey:chars];
-				[self setMode:[d objectForKey:@"modeObject"]];
+				if (d != nil) {
+					[self setMode:[d objectForKey:@"modeObject"]];
+					handled = YES;
+				}
 			}
-			handled = YES;			
+
 		}
 		else {
 			handled = [[self mode] handleEvent:event];
 		}
 	}
+	NSLog(@"handled %d", handled);
 	return handled;
 }
 

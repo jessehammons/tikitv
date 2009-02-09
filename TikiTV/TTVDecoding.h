@@ -257,6 +257,7 @@ void ttv_print_gl_error(int error);
 {
 	NSString *_filename;
 	NSMutableArray *_entries;
+	int _repeatFrames;
 }
 
 - (id)initWithFile:(NSString*)file;
@@ -269,6 +270,7 @@ void ttv_print_gl_error(int error);
 - (long long)byteOffsetForFrame:(int)frame;
 - (TTVFrameIndexEntry*)previousEntry:(TTVFrameIndexEntry*)entry;
 - (TTVFrameIndexEntry*)nextEntry:(TTVFrameIndexEntry*)entry;
+- (int)repeatFrames;
 
 @end
 
@@ -416,6 +418,7 @@ void ttv_print_gl_error(int error);
 {
 	NSDictionary *_sheep;
 	NSString *_currentPath;
+	NSMutableArray *_history;
 }
 - (id)initWithFile:(NSString*)path;
 @end
