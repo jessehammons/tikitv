@@ -1247,6 +1247,10 @@ extern int __fullScreenIsMainScreen;
 	[self exitFullscreen];
 }
 
+- (void)applicationWillBecomeActive:(NSNotification *)aNotification{
+	[[VSFileLibrary library] rescan];
+}
+
 @end
 
 /* need to trap this callback so all the textures get updated */
