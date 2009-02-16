@@ -1976,7 +1976,7 @@ NSLock *__ffmpegLock = nil;
 }
 
 - (int)repeatFrames {
-	return 3;
+	return 1;
 }
 
 - (AVFrame*)decodeNextFrame {
