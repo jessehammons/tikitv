@@ -14,4 +14,5 @@
 - (NSString*)filenameForRow:(int)row;
 - (NSString*)pathForBookmark:(NSString*)mark;
 - (NSString*)bookmarksPath;
+- (void)rescan;
 @end
