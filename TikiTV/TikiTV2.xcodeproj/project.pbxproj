@@ -93,7 +93,7 @@
 /* Begin PBXCopyFilesBuildPhase section */
 		886F06740F2D9CF900BB4DB4 /* Copy M2V */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 8;
 			dstPath = selects;
 			dstSubfolderSpec = 7;
 			files = (
@@ -106,7 +106,7 @@
 				886F072F0F2D9DD100BB4DB4 /* tv-noise-slow.m2v in Copy M2V */,
 			);
 			name = "Copy M2V";
-			runOnlyForDeploymentPostprocessing = 0;
+			runOnlyForDeploymentPostprocessing = 1;
 		};
 /* End PBXCopyFilesBuildPhase section */
 

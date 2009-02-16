@@ -1067,13 +1067,13 @@ static	NSLock *_glLock = nil;
 		for(int i = 0; i < 21; i++) {
 			glNewList(_listBase + i, GL_COMPILE);
 			if (i >= 20) {
-				glColor4f(0.0, 0.0, 1.0, 1.0);
-			}
-			else if (i >= 18) {
 				glColor4f(1.0, 0.0, 0.0, 1.0);
 			}
+			else if (i >= 18) {
+				glColor4f(0.0, 0.0, 1.0, 1.0);
+			}
 			else {
-				glColor4f(1.0, 1.0, 1.0, 1.0);
+				glColor4f(0.0, 1.0, 0.0, 1.0);
 			}
 			glRecti(0, 0, 1, i);
 			glEndList();
@@ -1976,7 +1976,7 @@ NSLock *__ffmpegLock = nil;
 }
 
 - (int)repeatFrames {
-	return 3;
+	return 1;
 }
 
 - (AVFrame*)decodeNextFrame {
