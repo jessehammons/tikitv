@@ -1,0 +1,11 @@
+#!/bin/bash
+#
+# Strip the xml tail off the end of the electric sheep mpg files.
+#
+# how i used it:
+# find sheepdir -type f -ls -exec fix-sheep-mpg {} \;
+#
+
+file=$1
+perl -e '@f=<>; $f = join("", @f); $f =~ s/^(.*).====magic.*/$1/smg; print $f' $file >$file.tmp
+mv $file.tmp $file
