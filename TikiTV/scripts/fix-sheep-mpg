@@ -5,6 +5,9 @@
 # how i used it:
 # find sheepdir -type f -ls -exec fix-sheep-mpg {} \;
 #
+# WATCH OUT.. YOUR SHEEP WILL BE ALTERED AND MAY NOT SCREENSAVE AFTER THIS
+# maybe ... this hasnt been tested..
+#
 
 file=$1
 perl -e '@f=<>; $f = join("", @f); $f =~ s/^(.*).====magic.*/$1/smg; print $f' $file >$file.tmp

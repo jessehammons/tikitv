@@ -1,0 +1,35 @@
+#!/bin/bash
+
+# make a simple title still mpg movie
+# you willl have to edit the ffmpeg path for you :)
+
+
+TMP=/tmp/titledir
+rm -rf "$TMP"
+mkdir -p "$TMP"
+
+. /Users/user/local/setup
+
+text="$1"
+out="$2"
+convert -size 640x480 \
+	-gravity center  \
+	xc:black \
+	-font /Library/Fonts/Arial.ttf \
+	-pointsize 110 \
+	-fill \#bb0000 \
+	-stroke white \
+	-strokewidth 15 \
+	-annotate 0,0 "$text" \
+	-stroke none \
+	-annotate 0,0 "$text" \
+	"$TMP/master.jpg"
+
+i=0
+while [ $i -lt 600 ] ; do
+	f=`printf %05d.jpg $i`
+	ln -s "$TMP/master.jpg" "$TMP/$f"
+	i=`expr $i + 1`
+done
+
+~/tv/ffmpeg/ffmpeg -i "$TMP/%05d.jpg"  -an -b 6000000 -maxrate 9000000 -minrate 0 -bufsize 1835008 -packetsize 2048 -muxrate 10080000 -bufsize 15835008 "$2.m2v"

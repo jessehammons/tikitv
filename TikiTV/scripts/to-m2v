@@ -1,0 +1,5 @@
+#!/bin/bash
+#
+# these args work well for encoding content for tikitv
+#
+~/tv/ffmpeg/ffmpeg  -i "$1" -an -b 6000000 -maxrate 9000000 -minrate 0 -bufsize 1835008 -packetsize 2048 -muxrate 10080000 $3 "$2"
