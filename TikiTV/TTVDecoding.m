@@ -197,11 +197,14 @@ int __fullScreenIsMainScreen = 1;
 			(NSOpenGLPixelFormatAttribute) 0
 		};
 		fullscreenContext = [[[self class] alloc] initWithAttributes:attributes shareContext:nil];
+		
+		//uncommented to turn on vbl
+		
 		//		if (![[[NSProcessInfo processInfo] processName] isEqualToString:@"TikiTV"]) {
 		//			NSLog(@"SETTING VBL");
 		/* request this context sync with VBL */
-//		long							value = 1;
-//		[[fullscreenContext openGLContext] setValues:(const GLint *)&value forParameter:NSOpenGLCPSwapInterval];
+		long							value = 1;
+		[[fullscreenContext openGLContext] setValues:(const GLint *)&value forParameter:NSOpenGLCPSwapInterval];
 		
 		//		}
 		NSLog(@"fullscreen is %@ on %d", fullscreenContext, fullscreenDisplayId);
@@ -1157,6 +1160,29 @@ static	NSLock *_glLock = nil;
 		TTV_KVC_SET(entries, [NSMutableArray array]);
 		NSArray *saved = ttv_readPList([self filename]);
 		int repeatFrames = [[[saved objectAtIndex:0] objectForKey:@"repeat_frames_count"] intValue];
+		//sam hack
+		//[NSPredicate predicateWithFormat:@"SELF endswith[c] '.ttv_sheep'"]
+		// char * _c_fname;
+		// _c_fname = [[self filename] cStringUsingEncoding:NSUTF8StringEncoding];
+		// long _l  = [[self filename] cStringLength];
+		// if name is like name.r2.m2v than play each frame twice
+		//NSLog([NSString stringWithFormat: @"fname: %s len: %d -10:%c -9:%c -8:%c", [self filename], _l, _c_fname[_l-10], _c_fname[_l-9], _c_fname[_l-8] ]);
+		//NSLog([self filename]);
+		
+		NSArray *components = [[self filename] componentsSeparatedByString:@"."];
+		if ([components count] > 1) {
+			NSString *s = [components objectAtIndex:[components count]-2];
+			if ([s hasPrefix:@"r"]) {
+				repeatFrames = [[s substringFromIndex:1] intValue];
+				if (repeatFrames <= 0) {
+					repeatFrames = 1;
+				}
+			}
+		}
+		/*
+		if (!repeatFrames && _l >= 11 &&  _c_fname[_l-11] == 'r' && _c_fname[_l-10] >= '1' && _c_fname[_l-10] <= '9' && _c_fname[_l-9] == '.') {
+			repeatFrames = _c_fname[_l-10] -'0';
+		}*/
 		if (!repeatFrames) {
 			repeatFrames = 1;
 		}
@@ -1975,8 +2001,9 @@ NSLock *__ffmpegLock = nil;
 	}
 }
 
+// sheep repeat frame rate
 - (int)repeatFrames {
-	return 1;
+	return 2;
 }
 
 - (AVFrame*)decodeNextFrame {

@@ -102,7 +102,7 @@
 //	NSString *filename = @"/selects/2001-streamers-looped.m2v";
 //	NSString *filename = @"/selects/earthviews-firsthalf.m2v";
 //	NSString *filename = @"/selects/castles2_test.m2v";
-	NSString *filename = @"/selects/blue-spinner.m2v";
+	NSString *filename = @"/selects/zivory_soap.m2v";
 //	NSString *filename = @"/selects/repo_man_first_part.m2v";
 //	NSString *filename = @"/selects/bc1_2k7_end.m2v";
 //	NSString *filename = @"/selects/africa-1.m2v";
