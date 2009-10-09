@@ -1065,7 +1065,7 @@ extern int __fullScreenIsMainScreen;
 	[[_controlsView window] setFrame:windowRect display:YES];
 	
 	float windowHeight = NSHeight([[_controlsView window] frame]);
-	float searchViewHeight = windowHeight-600;
+	float searchViewHeight = windowHeight *0.25;
 //	float searchViewWidth = (NSWidth([[_controlsView window] frame]) - NSWidth([_controlsView frame])) / 3 - 15;
 	float searchViewWidth = 210;
 	_commandViews = [[NSMutableArray alloc] init];
