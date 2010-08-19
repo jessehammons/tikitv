@@ -200,24 +200,24 @@
 			<key>Content</key>
 			<dict>
 				<key>PBXProjectModuleGUID</key>
-				<string>881D65E90F413E14007EC11C</string>
+				<string>8879BCF5121D01E800108202</string>
 				<key>PBXProjectModuleLabel</key>
-				<string>TTVAppDelegate.m</string>
+				<string>VSFileLibrary.m</string>
 				<key>PBXSplitModuleInNavigatorKey</key>
 				<dict>
 					<key>Split0</key>
 					<dict>
 						<key>PBXProjectModuleGUID</key>
-						<string>881D65EA0F413E14007EC11C</string>
+						<string>8879BCF6121D01E800108202</string>
 						<key>PBXProjectModuleLabel</key>
-						<string>TTVAppDelegate.m</string>
+						<string>VSFileLibrary.m</string>
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>8825B5CB0F49073F00F853AA</string>
+						<string>8879BD1F121D02AC00108202</string>
 						<key>history</key>
 						<array>
-							<string>881D66140F4368FB007EC11C</string>
+							<string>8879BCF7121D01E800108202</string>
 						</array>
 					</dict>
 					<key>SplitCount</key>
@@ -229,11 +229,51 @@
 			<key>Geometry</key>
 			<dict>
 				<key>Frame</key>
-				<string>{{0, 20}, {1058, 710}}</string>
+				<string>{{0, 20}, {1081, 524}}</string>
 				<key>PBXModuleWindowStatusBarHidden2</key>
 				<false/>
 				<key>RubberWindowFrame</key>
-				<string>343 127 1058 751 0 0 1440 878 </string>
+				<string>32 278 1081 565 0 0 1440 878 </string>
+			</dict>
+		</dict>
+		<dict>
+			<key>Content</key>
+			<dict>
+				<key>PBXProjectModuleGUID</key>
+				<string>8879BCA9121CD6EC00108202</string>
+				<key>PBXProjectModuleLabel</key>
+				<string>TTVDecoding.m</string>
+				<key>PBXSplitModuleInNavigatorKey</key>
+				<dict>
+					<key>Split0</key>
+					<dict>
+						<key>PBXProjectModuleGUID</key>
+						<string>8879BCAA121CD6EC00108202</string>
+						<key>PBXProjectModuleLabel</key>
+						<string>TTVDecoding.m</string>
+						<key>_historyCapacity</key>
+						<integer>0</integer>
+						<key>bookmark</key>
+						<string>8879BD20121D02AC00108202</string>
+						<key>history</key>
+						<array>
+							<string>8879BCA2121CD6E000108202</string>
+						</array>
+					</dict>
+					<key>SplitCount</key>
+					<string>1</string>
+				</dict>
+				<key>StatusBarVisibility</key>
+				<true/>
+			</dict>
+			<key>Geometry</key>
+			<dict>
+				<key>Frame</key>
+				<string>{{0, 20}, {1171, 481}}</string>
+				<key>PBXModuleWindowStatusBarHidden2</key>
+				<false/>
+				<key>RubberWindowFrame</key>
+				<string>171 239 1171 522 0 0 1440 878 </string>
 			</dict>
 		</dict>
 	</array>
@@ -247,15 +287,13 @@
 		<dict>
 			<key>ChosenToolbarItems</key>
 			<array>
-				<string>active-target-popup</string>
-				<string>active-buildstyle-popup</string>
+				<string>active-combo-popup</string>
 				<string>action</string>
 				<string>NSToolbarFlexibleSpaceItem</string>
-				<string>buildOrClean</string>
-				<string>build-and-goOrGo</string>
+				<string>debugger-enable-breakpoints</string>
+				<string>build-and-go</string>
 				<string>com.apple.ide.PBXToolbarStopButton</string>
 				<string>get-info</string>
-				<string>toggle-editor</string>
 				<string>NSToolbarFlexibleSpaceItem</string>
 				<string>com.apple.pbx.toolbar.searchfield</string>
 			</array>
@@ -278,7 +316,6 @@
 						<array>
 							<string>1C37FBAC04509CD000000102</string>
 							<string>1C37FAAC04509CD000000102</string>
-							<string>1C08E77C0454961000C914BD</string>
 							<string>1C37FABC05509CD000000102</string>
 							<string>1C37FABC05539CD112110102</string>
 							<string>E2644B35053B69B200211256</string>
@@ -310,12 +347,15 @@
 								<string>29B97314FDCFA39411CA2CEA</string>
 								<string>080E96DDFE201D6D7F000001</string>
 								<string>29B97317FDCFA39411CA2CEA</string>
+								<string>19C28FACFE9D520D11CA2CBB</string>
 								<string>1C37FBAC04509CD000000102</string>
 								<string>1C37FABC05509CD000000102</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
+									<integer>10</integer>
+									<integer>9</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -355,7 +395,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>tikitv_test.m</string>
+								<string>VSFileLibrary.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -363,14 +403,16 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>tikitv_test.m</string>
+										<string>VSFileLibrary.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>8825B5CA0F49073F00F853AA</string>
+										<string>8879BD1E121D02AC00108202</string>
 										<key>history</key>
 										<array>
-											<string>881D66120F4368FB007EC11C</string>
+											<string>8879BCA5121CD6EC00108202</string>
+											<string>8879BCA6121CD6EC00108202</string>
+											<string>8879BCF3121D01E800108202</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -428,12 +470,14 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>8825B58A0F453ECA00F853AA</string>
+				<string>8879BC9F121CD69800108202</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>8825B58B0F453ECA00F853AA</string>
+				<string>8879BCA0121CD69800108202</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
+			<key>ToolbarConfigUserDefaultsMinorVersion</key>
+			<string>2</string>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.defaultV3</string>
 		</dict>
@@ -562,10 +606,16 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>8879BD1C121D029900108202</string>
+		<string>8879BD15121D029600108202</string>
+		<string>8879BCB6121CD6EC00108202</string>
+		<string>8879BCB7121CD6EC00108202</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>88B3E8AF0E32C02600C49631</string>
-		<string>881D65E90F413E14007EC11C</string>
+		<string>1C530D57069F1CE1000CFCEE</string>
+		<string>8879BCA9121CD6EC00108202</string>
 		<string>/Users/jesse/projects/tikitv/TikiTV/TikiTV2.xcodeproj</string>
+		<string>8879BCF5121D01E800108202</string>
 		<string>1C78EAAD065D492600B07095</string>
 	</array>
 	<key>WindowString</key>
@@ -612,7 +662,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>XCMainBuildResultsModuleGUID</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>Build</string>
+								<string>Build Results</string>
 								<key>XCBuildResultsTrigger_Collapse</key>
 								<integer>1021</integer>
 								<key>XCBuildResultsTrigger_Open</key>
@@ -646,7 +696,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>88B3E8AF0E32C02600C49631</string>
-				<string>8825B5910F453ED600F853AA</string>
+				<string>8879BCA1121CD69800108202</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -766,13 +816,13 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1CD10A99069EF8BA00B06720</string>
-				<string>8825B5920F453ED600F853AA</string>
+				<string>8879BCAC121CD6EC00108202</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>8825B5930F453ED600F853AA</string>
-				<string>8825B5940F453ED600F853AA</string>
-				<string>8825B5950F453ED600F853AA</string>
-				<string>8825B5960F453ED600F853AA</string>
-				<string>8825B5970F453ED600F853AA</string>
+				<string>8879BCAD121CD6EC00108202</string>
+				<string>8879BCAE121CD6EC00108202</string>
+				<string>8879BCAF121CD6EC00108202</string>
+				<string>8879BCB0121CD6EC00108202</string>
+				<string>8879BCB1121CD6EC00108202</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
@@ -804,7 +854,7 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CDD528C0622207200134675</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>&lt;No Editor&gt;</string>
+										<string>TTVDecoding.m</string>
 										<key>StatusBarVisibility</key>
 										<true/>
 									</dict>
@@ -862,8 +912,8 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C530D57069F1CE1000CFCEE</string>
-				<string>8889163A0F3FD85F00FC6D6B</string>
-				<string>8889163B0F3FD85F00FC6D6B</string>
+				<string>8879BCB2121CD6EC00108202</string>
+				<string>8879BCB3121CD6EC00108202</string>
 				<string>1CDD528C0622207200134675</string>
 				<string>1CD0528E0623707200166675</string>
 			</array>
@@ -872,7 +922,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C530D57069F1CE1000CFCEE</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>FirstTimeWindowDisplayed</key>
@@ -930,7 +980,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C78EAAD065D492600B07095</string>
-				<string>8825B5980F453ED600F853AA</string>
+				<string>8879BCB4121CD6EC00108202</string>
 				<string>1C78EAAC065D492600B07095</string>
 			</array>
 			<key>ToolbarConfiguration</key>
@@ -1193,8 +1243,8 @@
 			<true/>
 			<key>TableOfContents</key>
 			<array>
-				<string>8889163C0F3FD85F00FC6D6B</string>
-				<string>8889163D0F3FD85F00FC6D6B</string>
+				<string>8879BD15121D029600108202</string>
+				<string>8879BD16121D029600108202</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
 				<string>1CA1AED706398EBD00589147</string>
 			</array>
@@ -1203,7 +1253,7 @@
 			<key>WindowString</key>
 			<string>70 427 744 409 0 0 1440 878 </string>
 			<key>WindowToolGUID</key>
-			<string>8889163C0F3FD85F00FC6D6B</string>
+			<string>8879BD15121D029600108202</string>
 			<key>WindowToolIsVisible</key>
 			<false/>
 		</dict>

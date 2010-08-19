@@ -51,8 +51,8 @@
 
 - (NSString*)libraryPath
 {
-//	return [[NSBundle mainBundle] pathForResource:@"selects" ofType:nil];
-	return @"/selects/";
+	return [[NSBundle mainBundle] pathForResource:@"selects" ofType:nil];
+//	return @"/selects/";
 }
 
 - (int)numberOfRowsInTableView:(NSTableView *)aTableView {

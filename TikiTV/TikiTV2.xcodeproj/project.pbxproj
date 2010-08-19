@@ -25,15 +25,9 @@
 		883ADD080E08A32100B1ED8E /* DPQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 883ADD060E08A32100B1ED8E /* DPQueue.m */; };
 		886EC2760EC6145400CA72C0 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 886EC2740EC6145400CA72C0 /* MainMenu.nib */; };
 		886EC39A0EC636F000CA72C0 /* TTVScrubSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 886EC3990EC636F000CA72C0 /* TTVScrubSlider.m */; };
-		886F07290F2D9DD100BB4DB4 /* black2.m2v in Copy M2V */ = {isa = PBXBuildFile; fileRef = 886F06520F2D9BD100BB4DB4 /* black2.m2v */; };
-		886F072A0F2D9DD100BB4DB4 /* dark-drive.m2v in Copy M2V */ = {isa = PBXBuildFile; fileRef = 886F06530F2D9BD100BB4DB4 /* dark-drive.m2v */; };
-		886F072B0F2D9DD100BB4DB4 /* freezer-002-test.m2v in Copy M2V */ = {isa = PBXBuildFile; fileRef = 886F06540F2D9BD100BB4DB4 /* freezer-002-test.m2v */; };
-		886F072C0F2D9DD100BB4DB4 /* marching_vob_01t_001.m2v in Copy M2V */ = {isa = PBXBuildFile; fileRef = 886F06550F2D9BD100BB4DB4 /* marching_vob_01t_001.m2v */; };
-		886F072D0F2D9DD100BB4DB4 /* ocean-seaweed-forest.m2v in Copy M2V */ = {isa = PBXBuildFile; fileRef = 886F06560F2D9BD100BB4DB4 /* ocean-seaweed-forest.m2v */; };
-		886F072E0F2D9DD100BB4DB4 /* sheep-2008.m2v in Copy M2V */ = {isa = PBXBuildFile; fileRef = 886F06570F2D9BD100BB4DB4 /* sheep-2008.m2v */; };
-		886F072F0F2D9DD100BB4DB4 /* tv-noise-slow.m2v in Copy M2V */ = {isa = PBXBuildFile; fileRef = 886F06580F2D9BD100BB4DB4 /* tv-noise-slow.m2v */; };
 		886F643B0E0A020200066F64 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 886F643A0E0A020200066F64 /* IOKit.framework */; };
 		886F643C0E0A020200066F64 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 886F643A0E0A020200066F64 /* IOKit.framework */; };
+		8879BD0E121D026F00108202 /* selects in Resources */ = {isa = PBXBuildFile; fileRef = 8879BD05121D026F00108202 /* selects */; };
 		8884E3880CE18D2900489F77 /* VSDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 8884E3870CE18D2900489F77 /* VSDecoder.m */; };
 		888D07E50B65EF3C00957EB2 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 888D07E40B65EF3C00957EB2 /* OpenGL.framework */; };
 		88CD2DC80CFA0B8000E3409C /* VSFileLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CD2DC70CFA0B8000E3409C /* VSFileLibrary.m */; };
@@ -97,13 +91,6 @@
 			dstPath = selects;
 			dstSubfolderSpec = 7;
 			files = (
-				886F07290F2D9DD100BB4DB4 /* black2.m2v in Copy M2V */,
-				886F072A0F2D9DD100BB4DB4 /* dark-drive.m2v in Copy M2V */,
-				886F072B0F2D9DD100BB4DB4 /* freezer-002-test.m2v in Copy M2V */,
-				886F072C0F2D9DD100BB4DB4 /* marching_vob_01t_001.m2v in Copy M2V */,
-				886F072D0F2D9DD100BB4DB4 /* ocean-seaweed-forest.m2v in Copy M2V */,
-				886F072E0F2D9DD100BB4DB4 /* sheep-2008.m2v in Copy M2V */,
-				886F072F0F2D9DD100BB4DB4 /* tv-noise-slow.m2v in Copy M2V */,
 			);
 			name = "Copy M2V";
 			runOnlyForDeploymentPostprocessing = 1;
@@ -134,21 +121,8 @@
 		886EC2750EC6145400CA72C0 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
 		886EC3980EC636F000CA72C0 /* TTVScrubSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTVScrubSlider.h; sourceTree = "<group>"; };
 		886EC3990EC636F000CA72C0 /* TTVScrubSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTVScrubSlider.m; sourceTree = "<group>"; };
-		886F06520F2D9BD100BB4DB4 /* black2.m2v */ = {isa = PBXFileReference; lastKnownFileType = file; path = black2.m2v; sourceTree = "<group>"; };
-		886F06530F2D9BD100BB4DB4 /* dark-drive.m2v */ = {isa = PBXFileReference; lastKnownFileType = file; path = "dark-drive.m2v"; sourceTree = "<group>"; };
-		886F06540F2D9BD100BB4DB4 /* freezer-002-test.m2v */ = {isa = PBXFileReference; lastKnownFileType = file; path = "freezer-002-test.m2v"; sourceTree = "<group>"; };
-		886F06550F2D9BD100BB4DB4 /* marching_vob_01t_001.m2v */ = {isa = PBXFileReference; lastKnownFileType = file; path = marching_vob_01t_001.m2v; sourceTree = "<group>"; };
-		886F06560F2D9BD100BB4DB4 /* ocean-seaweed-forest.m2v */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ocean-seaweed-forest.m2v"; sourceTree = "<group>"; };
-		886F06570F2D9BD100BB4DB4 /* sheep-2008.m2v */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sheep-2008.m2v"; sourceTree = "<group>"; };
-		886F06580F2D9BD100BB4DB4 /* tv-noise-slow.m2v */ = {isa = PBXFileReference; lastKnownFileType = file; path = "tv-noise-slow.m2v"; sourceTree = "<group>"; };
-		886F06650F2D9CA300BB4DB4 /* black2.m2v */ = {isa = PBXFileReference; lastKnownFileType = file; path = black2.m2v; sourceTree = "<group>"; };
-		886F06660F2D9CA300BB4DB4 /* dark-drive.m2v */ = {isa = PBXFileReference; lastKnownFileType = file; path = "dark-drive.m2v"; sourceTree = "<group>"; };
-		886F06670F2D9CA300BB4DB4 /* freezer-002-test.m2v */ = {isa = PBXFileReference; lastKnownFileType = file; path = "freezer-002-test.m2v"; sourceTree = "<group>"; };
-		886F06680F2D9CA300BB4DB4 /* marching_vob_01t_001.m2v */ = {isa = PBXFileReference; lastKnownFileType = file; path = marching_vob_01t_001.m2v; sourceTree = "<group>"; };
-		886F06690F2D9CA300BB4DB4 /* ocean-seaweed-forest.m2v */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ocean-seaweed-forest.m2v"; sourceTree = "<group>"; };
-		886F066A0F2D9CA300BB4DB4 /* sheep-2008.m2v */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sheep-2008.m2v"; sourceTree = "<group>"; };
-		886F066B0F2D9CA300BB4DB4 /* tv-noise-slow.m2v */ = {isa = PBXFileReference; lastKnownFileType = file; path = "tv-noise-slow.m2v"; sourceTree = "<group>"; };
 		886F643A0E0A020200066F64 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = /System/Library/Frameworks/IOKit.framework; sourceTree = "<absolute>"; };
+		8879BD05121D026F00108202 /* selects */ = {isa = PBXFileReference; lastKnownFileType = folder; path = selects; sourceTree = "<group>"; };
 		8884E3860CE18D2900489F77 /* VSDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSDecoder.h; sourceTree = "<group>"; };
 		8884E3870CE18D2900489F77 /* VSDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSDecoder.m; sourceTree = "<group>"; };
 		888D07E40B65EF3C00957EB2 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
@@ -178,7 +152,7 @@
 		88FBA0150B65E4AB0034EF9E /* TTVAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = TTVAppDelegate.h; sourceTree = "<group>"; };
 		88FBA0160B65E4AB0034EF9E /* TTVAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = TTVAppDelegate.m; sourceTree = "<group>"; };
 		88FBA0400B65E60C0034EF9E /* Quartz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = Quartz.framework; path = /System/Library/Frameworks/Quartz.framework; sourceTree = "<absolute>"; };
-		88FBA04E0B65E6720034EF9E /* TikiTV.qtz */ = {isa = PBXFileReference; lastKnownFileType = file; path = TikiTV.qtz; sourceTree = "<group>"; };
+		88FBA04E0B65E6720034EF9E /* TikiTV.qtz */ = {isa = PBXFileReference; lastKnownFileType = "video.quartz-composer"; path = TikiTV.qtz; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* TikiTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TikiTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -292,7 +266,6 @@
 		29B97314FDCFA39411CA2CEA /* TikiTV */ = {
 			isa = PBXGroup;
 			children = (
-				886F06640F2D9CA300BB4DB4 /* selects */,
 				886EC2740EC6145400CA72C0 /* MainMenu.nib */,
 				88F62FAB0EC419CA00472168 /* libavformat.a */,
 				88F62FA80EC419AD00472168 /* libavcodec.a */,
@@ -351,8 +324,8 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				8879BD05121D026F00108202 /* selects */,
 				88F62EFE0EC4112D00472168 /* TikiChopMainMenu.nib */,
-				886F06510F2D9BD100BB4DB4 /* selects */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 				88FBA04E0B65E6720034EF9E /* TikiTV.qtz */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
@@ -367,34 +340,6 @@
 				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		886F06510F2D9BD100BB4DB4 /* selects */ = {
-			isa = PBXGroup;
-			children = (
-				886F06520F2D9BD100BB4DB4 /* black2.m2v */,
-				886F06530F2D9BD100BB4DB4 /* dark-drive.m2v */,
-				886F06540F2D9BD100BB4DB4 /* freezer-002-test.m2v */,
-				886F06550F2D9BD100BB4DB4 /* marching_vob_01t_001.m2v */,
-				886F06560F2D9BD100BB4DB4 /* ocean-seaweed-forest.m2v */,
-				886F06570F2D9BD100BB4DB4 /* sheep-2008.m2v */,
-				886F06580F2D9BD100BB4DB4 /* tv-noise-slow.m2v */,
-			);
-			path = selects;
-			sourceTree = "<group>";
-		};
-		886F06640F2D9CA300BB4DB4 /* selects */ = {
-			isa = PBXGroup;
-			children = (
-				886F06650F2D9CA300BB4DB4 /* black2.m2v */,
-				886F06660F2D9CA300BB4DB4 /* dark-drive.m2v */,
-				886F06670F2D9CA300BB4DB4 /* freezer-002-test.m2v */,
-				886F06680F2D9CA300BB4DB4 /* marching_vob_01t_001.m2v */,
-				886F06690F2D9CA300BB4DB4 /* ocean-seaweed-forest.m2v */,
-				886F066A0F2D9CA300BB4DB4 /* sheep-2008.m2v */,
-				886F066B0F2D9CA300BB4DB4 /* tv-noise-slow.m2v */,
-			);
-			path = selects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -546,6 +491,7 @@
 				88FBA00C0B65E1830034EF9E /* GoodStuff.xcconfig in Resources */,
 				88FBA04F0B65E6720034EF9E /* TikiTV.qtz in Resources */,
 				886EC2760EC6145400CA72C0 /* MainMenu.nib in Resources */,
+				8879BD0E121D026F00108202 /* selects in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1084,12 +1084,12 @@ extern int __fullScreenIsMainScreen;
 	for(int i = 0; i < 6; i++) {
 		inputs[i] = [[VSFileLibrary library] pathForFilename:@"black2.m2v"];
 	}
-//	inputs[0] = [[VSFileLibrary library] pathForFilename:@"dark-drive.m2v"];
-//	inputs[1] = [[VSFileLibrary library] pathForFilename:@"freezer-002-test.m2v"];
-//	inputs[2] = [[VSFileLibrary library] pathForFilename:@"marching_vob_01t_001.m2v"];
-//	inputs[3] = [[VSFileLibrary library] pathForFilename:@"ocean-seaweed-forest.m2v"];
-//	inputs[4] = [[VSFileLibrary library] pathForFilename:@"sheep-2008.m2v"];
-//	inputs[5] = [[VSFileLibrary library] pathForFilename:@"tv-noise-slow.m2v"];
+	inputs[0] = [[VSFileLibrary library] pathForFilename:@"dark-drive.m2v"];
+	inputs[1] = [[VSFileLibrary library] pathForFilename:@"freezer-002-test.m2v"];
+	inputs[2] = [[VSFileLibrary library] pathForFilename:@"marching_vob_01t_001.m2v"];
+	inputs[3] = [[VSFileLibrary library] pathForFilename:@"ocean-seaweed-forest.m2v"];
+	inputs[4] = [[VSFileLibrary library] pathForFilename:@"sheep-2008.m2v"];
+	inputs[5] = [[VSFileLibrary library] pathForFilename:@"tv-noise-slow.m2v"];
 	NSLog(@"inputs %@", inputs[0]);
 
 	NSLog (@"image browser is %@", _imageBrowser);

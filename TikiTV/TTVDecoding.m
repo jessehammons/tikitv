@@ -1086,7 +1086,7 @@ static	NSLock *_glLock = nil;
 	glTranslatef(NSMinX(rect) +0.375, NSMinY(rect), 0);
 	for(int i = 0; i < _sampleCount; i++) {
 		glTranslatef(1, 0, 0);
-		glCallList(_samples[i]);
+		//glCallList(_samples[i]);
 	}
 	glPopMatrix();
 	
